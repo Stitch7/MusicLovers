@@ -113,9 +113,7 @@ class MasterViewController: UITableViewController {
 
     func downloadFrom(url: URL, completion completionHandler: @escaping (Data?) -> Void) {
         URLSession.shared.dataTask(with: url) { data, response, error in
-
-            sleep(1)
-
+***REMOVED***            sleep(1)
             guard let data = data, error == nil else {
                 print("error on download \(error!)")
                 return

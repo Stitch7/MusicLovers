@@ -37,7 +37,7 @@ struct DiscogsClient {
     func release(id: Int, completion: @escaping (Result<Release>) -> ()) {
         let path = "/releases/\(id)"
         let queryParameter: [URLQueryItem]? = nil
-        let resource = Resource<Release>(path: path, queryParameter: queryParameter, parseJSON: { json in
+        let resource = Resource<Release>(path: path, queryParameter: queryParameter, needsAuthentication: true, parseJSON: { json in
             guard let releaseJson = json as? JSON else { return nil ***REMOVED***
             return Release(json: releaseJson)
     ***REMOVED***)
