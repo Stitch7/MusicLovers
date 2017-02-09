@@ -60,7 +60,7 @@ class DetailViewController: UITableViewController {
 
                             DispatchQueue.main.async {
                                 let headerImageView = UIImageView()
-                                headerImageView.contentMode = .scaleAspectFit
+                                headerImageView.contentMode = .scaleAspectFill
                                 headerImageView.image = image
                                 self.tableView.tableHeaderView = headerImageView
 

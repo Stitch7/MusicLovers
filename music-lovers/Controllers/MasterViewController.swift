@@ -21,8 +21,9 @@ class MasterViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        configureNavigationBar()
         configureDetailViewController()
+        configureNavigationBar()
+        configureTableView()
 
         guard let url = URL(string: Config.DiscogsApi.BaseUrl) else {
             fatalError("Invalid DiscogsApi.BaseUrl in Config")
@@ -58,10 +59,6 @@ class MasterViewController: UITableViewController {
         super.viewWillAppear(animated)
 ***REMOVED***
 
-    func configureNavigationBar() {
-        title = "Music Lovers"
-***REMOVED***
-
     func configureDetailViewController() {
         guard let split = self.splitViewController else { return ***REMOVED***
 
@@ -70,28 +67,52 @@ class MasterViewController: UITableViewController {
         self.detailViewController = navigationVC.topViewController as? DetailViewController
 ***REMOVED***
 
+    func configureNavigationBar() {
+        title = "Music Lovers"
+***REMOVED***
+
+    func configureTableView() {
+        tableView.register(UINib(nibName: "SearchItemTableViewCell", bundle: nil), forCellReuseIdentifier: "SearchItemCell")
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 100
+***REMOVED***
+
     ***REMOVED*** MARK: - Table View
+
+***REMOVED***    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+***REMOVED***        return UITableViewAutomaticDimension
+***REMOVED******REMOVED***
+***REMOVED***
+***REMOVED***    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+***REMOVED***        return UITableViewAutomaticDimension
+***REMOVED******REMOVED***
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showDetail", sender: indexPath)
+***REMOVED***
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return searchItems.count
 ***REMOVED***
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SearchItemCell", for: indexPath) as! SearchItemTableViewCell
         let key = NSNumber(integerLiteral: indexPath.row)
 
         cell.accessoryType = .disclosureIndicator
 
-        let release = searchItems[indexPath.row]
+        let searchItem = searchItems[indexPath.row]
 
-        cell.imageView?.contentMode = .scaleAspectFit
+        cell.searchItem = searchItem
+
+        cell.coverImageView?.contentMode = .scaleAspectFit
 
         if let cachedImage = cache.object(forKey: key) {
             print("Cached image used")
-            cell.imageView?.image = cachedImage
+            cell.coverImageView?.image = cachedImage
     ***REMOVED*** else {
-            cell.imageView?.image = UIImage(named: "default-release")
-            downloadFrom(url: release.thumb) { data in
+            cell.coverImageView?.image = UIImage(named: "default-release")
+            downloadFrom(url: searchItem.thumb) { data in
                 guard
                     let imageData = data,
                     let image = UIImage(data: imageData)
@@ -99,14 +120,11 @@ class MasterViewController: UITableViewController {
 
                 self.cache.setObject(image, forKey: key)
 
-                if let updateCell = tableView.cellForRow(at: indexPath) {
-                    updateCell.imageView?.image = image
+                if let updateCell = tableView.cellForRow(at: indexPath) as? SearchItemTableViewCell {
+                    updateCell.coverImageView?.image = image
             ***REMOVED***
         ***REMOVED***
     ***REMOVED***
-
-        cell.textLabel?.text = release.title
-        cell.detailTextLabel?.text = String(release.id)
 
         return cell
 ***REMOVED***
@@ -134,7 +152,7 @@ class MasterViewController: UITableViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
-            if let indexPath = self.tableView.indexPathForSelectedRow {
+            if let indexPath = sender as? IndexPath {
                 let searchItem = searchItems[indexPath.row]
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
                 controller.searchItem = searchItem

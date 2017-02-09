@@ -12,7 +12,7 @@ struct Track {
     let position: String
     let title: String
     let duration: String
-    let extraArtists: [Artist]
+    let extraArtists: [Artist]?
 ***REMOVED***
 
 extension Track: JSONInitializable {
@@ -20,8 +20,7 @@ extension Track: JSONInitializable {
         guard
             let position = json["position"] as? String,
             let title = json["title"] as? String,
-            let duration = json["duration"] as? String,
-            let extraArtistsJson = json["extraartists"] as? [JSON]
+            let duration = json["duration"] as? String
         else {
             return nil
     ***REMOVED***
@@ -29,6 +28,11 @@ extension Track: JSONInitializable {
         self.position = position
         self.title = title
         self.duration = duration
-        self.extraArtists = extraArtistsJson.flatMap(Artist.init)
+
+        var extraArtists: [Artist]? = nil
+        if let extraArtistsJson = json["extraartists"] as? [JSON] {
+            extraArtists = extraArtistsJson.flatMap(Artist.init)
+    ***REMOVED***
+        self.extraArtists = extraArtists
 ***REMOVED***
 ***REMOVED***

@@ -21,6 +21,7 @@ struct SearchItem {
     let uri: String
     let barcode: [String]
     let catno: String
+    let year: String
 ***REMOVED*** TODO: community is dictionary
 ***REMOVED***    let community: [String]
 ***REMOVED***
@@ -41,7 +42,8 @@ extension SearchItem: JSONInitializable {
             let thumb = URL(string: thumbUrlStr),
             let uri = json["uri"] as? String,
             let barcode = json["barcode"] as? [String],
-            let catno = json["catno"] as? String
+            let catno = json["catno"] as? String,
+            let year = json["year"] as? String
         else {
             return nil
     ***REMOVED***
@@ -58,6 +60,7 @@ extension SearchItem: JSONInitializable {
         self.uri = uri
         self.barcode = barcode
         self.catno = catno
+        self.year = year
 ***REMOVED***        self.community = community
 ***REMOVED***
 ***REMOVED***
