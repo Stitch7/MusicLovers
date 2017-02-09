@@ -36,6 +36,8 @@
 		30A877A61E4B9A4700C419F9 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A877A51E4B9A4700C419F9 /* Video.swift */; ***REMOVED***;
 		30A877AC1E4BE03B00C419F9 /* SearchItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A877AA1E4BE03B00C419F9 /* SearchItemTableViewCell.swift */; ***REMOVED***;
 		30A877AD1E4BE03B00C419F9 /* SearchItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30A877AB1E4BE03B00C419F9 /* SearchItemTableViewCell.xib */; ***REMOVED***;
+		30A877B11E4C816100C419F9 /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A877AF1E4C816100C419F9 /* TrackTableViewCell.swift */; ***REMOVED***;
+		30A877B21E4C816100C419F9 /* TrackTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30A877B01E4C816100C419F9 /* TrackTableViewCell.xib */; ***REMOVED***;
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		30A877A51E4B9A4700C419F9 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; ***REMOVED***;
 		30A877AA1E4BE03B00C419F9 /* SearchItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItemTableViewCell.swift; sourceTree = "<group>"; ***REMOVED***;
 		30A877AB1E4BE03B00C419F9 /* SearchItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchItemTableViewCell.xib; sourceTree = "<group>"; ***REMOVED***;
+		30A877AF1E4C816100C419F9 /* TrackTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; ***REMOVED***;
+		30A877B01E4C816100C419F9 /* TrackTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrackTableViewCell.xib; sourceTree = "<group>"; ***REMOVED***;
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,8 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				30A877AE1E4C80C400C419F9 /* SearchItem */,
+				30A877B31E4C816800C419F9 /* Track */,
 			);
-			name = Cells;
 			path = Cells;
 			sourceTree = "<group>";
 		***REMOVED***;
@@ -219,8 +223,16 @@
 				30A877AA1E4BE03B00C419F9 /* SearchItemTableViewCell.swift */,
 				30A877AB1E4BE03B00C419F9 /* SearchItemTableViewCell.xib */,
 			);
-			name = SearchItem;
 			path = SearchItem;
+			sourceTree = "<group>";
+		***REMOVED***;
+		30A877B31E4C816800C419F9 /* Track */ = {
+			isa = PBXGroup;
+			children = (
+				30A877AF1E4C816100C419F9 /* TrackTableViewCell.swift */,
+				30A877B01E4C816100C419F9 /* TrackTableViewCell.xib */,
+			);
+			name = Track;
 			sourceTree = "<group>";
 		***REMOVED***;
 /* End PBXGroup section */
@@ -310,6 +322,7 @@
 				30A877AD1E4BE03B00C419F9 /* SearchItemTableViewCell.xib in Resources */,
 				30A877651E4B328D00C419F9 /* LaunchScreen.storyboard in Resources */,
 				30A877621E4B328D00C419F9 /* Assets.xcassets in Resources */,
+				30A877B21E4C816100C419F9 /* TrackTableViewCell.xib in Resources */,
 				30A877601E4B328D00C419F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +361,7 @@
 				30A877801E4B583900C419F9 /* Resource.swift in Sources */,
 				30A8777C1E4B580100C419F9 /* HttpClient.swift in Sources */,
 				30A877591E4B328D00C419F9 /* AppDelegate.swift in Sources */,
+				30A877B11E4C816100C419F9 /* TrackTableViewCell.swift in Sources */,
 				30A8779C1E4B976100C419F9 /* Format.swift in Sources */,
 				30A8779A1E4B973800C419F9 /* Label.swift in Sources */,
 				30A877981E4B971800C419F9 /* Artist.swift in Sources */,

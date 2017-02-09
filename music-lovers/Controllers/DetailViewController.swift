@@ -21,7 +21,8 @@ class DetailViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.configureView()
+        configureView()
+        configureTableView()
 ***REMOVED***
 
     func configureView() {
@@ -82,6 +83,12 @@ class DetailViewController: UITableViewController {
     ***REMOVED***
 ***REMOVED***
 
+    func configureTableView() {
+        tableView.register(UINib(nibName: "TrackTableViewCell", bundle: nil), forCellReuseIdentifier: "TrackCell")
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 21
+***REMOVED***
+
     ***REMOVED*** MARK: - Table View
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -93,11 +100,8 @@ class DetailViewController: UITableViewController {
 ***REMOVED***
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let track = release?.tracklist[indexPath.row]
-
-        cell.textLabel?.text = track?.title
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TrackCell", for: indexPath) as! TrackTableViewCell
+        cell.track = release?.tracklist[indexPath.row]
         return cell
 ***REMOVED***
 ***REMOVED***
