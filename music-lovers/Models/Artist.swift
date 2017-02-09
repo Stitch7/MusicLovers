@@ -11,6 +11,7 @@ import Foundation
 struct Artist {
     let id: Int
     let name: String
+    let role: String
     let resourceUrl: URL
 ***REMOVED***
 
@@ -19,6 +20,7 @@ extension Artist: JSONInitializable {
         guard
             let id = json["id"] as? Int,
             let name = json["name"] as? String,
+            let role = json["role"] as? String,
             let resourceUrlStr = json["resource_url"] as? String,
             let resourceUrl = URL(string: resourceUrlStr)
         else {
@@ -27,6 +29,7 @@ extension Artist: JSONInitializable {
 
         self.id = id
         self.name = name
+        self.role = role
         self.resourceUrl = resourceUrl
 ***REMOVED***
 ***REMOVED***

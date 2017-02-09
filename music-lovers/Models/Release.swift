@@ -35,7 +35,7 @@ struct Release {
     let title: String
     let tracklist: [Track]
     let uri: URL
-***REMOVED***    let videos: [Video]
+    let videos: [Video]
     let year: Int
 ***REMOVED***
 
@@ -84,13 +84,13 @@ extension Release: JSONInitializable {
             let tracklistJson = json["tracklist"] as? [JSON],
             let uriStr = json["uri"] as? String,
             let uri = URL(string: uriStr),
-***REMOVED***            let videosJson = json["videos"] as? [JSON],
             let year = json["year"] as? Int
         else {
             return nil
     ***REMOVED***
 
         let notes = json["notes"] as? String ?? ""
+        let videosJson = json["videos"] as? [JSON] ?? [JSON]()
 
         self.id = id
         self.artists = artistsJson.flatMap(Artist.init)
@@ -117,7 +117,7 @@ extension Release: JSONInitializable {
         self.title = title
         self.tracklist = tracklistJson.flatMap(Track.init)
         self.uri = uri
-***REMOVED***        self.videos = videosJson.flatMap(Video.init)
+        self.videos = videosJson.flatMap(Video.init)
         self.year = year
 ***REMOVED***
 ***REMOVED***

@@ -27,6 +27,8 @@ class TrackTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
+        selectionStyle = .none
+
         positionLabel.textAlignment = .right
         positionLabel.textColor = .darkGray
 

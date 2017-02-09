@@ -20,17 +20,17 @@ class SearchItemTableViewCell: UITableViewCell {
         didSet {
             guard let searchItem = self.searchItem else { return ***REMOVED***
 
-            self.titleLabel.text = searchItem.title
-            self.labelLabel.text = Array(Set(searchItem.label)).joined(separator: ", ")
-            self.genreLabel.text = searchItem.genre.joined(separator: ", ")
-            self.countryYearLabel.text = searchItem.country + ", " + searchItem.year
+            titleLabel.text = searchItem.title
+            labelLabel.text = Array(Set(searchItem.label)).joined(separator: ", ")
+            genreLabel.text = searchItem.genre.joined(separator: ", ")
+            countryYearLabel.text = searchItem.country + ", " + searchItem.year
     ***REMOVED***
 ***REMOVED***
 
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.titleLabel.numberOfLines = 0
-        self.labelLabel.numberOfLines = 3
+        titleLabel.numberOfLines = 0
+        labelLabel.numberOfLines = 3
 ***REMOVED***
 ***REMOVED***

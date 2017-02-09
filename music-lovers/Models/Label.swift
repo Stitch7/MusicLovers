@@ -24,7 +24,7 @@ extension Label: JSONInitializable {
             let name = json["name"] as? String,
             let resourceUrlStr = json["resource_url"] as? String,
             let resourceUrl = URL(string: resourceUrlStr),
-            let catNo = json["cat_no"] as? String,
+            let catNo = json["catno"] as? String,
             let entityType = json["entity_type"] as? String,
             let entityTypeName = json["entity_type_name"] as? String
         else {

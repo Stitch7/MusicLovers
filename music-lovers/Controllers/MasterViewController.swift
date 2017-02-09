@@ -12,7 +12,7 @@ class MasterViewController: UITableViewController {
 
     ***REMOVED*** MARK: - Properties
 
-    var detailViewController: DetailViewController? = nil
+    var detailViewController: ReleaseViewController? = nil
     var searchItems = [SearchItem]()
     var cache = NSCache<NSNumber, UIImage>()
 
@@ -64,7 +64,7 @@ class MasterViewController: UITableViewController {
 
         let controllers = split.viewControllers
         let navigationVC = controllers[controllers.count-1] as! UINavigationController
-        self.detailViewController = navigationVC.topViewController as? DetailViewController
+        self.detailViewController = navigationVC.topViewController as? ReleaseViewController
 ***REMOVED***
 
     func configureNavigationBar() {
@@ -154,7 +154,7 @@ class MasterViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = sender as? IndexPath {
                 let searchItem = searchItems[indexPath.row]
-                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
+                let controller = (segue.destination as! UINavigationController).topViewController as! ReleaseViewController
                 controller.searchItem = searchItem
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
