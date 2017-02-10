@@ -8,33 +8,27 @@
 
 import UIKit
 
-class DiscographyTableViewController: UITableViewController {
+class DiscographyViewController: UITableViewController {
 
-    var discogsClient: DiscogsClient = {
-        guard let url = URL(string: Config.DiscogsApi.BaseUrl) else {
-            fatalError("Invalid DiscogsApi.BaseUrl in Config")
-    ***REMOVED***
-
-        let credentials = Credentials(key: Config.DiscogsApi.Key, secret: Config.DiscogsApi.Secret)
-        let foundationClient = FoundationClient(url: url, credentials: credentials)
-        return DiscogsClient(httpClient: foundationClient)
-***REMOVED***()
+    ***REMOVED*** MARK: - Properties
 
     var artist: Artist? {
         didSet {
             title = artist?.name
     ***REMOVED***
 ***REMOVED***
-
+    var discogsClient: DiscogsClient?
     var records = [Record]()
     var cache = NSCache<NSString, UIImage>()
+
+    ***REMOVED*** MARK: - UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         configureTableView()
 
-        guard let artist = self.artist else { return ***REMOVED***
+        guard let artist = self.artist, let discogsClient = self.discogsClient else { return ***REMOVED***
 
         let loadingView = LoadingView()
         loadingView.isHidden = false
@@ -95,14 +89,10 @@ class DiscographyTableViewController: UITableViewController {
             cell.coverImageView?.image = cachedImage
     ***REMOVED*** else {
             cell.coverImageView?.image = UIImage(named: "default-release")
-            downloadFrom(url: record.thumb) { data in
-                guard
-                    let imageData = data,
-                    let image = UIImage(data: imageData)
-                    else { return ***REMOVED***
+            UIImage.downloadFrom(url: record.thumb) { image in
+                guard let image = image else { return ***REMOVED***
 
                 self.cache.setObject(image, forKey: cacheKey)
-
                 if let updateCell = tableView.cellForRow(at: indexPath) as? RecordTableViewCell {
                     updateCell.coverImageView?.image = image
             ***REMOVED***
@@ -110,22 +100,5 @@ class DiscographyTableViewController: UITableViewController {
     ***REMOVED***
 
         return cell
-***REMOVED***
-
-    func downloadFrom(url: URL, completion completionHandler: @escaping (Data?) -> Void) {
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            guard let data = data, error == nil else {
-                print("error on download \(error!)")
-                return
-        ***REMOVED***
-            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
-                print("statusCode != 200")
-                return
-        ***REMOVED***
-            
-            DispatchQueue.main.async {
-                completionHandler(data)
-        ***REMOVED***
-    ***REMOVED***.resume()
 ***REMOVED***
 ***REMOVED***

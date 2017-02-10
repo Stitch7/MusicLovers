@@ -24,10 +24,6 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
 
     var detailViewController: ReleaseViewController? = nil
     let searchController = UISearchController(searchResultsController: nil)
-
-    let searchHistoryKey = "searchHistory"
-    var searchHistory = NSMutableArray()
-    let userDefaults = UserDefaults.standard
     var searchItems = [SearchItem]()
     var cache = NSCache<NSString, UIImage>()
 
@@ -49,6 +45,7 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
     override func viewWillAppear(_ animated: Bool) {
         self.clearsSelectionOnViewWillAppear = self.splitViewController!.isCollapsed
         super.viewWillAppear(animated)
+        tableView.tableHeaderView = searchController.searchBar
 ***REMOVED***
 
     func configureDetailViewController() {
@@ -75,9 +72,6 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
         searchController.searchBar.sizeToFit()
         searchController.searchBar.delegate = self
         searchController.searchBar.placeholder = "Search for a record name"
-        tableView.tableHeaderView = searchController.searchBar
-
-        searchHistory = userDefaults.mutableArrayValue(forKey: searchHistoryKey)
 ***REMOVED***
 
     func configureLoadingView() {
@@ -98,32 +92,15 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
 
     ***REMOVED*** MARK: - Table View
 
-***REMOVED***    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-***REMOVED***        return UITableViewAutomaticDimension
-***REMOVED******REMOVED***
-***REMOVED***
-***REMOVED***    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-***REMOVED***        return UITableViewAutomaticDimension
-***REMOVED******REMOVED***
-
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard searchController.isActive else { return ***REMOVED***
         performSegue(withIdentifier: "showDetail", sender: indexPath)
 ***REMOVED***
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return searchController.isActive ? searchItems.count : searchHistory.count
+        return searchItems.count
 ***REMOVED***
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard searchController.isActive else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-            if searchHistory.count > indexPath.row {
-                cell.textLabel?.text = searchHistory.object(at: indexPath.row) as? String
-        ***REMOVED***
-            return cell
-    ***REMOVED***
-
         let cell = tableView.dequeueReusableCell(withIdentifier: "SearchItemCell", for: indexPath) as! SearchItemTableViewCell
 
         let searchItem = searchItems[indexPath.row]
@@ -134,38 +111,17 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
             cell.coverImageView?.image = cachedImage
     ***REMOVED*** else {
             cell.coverImageView?.image = UIImage(named: "default-release")
-            downloadFrom(url: searchItem.thumb) { data in
-                guard
-                    let imageData = data,
-                    let image = UIImage(data: imageData)
-                else { return ***REMOVED***
-
-                self.cache.setObject(image, forKey: cacheKey)
+            UIImage.downloadFrom(url: searchItem.thumb) { image in
+                guard let coverImage = image else { return ***REMOVED***
+                self.cache.setObject(coverImage, forKey: cacheKey)
 
                 if let updateCell = tableView.cellForRow(at: indexPath) as? SearchItemTableViewCell {
-                    updateCell.coverImageView?.image = image
+                    updateCell.coverImageView?.image = coverImage
             ***REMOVED***
         ***REMOVED***
     ***REMOVED***
 
         return cell
-***REMOVED***
-
-    func downloadFrom(url: URL, completion completionHandler: @escaping (Data?) -> Void) {
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            guard let data = data, error == nil else {
-                print("error on download \(error!)")
-                return
-        ***REMOVED***
-            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
-                print("statusCode != 200")
-                return
-        ***REMOVED***
-
-            DispatchQueue.main.async {
-                completionHandler(data)
-        ***REMOVED***
-    ***REMOVED***.resume()
 ***REMOVED***
 
     ***REMOVED*** MARK: - UISearchBarDelegate
@@ -194,14 +150,6 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
                     print("reloaded")
 
                     self.loadingView.isHidden = true
-
-                    ***REMOVED*** Update searchHistory
-***REMOVED***                    let newSearchHistory = NSMutableArray()
-***REMOVED***                    newSearchHistory.add(searchString)
-***REMOVED***                    newSearchHistory.add(self.searchHistory)
-***REMOVED***
-***REMOVED***                    self.userDefaults.set(newSearchHistory, forKey: self.searchHistoryKey)
-***REMOVED***                    self.searchHistory = newSearchHistory
             ***REMOVED***
             case .failure(let error):
                 if case let .requestFailed(statusCode, message) = error as! HttpError {
@@ -220,20 +168,17 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
         tableView.reloadData()
 ***REMOVED***
 
-    func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool {
-        return true
-***REMOVED***
-
     ***REMOVED*** MARK: - Segues
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = sender as? IndexPath {
                 let searchItem = searchItems[indexPath.row]
-                let controller = (segue.destination as! UINavigationController).topViewController as! ReleaseViewController
-                controller.searchItem = searchItem
-                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
-                controller.navigationItem.leftItemsSupplementBackButton = true
+                let releaseVC = (segue.destination as! UINavigationController).topViewController as! ReleaseViewController
+                releaseVC.searchItem = searchItem
+                releaseVC.discogsClient = discogsClient
+                releaseVC.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
+                releaseVC.navigationItem.leftItemsSupplementBackButton = true
                 searchController.searchBar.resignFirstResponder()
         ***REMOVED***
     ***REMOVED***

@@ -18,7 +18,7 @@ extension URLRequest {
     init<T>(credentials: Credentials?, url: URL, resource: Resource<T>) {
         self.init(url: url)
 
-        if resource.needsAuthentication {
+        if resource.needsAuth {
             if let creds = credentials {
                 setValue("Discogs key=\(creds.key), secret=\(creds.secret)", forHTTPHeaderField: "Authorization")
         ***REMOVED***

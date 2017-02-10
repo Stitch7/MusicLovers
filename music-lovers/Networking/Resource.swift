@@ -11,25 +11,32 @@ import Foundation
 struct Resource<T> {
     let path: String
     let queryParameter: [URLQueryItem]?
-    let needsAuthentication: Bool
+    let needsAuth: Bool
     let method: HttpMethod<Data>
     let parse: (Data) -> T?
     func parseError(data: Data?) -> String? {
-        let json = try? JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions()) as? [String: String]
+        let defaultOptions = JSONSerialization.ReadingOptions()
+        let json = try? JSONSerialization.jsonObject(with: data!, options: defaultOptions) as? [String: String]
         return json??["error"]
 ***REMOVED***
 ***REMOVED***
 
 extension Resource {
-    init(path: String, queryParameter: [URLQueryItem]? = nil, needsAuthentication: Bool = false, method: HttpMethod<Any> = .get, parseJSON: @escaping (Any) -> T?) {
+    init(path: String,
+         queryParameter: [URLQueryItem]? = nil,
+         needsAuth: Bool = true,
+         method: HttpMethod<Any> = .get,
+         parseJSON: @escaping (Any) -> T?
+    ) {
         self.path = path
         self.queryParameter = queryParameter
-        self.needsAuthentication = needsAuthentication
+        self.needsAuth = needsAuth
         self.method = method.map { json in
             try! JSONSerialization.data(withJSONObject: json, options: [])
     ***REMOVED***
         self.parse = { data in
-            let json = try? JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions())
+            let defaultOptions = JSONSerialization.ReadingOptions()
+            let json = try? JSONSerialization.jsonObject(with: data, options: defaultOptions)
             return json.flatMap(parseJSON)
     ***REMOVED***
 ***REMOVED***

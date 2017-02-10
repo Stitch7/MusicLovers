@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30A1CD0E1E4E640B00047390 /* SectionsDataEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A1CD0D1E4E640B00047390 /* SectionsDataEnum.swift */; ***REMOVED***;
 		30A877591E4B328D00C419F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A877581E4B328D00C419F9 /* AppDelegate.swift */; ***REMOVED***;
 		30A8775B1E4B328D00C419F9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8775A1E4B328D00C419F9 /* SearchViewController.swift */; ***REMOVED***;
 		30A8775D1E4B328D00C419F9 /* ReleaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8775C1E4B328D00C419F9 /* ReleaseViewController.swift */; ***REMOVED***;
@@ -38,12 +39,10 @@
 		30A877AD1E4BE03B00C419F9 /* SearchItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30A877AB1E4BE03B00C419F9 /* SearchItemTableViewCell.xib */; ***REMOVED***;
 		30A877B11E4C816100C419F9 /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A877AF1E4C816100C419F9 /* TrackTableViewCell.swift */; ***REMOVED***;
 		30A877B21E4C816100C419F9 /* TrackTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30A877B01E4C816100C419F9 /* TrackTableViewCell.xib */; ***REMOVED***;
-		30A877B61E4C890500C419F9 /* ReleaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30A877B51E4C890500C419F9 /* ReleaseView.xib */; ***REMOVED***;
-		30A877B81E4C892500C419F9 /* ReleaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A877B71E4C892500C419F9 /* ReleaseView.swift */; ***REMOVED***;
 		30A877BB1E4C9E7D00C419F9 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A877B91E4C9E7D00C419F9 /* VideoTableViewCell.swift */; ***REMOVED***;
 		30A877BC1E4C9E7D00C419F9 /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30A877BA1E4C9E7D00C419F9 /* VideoTableViewCell.xib */; ***REMOVED***;
 		30A877BF1E4CA92600C419F9 /* String+leftPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A877BE1E4CA92600C419F9 /* String+leftPadding.swift */; ***REMOVED***;
-		30A877C41E4CBFD700C419F9 /* ArtistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A877C31E4CBFD700C419F9 /* ArtistTableViewController.swift */; ***REMOVED***;
+		30A877C41E4CBFD700C419F9 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A877C31E4CBFD700C419F9 /* ArtistViewController.swift */; ***REMOVED***;
 		30A877C61E4CDBC400C419F9 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A877C51E4CDBC400C419F9 /* LoadingView.swift */; ***REMOVED***;
 		30A877C81E4CDD5900C419F9 /* UIView+addConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A877C71E4CDD5900C419F9 /* UIView+addConstraints.swift */; ***REMOVED***;
 		30A877CA1E4CE8EF00C419F9 /* NoResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A877C91E4CE8EF00C419F9 /* NoResultsView.swift */; ***REMOVED***;
@@ -52,11 +51,14 @@
 		30CF228B1E4DF8AB00464097 /* RecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30CF22891E4DF8AB00464097 /* RecordTableViewCell.xib */; ***REMOVED***;
 		30CF228D1E4DFED400464097 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF228C1E4DFED400464097 /* Member.swift */; ***REMOVED***;
 		30CF228F1E4E01AF00464097 /* Alias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF228E1E4E01AF00464097 /* Alias.swift */; ***REMOVED***;
-		30CF22911E4E044C00464097 /* DiscographyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF22901E4E044C00464097 /* DiscographyTableViewController.swift */; ***REMOVED***;
+		30CF22911E4E044C00464097 /* DiscographyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF22901E4E044C00464097 /* DiscographyViewController.swift */; ***REMOVED***;
 		30CF22981E4E33E400464097 /* UITableView+setAndLayoutTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF22971E4E33E400464097 /* UITableView+setAndLayoutTableHeaderView.swift */; ***REMOVED***;
 		30CF229E1E4E3DF300464097 /* ReleaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF229C1E4E3DF300464097 /* ReleaseTableViewCell.swift */; ***REMOVED***;
 		30CF229F1E4E3DF300464097 /* ReleaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30CF229D1E4E3DF300464097 /* ReleaseTableViewCell.xib */; ***REMOVED***;
 		30CF22A31E4E428400464097 /* UIImage+downloadFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF22A21E4E428400464097 /* UIImage+downloadFrom.swift */; ***REMOVED***;
+		30FE5C2E1E4E54DE00E9E592 /* SectionsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE5C2D1E4E54DE00E9E592 /* SectionsDataSource.swift */; ***REMOVED***;
+		30FE5C301E4E56EF00E9E592 /* ArtistSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE5C2F1E4E56EF00E9E592 /* ArtistSections.swift */; ***REMOVED***;
+		30FE5C321E4E570800E9E592 /* ReleaseSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE5C311E4E570800E9E592 /* ReleaseSections.swift */; ***REMOVED***;
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30A1CD0D1E4E640B00047390 /* SectionsDataEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsDataEnum.swift; sourceTree = "<group>"; ***REMOVED***;
 		30A877551E4B328D00C419F9 /* music-lovers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "music-lovers.app"; sourceTree = BUILT_PRODUCTS_DIR; ***REMOVED***;
 		30A877581E4B328D00C419F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; ***REMOVED***;
 		30A8775A1E4B328D00C419F9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; ***REMOVED***;
@@ -105,12 +108,10 @@
 		30A877AB1E4BE03B00C419F9 /* SearchItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchItemTableViewCell.xib; sourceTree = "<group>"; ***REMOVED***;
 		30A877AF1E4C816100C419F9 /* TrackTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; ***REMOVED***;
 		30A877B01E4C816100C419F9 /* TrackTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrackTableViewCell.xib; sourceTree = "<group>"; ***REMOVED***;
-		30A877B51E4C890500C419F9 /* ReleaseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReleaseView.xib; sourceTree = "<group>"; ***REMOVED***;
-		30A877B71E4C892500C419F9 /* ReleaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReleaseView.swift; sourceTree = "<group>"; ***REMOVED***;
 		30A877B91E4C9E7D00C419F9 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; ***REMOVED***;
 		30A877BA1E4C9E7D00C419F9 /* VideoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; ***REMOVED***;
 		30A877BE1E4CA92600C419F9 /* String+leftPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+leftPadding.swift"; sourceTree = "<group>"; ***REMOVED***;
-		30A877C31E4CBFD700C419F9 /* ArtistTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistTableViewController.swift; sourceTree = "<group>"; ***REMOVED***;
+		30A877C31E4CBFD700C419F9 /* ArtistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; ***REMOVED***;
 		30A877C51E4CDBC400C419F9 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; ***REMOVED***;
 		30A877C71E4CDD5900C419F9 /* UIView+addConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+addConstraints.swift"; sourceTree = "<group>"; ***REMOVED***;
 		30A877C91E4CE8EF00C419F9 /* NoResultsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoResultsView.swift; sourceTree = "<group>"; ***REMOVED***;
@@ -119,11 +120,14 @@
 		30CF22891E4DF8AB00464097 /* RecordTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecordTableViewCell.xib; sourceTree = "<group>"; ***REMOVED***;
 		30CF228C1E4DFED400464097 /* Member.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; ***REMOVED***;
 		30CF228E1E4E01AF00464097 /* Alias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alias.swift; sourceTree = "<group>"; ***REMOVED***;
-		30CF22901E4E044C00464097 /* DiscographyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscographyTableViewController.swift; sourceTree = "<group>"; ***REMOVED***;
+		30CF22901E4E044C00464097 /* DiscographyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscographyViewController.swift; sourceTree = "<group>"; ***REMOVED***;
 		30CF22971E4E33E400464097 /* UITableView+setAndLayoutTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+setAndLayoutTableHeaderView.swift"; sourceTree = "<group>"; ***REMOVED***;
 		30CF229C1E4E3DF300464097 /* ReleaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReleaseTableViewCell.swift; sourceTree = "<group>"; ***REMOVED***;
 		30CF229D1E4E3DF300464097 /* ReleaseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReleaseTableViewCell.xib; sourceTree = "<group>"; ***REMOVED***;
 		30CF22A21E4E428400464097 /* UIImage+downloadFrom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+downloadFrom.swift"; sourceTree = "<group>"; ***REMOVED***;
+		30FE5C2D1E4E54DE00E9E592 /* SectionsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsDataSource.swift; sourceTree = "<group>"; ***REMOVED***;
+		30FE5C2F1E4E56EF00E9E592 /* ArtistSections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistSections.swift; sourceTree = "<group>"; ***REMOVED***;
+		30FE5C311E4E570800E9E592 /* ReleaseSections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReleaseSections.swift; sourceTree = "<group>"; ***REMOVED***;
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +172,7 @@
 				30A877831E4B586400C419F9 /* Models */,
 				30A877B41E4C88AE00C419F9 /* Views */,
 				30A877A81E4BC1F300C419F9 /* Controllers */,
+				30FE5C2C1E4E484100E9E592 /* Datasources */,
 				30A8777A1E4B57CB00C419F9 /* Networking */,
 				30A877C01E4CA92B00C419F9 /* Extensions */,
 				30A877A71E4BC1E300C419F9 /* Supporting Files */,
@@ -244,8 +249,8 @@
 		30A877A81E4BC1F300C419F9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				30A877C31E4CBFD700C419F9 /* ArtistTableViewController.swift */,
-				30CF22901E4E044C00464097 /* DiscographyTableViewController.swift */,
+				30A877C31E4CBFD700C419F9 /* ArtistViewController.swift */,
+				30CF22901E4E044C00464097 /* DiscographyViewController.swift */,
 				30A8775C1E4B328D00C419F9 /* ReleaseViewController.swift */,
 				30A8775A1E4B328D00C419F9 /* SearchViewController.swift */,
 			);
@@ -255,14 +260,13 @@
 		30A877A91E4BE00E00C419F9 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				30CF229B1E4E3DF300464097 /* Release */,
 				30CF22871E4DF8AB00464097 /* Record */,
+				30CF229B1E4E3DF300464097 /* Release */,
 				30A877AE1E4C80C400C419F9 /* SearchItem */,
 				30A877B31E4C816800C419F9 /* Track */,
 				30A877BD1E4C9E8600C419F9 /* Video */,
 			);
-			name = Cells;
-			path = ../Cells;
+			path = Cells;
 			sourceTree = "<group>";
 		***REMOVED***;
 		30A877AE1E4C80C400C419F9 /* SearchItem */ = {
@@ -287,8 +291,6 @@
 			isa = PBXGroup;
 			children = (
 				30A877A91E4BE00E00C419F9 /* Cells */,
-				30A877B71E4C892500C419F9 /* ReleaseView.swift */,
-				30A877B51E4C890500C419F9 /* ReleaseView.xib */,
 				30A877C51E4CDBC400C419F9 /* LoadingView.swift */,
 				30A877C91E4CE8EF00C419F9 /* NoResultsView.swift */,
 			);
@@ -327,10 +329,21 @@
 		30CF229B1E4E3DF300464097 /* Release */ = {
 			isa = PBXGroup;
 			children = (
-				30CF229D1E4E3DF300464097 /* ReleaseTableViewCell.xib */,
 				30CF229C1E4E3DF300464097 /* ReleaseTableViewCell.swift */,
+				30CF229D1E4E3DF300464097 /* ReleaseTableViewCell.xib */,
 			);
 			path = Release;
+			sourceTree = "<group>";
+		***REMOVED***;
+		30FE5C2C1E4E484100E9E592 /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				30FE5C2F1E4E56EF00E9E592 /* ArtistSections.swift */,
+				30FE5C311E4E570800E9E592 /* ReleaseSections.swift */,
+				30A1CD0D1E4E640B00047390 /* SectionsDataEnum.swift */,
+				30FE5C2D1E4E54DE00E9E592 /* SectionsDataSource.swift */,
+			);
+			path = Datasources;
 			sourceTree = "<group>";
 		***REMOVED***;
 /* End PBXGroup section */
@@ -383,7 +396,6 @@
 				TargetAttributes = {
 					30A877541E4B328D00C419F9 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = J8XDHCNJQA;
 						ProvisioningStyle = Automatic;
 					***REMOVED***;
 					30A8776A1E4B328D00C419F9 = {
@@ -418,7 +430,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				30A877BC1E4C9E7D00C419F9 /* VideoTableViewCell.xib in Resources */,
-				30A877B61E4C890500C419F9 /* ReleaseView.xib in Resources */,
 				30CF228B1E4DF8AB00464097 /* RecordTableViewCell.xib in Resources */,
 				30A877AD1E4BE03B00C419F9 /* SearchItemTableViewCell.xib in Resources */,
 				30A877651E4B328D00C419F9 /* LaunchScreen.storyboard in Resources */,
@@ -443,11 +454,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30A1CD0E1E4E640B00047390 /* SectionsDataEnum.swift in Sources */,
 				30A8779E1E4B97D500C419F9 /* Company.swift in Sources */,
+				30FE5C321E4E570800E9E592 /* ReleaseSections.swift in Sources */,
 				30A877A41E4B9A3900C419F9 /* Track.swift in Sources */,
 				30A8775D1E4B328D00C419F9 /* ReleaseViewController.swift in Sources */,
 				30A877BF1E4CA92600C419F9 /* String+leftPadding.swift in Sources */,
-				30CF22911E4E044C00464097 /* DiscographyTableViewController.swift in Sources */,
+				30CF22911E4E044C00464097 /* DiscographyViewController.swift in Sources */,
 				30A877961E4B8F8000C419F9 /* Release.swift in Sources */,
 				30A877851E4B587500C419F9 /* SearchItem.swift in Sources */,
 				30A877871E4B588800C419F9 /* DiscogsClient.swift in Sources */,
@@ -467,9 +480,11 @@
 				30CF22A31E4E428400464097 /* UIImage+downloadFrom.swift in Sources */,
 				30A8778B1E4B599300C419F9 /* HttpError.swift in Sources */,
 				30CF228D1E4DFED400464097 /* Member.swift in Sources */,
-				30A877C41E4CBFD700C419F9 /* ArtistTableViewController.swift in Sources */,
+				30A877C41E4CBFD700C419F9 /* ArtistViewController.swift in Sources */,
 				30CF228A1E4DF8AB00464097 /* RecordTableViewCell.swift in Sources */,
 				30A877AC1E4BE03B00C419F9 /* SearchItemTableViewCell.swift in Sources */,
+				30FE5C301E4E56EF00E9E592 /* ArtistSections.swift in Sources */,
+				30FE5C2E1E4E54DE00E9E592 /* SectionsDataSource.swift in Sources */,
 				30A877801E4B583900C419F9 /* Resource.swift in Sources */,
 				30A8777C1E4B580100C419F9 /* HttpClient.swift in Sources */,
 				30A877591E4B328D00C419F9 /* AppDelegate.swift in Sources */,
@@ -480,7 +495,6 @@
 				30A8779C1E4B976100C419F9 /* Format.swift in Sources */,
 				30A8779A1E4B973800C419F9 /* Label.swift in Sources */,
 				30A877981E4B971800C419F9 /* Artist.swift in Sources */,
-				30A877B81E4C892500C419F9 /* ReleaseView.swift in Sources */,
 				30A8778F1E4B5A2C00C419F9 /* JSONInitializable.swift in Sources */,
 				30A877BB1E4C9E7D00C419F9 /* VideoTableViewCell.swift in Sources */,
 			);
@@ -623,7 +637,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = J8XDHCNJQA;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "music-lovers/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "re.reitz.music-lovers";
@@ -636,7 +650,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = J8XDHCNJQA;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "music-lovers/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "re.reitz.music-lovers";

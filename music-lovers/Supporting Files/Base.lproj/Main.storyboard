@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="708" y="128"/>
         </scene>
-        <!--Artist Table View Controller-->
+        <!--Artist View Controller-->
         <scene sceneID="2kY-Lv-29U">
             <objects>
-                <tableViewController id="Gtg-L0-TLM" customClass="ArtistTableViewController" customModule="music_lovers" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Gtg-L0-TLM" customClass="ArtistViewController" customModule="music_lovers" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="CZJ-dI-prR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="1494" y="127"/>
         </scene>
-        <!--Discography Table View Controller-->
+        <!--Discography View Controller-->
         <scene sceneID="0TN-8S-quH">
             <objects>
-                <tableViewController id="LGh-9r-IUn" customClass="DiscographyTableViewController" customModule="music_lovers" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="LGh-9r-IUn" customClass="DiscographyViewController" customModule="music_lovers" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="frf-yp-C9m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
