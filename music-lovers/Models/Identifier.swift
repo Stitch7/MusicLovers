@@ -6,8 +6,6 @@
 ***REMOVED***  Copyright © 2017 Christopher Reitz. All rights reserved.
 ***REMOVED***
 
-import Foundation
-
 struct Identifier {
     let type: String
     let value: String

@@ -22,8 +22,6 @@ struct SearchItem {
     let barcode: [String]
     let catno: String
     let year: String
-***REMOVED*** TODO: community is dictionary
-***REMOVED***    let community: [String]
 ***REMOVED***
 
 extension SearchItem: JSONInitializable {
@@ -61,6 +59,5 @@ extension SearchItem: JSONInitializable {
         self.barcode = barcode
         self.catno = catno
         self.year = year
-***REMOVED***        self.community = community
 ***REMOVED***
 ***REMOVED***

@@ -19,11 +19,10 @@ class ArtistViewController: UITableViewController {
 ***REMOVED***
     var discogsClient: DiscogsClient?
 
+    let loadingView = LoadingView()
     lazy var dataSource: SectionsDataSource<ArtistSections> = {
         SectionsDataSource<ArtistSections>(tableView: self.tableView)
 ***REMOVED***()
-
-    let loadingView = LoadingView()
 
     ***REMOVED*** MARK: - UIViewController
 

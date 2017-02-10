@@ -10,6 +10,8 @@ import UIKit
 
 class ReleaseViewController: UITableViewController {
 
+    ***REMOVED*** MARK: - Properties
+
     var searchItem: SearchItem? {
         didSet {
             self.configureView()
@@ -17,10 +19,12 @@ class ReleaseViewController: UITableViewController {
 ***REMOVED***
     var discogsClient: DiscogsClient?
 
+    let loadingView = LoadingView()
     lazy var dataSource: SectionsDataSource<ReleaseSections> = {
         SectionsDataSource<ReleaseSections>(tableView: self.tableView)
 ***REMOVED***()
-    let loadingView = LoadingView()
+
+    ***REMOVED*** MARK: - UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,7 +76,7 @@ class ReleaseViewController: UITableViewController {
         tableView.dataSource = dataSource
 ***REMOVED***
 
-    ***REMOVED*** MARK: - Table View
+    ***REMOVED*** MARK: - UITableViewDelegate
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let releaseSection = ReleaseSections(rawValue: indexPath.section) else { fatalError("Invalid section") ***REMOVED***

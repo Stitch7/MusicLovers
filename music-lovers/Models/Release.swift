@@ -23,13 +23,8 @@ struct Release {
     let identifiers: [Identifier]
     let images: [Image]
     let labels: [Label]
-***REMOVED***    let lowestPrice: Double
-***REMOVED***    let masterId: Int
-***REMOVED***    let masterUrl: URL
     let notes: String
     let numForSale: Int
-***REMOVED***    let released: Date
-***REMOVED***    let released: String
     let resourceUrl: URL
     let status: String
     let title: String
@@ -50,9 +45,6 @@ extension Release: JSONInitializable {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
 
-***REMOVED***        let releasedFormatter = DateFormatter()
-***REMOVED***        releasedFormatter.dateFormat = "yyyy-MM-dd"
-
         guard
             let id = json["id"] as? Int,
             let artistsJson = json["artists"] as? [JSON],
@@ -70,13 +62,7 @@ extension Release: JSONInitializable {
             let identifiersJson = json["identifiers"] as? [JSON],
             let imagesJson = json["images"] as? [JSON],
             let labelsJson = json["labels"] as? [JSON],
-***REMOVED***            let lowestPrice = json["lowest_price"] as? Double,
-***REMOVED***            let masterId = json["master_id"] as? Int,
-***REMOVED***            let masterUrlStr = json["master_url"] as? String,
-***REMOVED***            let masterUrl = URL(string: masterUrlStr),
             let numForSale = json["num_for_sale"] as? Int,
-***REMOVED***            let released = json["released"] as? String,
-***REMOVED***            let released = releasedFormatter.date(from: releasedStr),
             let resourceUrlStr = json["resource_url"] as? String,
             let resourceUrl = URL(string: resourceUrlStr),
             let status = json["status"] as? String,
@@ -106,12 +92,8 @@ extension Release: JSONInitializable {
         self.identifiers = identifiersJson.flatMap(Identifier.init)
         self.images = imagesJson.flatMap(Image.init)
         self.labels = labelsJson.flatMap(Label.init)
-***REMOVED***        self.lowestPrice = lowestPrice
-***REMOVED***        self.masterId = masterId
-***REMOVED***        self.masterUrl = masterUrl
         self.notes = notes
         self.numForSale = numForSale
-***REMOVED***        self.released = released
         self.resourceUrl = resourceUrl
         self.status = status
         self.title = title
