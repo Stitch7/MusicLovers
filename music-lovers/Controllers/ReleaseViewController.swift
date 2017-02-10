@@ -46,6 +46,14 @@ class ReleaseViewController: UITableViewController {
         let foundationClient = FoundationClient(url: url, credentials: credentials)
         let discogsClient = DiscogsClient(httpClient: foundationClient)
 
+        let loadingView = LoadingView()
+        loadingView.isHidden = false
+        navigationController?.view.addSubview(loadingView)
+
+        let views =  ["loadingView": loadingView]
+        navigationController?.view.addConstraints(format: "V:|[loadingView]|", views: views)
+        navigationController?.view.addConstraints(format: "H:|[loadingView]|", views: views)
+
         discogsClient.release(id: searchItem.id) { result in
             switch result {
             case .success(let release):
@@ -62,6 +70,8 @@ class ReleaseViewController: UITableViewController {
                         releaseView.release = release
                 ***REMOVED***
 
+                    loadingView.removeFromSuperview()
+
 ***REMOVED***                    var sections = [Int]()
 ***REMOVED***                    for section in 0..<self.tableView.numberOfSections {
 ***REMOVED***                        if self.tableView(self.tableView, numberOfRowsInSection: section) == 0 {
@@ -75,6 +85,8 @@ class ReleaseViewController: UITableViewController {
                 if case let .requestFailed(statusCode, message) = error as! HttpError {
                     print("discogsClient.failure: statusCode: \(statusCode) - message: \(message)")
             ***REMOVED***
+
+                loadingView.removeFromSuperview()
         ***REMOVED***
     ***REMOVED***
 ***REMOVED***

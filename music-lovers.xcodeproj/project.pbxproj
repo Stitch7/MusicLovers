@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		30A877591E4B328D00C419F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A877581E4B328D00C419F9 /* AppDelegate.swift */; ***REMOVED***;
-		30A8775B1E4B328D00C419F9 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8775A1E4B328D00C419F9 /* MasterViewController.swift */; ***REMOVED***;
+		30A8775B1E4B328D00C419F9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8775A1E4B328D00C419F9 /* SearchViewController.swift */; ***REMOVED***;
 		30A8775D1E4B328D00C419F9 /* ReleaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8775C1E4B328D00C419F9 /* ReleaseViewController.swift */; ***REMOVED***;
 		30A877601E4B328D00C419F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A8775E1E4B328D00C419F9 /* Main.storyboard */; ***REMOVED***;
 		30A877621E4B328D00C419F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A877611E4B328D00C419F9 /* Assets.xcassets */; ***REMOVED***;
@@ -44,6 +44,9 @@
 		30A877BC1E4C9E7D00C419F9 /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30A877BA1E4C9E7D00C419F9 /* VideoTableViewCell.xib */; ***REMOVED***;
 		30A877BF1E4CA92600C419F9 /* String+leftPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A877BE1E4CA92600C419F9 /* String+leftPadding.swift */; ***REMOVED***;
 		30A877C41E4CBFD700C419F9 /* ArtistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A877C31E4CBFD700C419F9 /* ArtistTableViewController.swift */; ***REMOVED***;
+		30A877C61E4CDBC400C419F9 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A877C51E4CDBC400C419F9 /* LoadingView.swift */; ***REMOVED***;
+		30A877C81E4CDD5900C419F9 /* UIView+addConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A877C71E4CDD5900C419F9 /* UIView+addConstraints.swift */; ***REMOVED***;
+		30A877CA1E4CE8EF00C419F9 /* NoResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A877C91E4CE8EF00C419F9 /* NoResultsView.swift */; ***REMOVED***;
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +62,7 @@
 /* Begin PBXFileReference section */
 		30A877551E4B328D00C419F9 /* music-lovers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "music-lovers.app"; sourceTree = BUILT_PRODUCTS_DIR; ***REMOVED***;
 		30A877581E4B328D00C419F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; ***REMOVED***;
-		30A8775A1E4B328D00C419F9 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; ***REMOVED***;
+		30A8775A1E4B328D00C419F9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; ***REMOVED***;
 		30A8775C1E4B328D00C419F9 /* ReleaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseViewController.swift; sourceTree = "<group>"; ***REMOVED***;
 		30A8775F1E4B328D00C419F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; ***REMOVED***;
 		30A877611E4B328D00C419F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; ***REMOVED***;
@@ -98,6 +101,9 @@
 		30A877BA1E4C9E7D00C419F9 /* VideoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; ***REMOVED***;
 		30A877BE1E4CA92600C419F9 /* String+leftPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+leftPadding.swift"; sourceTree = "<group>"; ***REMOVED***;
 		30A877C31E4CBFD700C419F9 /* ArtistTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistTableViewController.swift; sourceTree = "<group>"; ***REMOVED***;
+		30A877C51E4CDBC400C419F9 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; ***REMOVED***;
+		30A877C71E4CDD5900C419F9 /* UIView+addConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+addConstraints.swift"; sourceTree = "<group>"; ***REMOVED***;
+		30A877C91E4CE8EF00C419F9 /* NoResultsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoResultsView.swift; sourceTree = "<group>"; ***REMOVED***;
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,7 +223,7 @@
 			children = (
 				30A877C31E4CBFD700C419F9 /* ArtistTableViewController.swift */,
 				30A8775C1E4B328D00C419F9 /* ReleaseViewController.swift */,
-				30A8775A1E4B328D00C419F9 /* MasterViewController.swift */,
+				30A8775A1E4B328D00C419F9 /* SearchViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -257,6 +263,8 @@
 				30A877A91E4BE00E00C419F9 /* Cells */,
 				30A877B71E4C892500C419F9 /* ReleaseView.swift */,
 				30A877B51E4C890500C419F9 /* ReleaseView.xib */,
+				30A877C51E4CDBC400C419F9 /* LoadingView.swift */,
+				30A877C91E4CE8EF00C419F9 /* NoResultsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -273,6 +281,7 @@
 		30A877C01E4CA92B00C419F9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				30A877C71E4CDD5900C419F9 /* UIView+addConstraints.swift */,
 				30A877BE1E4CA92600C419F9 /* String+leftPadding.swift */,
 			);
 			path = Extensions;
@@ -396,12 +405,13 @@
 				30A877911E4B5DDA00C419F9 /* Config.swift in Sources */,
 				30A877A01E4B98FD00C419F9 /* Identifier.swift in Sources */,
 				30A877A21E4B993700C419F9 /* Image.swift in Sources */,
-				30A8775B1E4B328D00C419F9 /* MasterViewController.swift in Sources */,
+				30A8775B1E4B328D00C419F9 /* SearchViewController.swift in Sources */,
 				30A8778D1E4B59BF00C419F9 /* HttpMethod.swift in Sources */,
 				30A877821E4B584700C419F9 /* FoundationClient.swift in Sources */,
 				30A877A61E4B9A4700C419F9 /* Video.swift in Sources */,
 				30A8777E1E4B581F00C419F9 /* Credentials.swift in Sources */,
 				30A877891E4B58C500C419F9 /* Result.swift in Sources */,
+				30A877C81E4CDD5900C419F9 /* UIView+addConstraints.swift in Sources */,
 				30A8778B1E4B599300C419F9 /* HttpError.swift in Sources */,
 				30A877C41E4CBFD700C419F9 /* ArtistTableViewController.swift in Sources */,
 				30A877AC1E4BE03B00C419F9 /* SearchItemTableViewCell.swift in Sources */,
@@ -409,6 +419,8 @@
 				30A8777C1E4B580100C419F9 /* HttpClient.swift in Sources */,
 				30A877591E4B328D00C419F9 /* AppDelegate.swift in Sources */,
 				30A877B11E4C816100C419F9 /* TrackTableViewCell.swift in Sources */,
+				30A877CA1E4CE8EF00C419F9 /* NoResultsView.swift in Sources */,
+				30A877C61E4CDBC400C419F9 /* LoadingView.swift in Sources */,
 				30A8779C1E4B976100C419F9 /* Format.swift in Sources */,
 				30A8779A1E4B973800C419F9 /* Label.swift in Sources */,
 				30A877981E4B971800C419F9 /* Artist.swift in Sources */,

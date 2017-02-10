@@ -29,7 +29,11 @@ class SearchItemTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+
+        accessoryType = .disclosureIndicator
+
+        coverImageView.contentMode = .scaleAspectFit
+
         titleLabel.numberOfLines = 0
         labelLabel.numberOfLines = 3
 ***REMOVED***
