@@ -43,4 +43,28 @@ struct DiscogsClient {
     ***REMOVED***)
         httpClient.load(resource: resource, completion: completion)
 ***REMOVED***
+
+    func artist(id: Int, completion: @escaping (Result<Artist>) -> ()) {
+        let path = "/artists/\(id)"
+        let queryParameter: [URLQueryItem]? = nil
+        let resource = Resource<Artist>(path: path, queryParameter: queryParameter, needsAuthentication: true, parseJSON: { json in
+            guard let artistJson = json as? JSON else { return nil ***REMOVED***
+            return Artist(json: artistJson)
+    ***REMOVED***)
+        httpClient.load(resource: resource, completion: completion)
+***REMOVED***
+
+    func discography(artistId: Int, completion: @escaping (Result<[Record]>) -> ()) {
+        let path = "/artists/\(artistId)/releases"
+        let queryParameter: [URLQueryItem]? = nil
+        let resource = Resource<[Record]>(path: path, queryParameter: queryParameter, needsAuthentication: true, parseJSON: { json in
+            guard
+                let dictionaries = json as? JSON,
+                let releases = dictionaries["releases"] as? [JSON]
+            else { return nil ***REMOVED***
+
+            return releases.flatMap(Record.init)
+    ***REMOVED***)
+        httpClient.load(resource: resource, completion: completion)
+***REMOVED***
 ***REMOVED***

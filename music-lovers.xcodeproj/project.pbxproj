@@ -47,6 +47,16 @@
 		30A877C61E4CDBC400C419F9 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A877C51E4CDBC400C419F9 /* LoadingView.swift */; ***REMOVED***;
 		30A877C81E4CDD5900C419F9 /* UIView+addConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A877C71E4CDD5900C419F9 /* UIView+addConstraints.swift */; ***REMOVED***;
 		30A877CA1E4CE8EF00C419F9 /* NoResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A877C91E4CE8EF00C419F9 /* NoResultsView.swift */; ***REMOVED***;
+		30CF22861E4DF22100464097 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF22851E4DF22100464097 /* Record.swift */; ***REMOVED***;
+		30CF228A1E4DF8AB00464097 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF22881E4DF8AB00464097 /* RecordTableViewCell.swift */; ***REMOVED***;
+		30CF228B1E4DF8AB00464097 /* RecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30CF22891E4DF8AB00464097 /* RecordTableViewCell.xib */; ***REMOVED***;
+		30CF228D1E4DFED400464097 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF228C1E4DFED400464097 /* Member.swift */; ***REMOVED***;
+		30CF228F1E4E01AF00464097 /* Alias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF228E1E4E01AF00464097 /* Alias.swift */; ***REMOVED***;
+		30CF22911E4E044C00464097 /* DiscographyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF22901E4E044C00464097 /* DiscographyTableViewController.swift */; ***REMOVED***;
+		30CF22981E4E33E400464097 /* UITableView+setAndLayoutTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF22971E4E33E400464097 /* UITableView+setAndLayoutTableHeaderView.swift */; ***REMOVED***;
+		30CF229E1E4E3DF300464097 /* ReleaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF229C1E4E3DF300464097 /* ReleaseTableViewCell.swift */; ***REMOVED***;
+		30CF229F1E4E3DF300464097 /* ReleaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30CF229D1E4E3DF300464097 /* ReleaseTableViewCell.xib */; ***REMOVED***;
+		30CF22A31E4E428400464097 /* UIImage+downloadFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF22A21E4E428400464097 /* UIImage+downloadFrom.swift */; ***REMOVED***;
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +114,16 @@
 		30A877C51E4CDBC400C419F9 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; ***REMOVED***;
 		30A877C71E4CDD5900C419F9 /* UIView+addConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+addConstraints.swift"; sourceTree = "<group>"; ***REMOVED***;
 		30A877C91E4CE8EF00C419F9 /* NoResultsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoResultsView.swift; sourceTree = "<group>"; ***REMOVED***;
+		30CF22851E4DF22100464097 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; ***REMOVED***;
+		30CF22881E4DF8AB00464097 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; ***REMOVED***;
+		30CF22891E4DF8AB00464097 /* RecordTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecordTableViewCell.xib; sourceTree = "<group>"; ***REMOVED***;
+		30CF228C1E4DFED400464097 /* Member.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; ***REMOVED***;
+		30CF228E1E4E01AF00464097 /* Alias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alias.swift; sourceTree = "<group>"; ***REMOVED***;
+		30CF22901E4E044C00464097 /* DiscographyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscographyTableViewController.swift; sourceTree = "<group>"; ***REMOVED***;
+		30CF22971E4E33E400464097 /* UITableView+setAndLayoutTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+setAndLayoutTableHeaderView.swift"; sourceTree = "<group>"; ***REMOVED***;
+		30CF229C1E4E3DF300464097 /* ReleaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReleaseTableViewCell.swift; sourceTree = "<group>"; ***REMOVED***;
+		30CF229D1E4E3DF300464097 /* ReleaseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReleaseTableViewCell.xib; sourceTree = "<group>"; ***REMOVED***;
+		30CF22A21E4E428400464097 /* UIImage+downloadFrom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+downloadFrom.swift"; sourceTree = "<group>"; ***REMOVED***;
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,12 +202,15 @@
 		30A877831E4B586400C419F9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				30CF228E1E4E01AF00464097 /* Alias.swift */,
 				30A877971E4B971800C419F9 /* Artist.swift */,
 				30A8779D1E4B97D500C419F9 /* Company.swift */,
 				30A8779B1E4B976100C419F9 /* Format.swift */,
 				30A8779F1E4B98FD00C419F9 /* Identifier.swift */,
 				30A877A11E4B993700C419F9 /* Image.swift */,
 				30A877991E4B973700C419F9 /* Label.swift */,
+				30CF228C1E4DFED400464097 /* Member.swift */,
+				30CF22851E4DF22100464097 /* Record.swift */,
 				30A877951E4B8F8000C419F9 /* Release.swift */,
 				30A877841E4B587500C419F9 /* SearchItem.swift */,
 				30A877A31E4B9A3900C419F9 /* Track.swift */,
@@ -222,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				30A877C31E4CBFD700C419F9 /* ArtistTableViewController.swift */,
+				30CF22901E4E044C00464097 /* DiscographyTableViewController.swift */,
 				30A8775C1E4B328D00C419F9 /* ReleaseViewController.swift */,
 				30A8775A1E4B328D00C419F9 /* SearchViewController.swift */,
 			);
@@ -231,6 +255,8 @@
 		30A877A91E4BE00E00C419F9 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				30CF229B1E4E3DF300464097 /* Release */,
+				30CF22871E4DF8AB00464097 /* Record */,
 				30A877AE1E4C80C400C419F9 /* SearchItem */,
 				30A877B31E4C816800C419F9 /* Track */,
 				30A877BD1E4C9E8600C419F9 /* Video */,
@@ -281,10 +307,30 @@
 		30A877C01E4CA92B00C419F9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				30A877C71E4CDD5900C419F9 /* UIView+addConstraints.swift */,
 				30A877BE1E4CA92600C419F9 /* String+leftPadding.swift */,
+				30CF22A21E4E428400464097 /* UIImage+downloadFrom.swift */,
+				30CF22971E4E33E400464097 /* UITableView+setAndLayoutTableHeaderView.swift */,
+				30A877C71E4CDD5900C419F9 /* UIView+addConstraints.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		***REMOVED***;
+		30CF22871E4DF8AB00464097 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				30CF22881E4DF8AB00464097 /* RecordTableViewCell.swift */,
+				30CF22891E4DF8AB00464097 /* RecordTableViewCell.xib */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		***REMOVED***;
+		30CF229B1E4E3DF300464097 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+				30CF229D1E4E3DF300464097 /* ReleaseTableViewCell.xib */,
+				30CF229C1E4E3DF300464097 /* ReleaseTableViewCell.swift */,
+			);
+			path = Release;
 			sourceTree = "<group>";
 		***REMOVED***;
 /* End PBXGroup section */
@@ -373,10 +419,12 @@
 			files = (
 				30A877BC1E4C9E7D00C419F9 /* VideoTableViewCell.xib in Resources */,
 				30A877B61E4C890500C419F9 /* ReleaseView.xib in Resources */,
+				30CF228B1E4DF8AB00464097 /* RecordTableViewCell.xib in Resources */,
 				30A877AD1E4BE03B00C419F9 /* SearchItemTableViewCell.xib in Resources */,
 				30A877651E4B328D00C419F9 /* LaunchScreen.storyboard in Resources */,
 				30A877621E4B328D00C419F9 /* Assets.xcassets in Resources */,
 				30A877B21E4C816100C419F9 /* TrackTableViewCell.xib in Resources */,
+				30CF229F1E4E3DF300464097 /* ReleaseTableViewCell.xib in Resources */,
 				30A877601E4B328D00C419F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +447,7 @@
 				30A877A41E4B9A3900C419F9 /* Track.swift in Sources */,
 				30A8775D1E4B328D00C419F9 /* ReleaseViewController.swift in Sources */,
 				30A877BF1E4CA92600C419F9 /* String+leftPadding.swift in Sources */,
+				30CF22911E4E044C00464097 /* DiscographyTableViewController.swift in Sources */,
 				30A877961E4B8F8000C419F9 /* Release.swift in Sources */,
 				30A877851E4B587500C419F9 /* SearchItem.swift in Sources */,
 				30A877871E4B588800C419F9 /* DiscogsClient.swift in Sources */,
@@ -411,15 +460,22 @@
 				30A877A61E4B9A4700C419F9 /* Video.swift in Sources */,
 				30A8777E1E4B581F00C419F9 /* Credentials.swift in Sources */,
 				30A877891E4B58C500C419F9 /* Result.swift in Sources */,
+				30CF228F1E4E01AF00464097 /* Alias.swift in Sources */,
 				30A877C81E4CDD5900C419F9 /* UIView+addConstraints.swift in Sources */,
+				30CF22861E4DF22100464097 /* Record.swift in Sources */,
+				30CF22981E4E33E400464097 /* UITableView+setAndLayoutTableHeaderView.swift in Sources */,
+				30CF22A31E4E428400464097 /* UIImage+downloadFrom.swift in Sources */,
 				30A8778B1E4B599300C419F9 /* HttpError.swift in Sources */,
+				30CF228D1E4DFED400464097 /* Member.swift in Sources */,
 				30A877C41E4CBFD700C419F9 /* ArtistTableViewController.swift in Sources */,
+				30CF228A1E4DF8AB00464097 /* RecordTableViewCell.swift in Sources */,
 				30A877AC1E4BE03B00C419F9 /* SearchItemTableViewCell.swift in Sources */,
 				30A877801E4B583900C419F9 /* Resource.swift in Sources */,
 				30A8777C1E4B580100C419F9 /* HttpClient.swift in Sources */,
 				30A877591E4B328D00C419F9 /* AppDelegate.swift in Sources */,
 				30A877B11E4C816100C419F9 /* TrackTableViewCell.swift in Sources */,
 				30A877CA1E4CE8EF00C419F9 /* NoResultsView.swift in Sources */,
+				30CF229E1E4E3DF300464097 /* ReleaseTableViewCell.swift in Sources */,
 				30A877C61E4CDBC400C419F9 /* LoadingView.swift in Sources */,
 				30A8779C1E4B976100C419F9 /* Format.swift in Sources */,
 				30A8779A1E4B973800C419F9 /* Label.swift in Sources */,

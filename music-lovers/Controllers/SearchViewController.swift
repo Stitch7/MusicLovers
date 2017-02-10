@@ -131,7 +131,6 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
 
         let cacheKey = NSString(string: searchItem.thumb.absoluteString)
         if let cachedImage = cache.object(forKey: cacheKey) {
-            print("Cached image used")
             cell.coverImageView?.image = cachedImage
     ***REMOVED*** else {
             cell.coverImageView?.image = UIImage(named: "default-release")
@@ -164,7 +163,6 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
         ***REMOVED***
 
             DispatchQueue.main.async {
-                print("download completed \(url.lastPathComponent)")
                 completionHandler(data)
         ***REMOVED***
     ***REMOVED***.resume()

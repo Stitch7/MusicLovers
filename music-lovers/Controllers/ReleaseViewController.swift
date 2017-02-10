@@ -9,6 +9,7 @@
 import UIKit
 
 enum ReleaseSections: Int {
+    case teaser
     case artist
     case tracks
     case notes
@@ -25,8 +26,6 @@ class ReleaseViewController: UITableViewController {
 ***REMOVED***
 
     var release: Release?
-
-***REMOVED***    var removedSectionsCount = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,50 +56,35 @@ class ReleaseViewController: UITableViewController {
         discogsClient.release(id: searchItem.id) { result in
             switch result {
             case .success(let release):
-                ***REMOVED*** TODO: why optional?
-                guard let release = release else { return ***REMOVED***
+                ***REMOVED*** TODO: show error
+                guard let release = release else {
+                    loadingView.remove()
+                    return
+            ***REMOVED***
 
                 DispatchQueue.main.async {
                     self.release = release
                     self.tableView.reloadData()
-
                     self.title = release.title
 
-                    if let releaseView = self.tableView.tableHeaderView as? ReleaseView {
-                        releaseView.release = release
-                ***REMOVED***
-
-                    loadingView.removeFromSuperview()
-
-***REMOVED***                    var sections = [Int]()
-***REMOVED***                    for section in 0..<self.tableView.numberOfSections {
-***REMOVED***                        if self.tableView(self.tableView, numberOfRowsInSection: section) == 0 {
-***REMOVED***                            sections.append(section)
-***REMOVED***                    ***REMOVED***
-***REMOVED***                ***REMOVED***
-***REMOVED***                    self.removedSectionsCount = sections.count
-***REMOVED***                    self.tableView.deleteSections(IndexSet(sections), with: .none)
+                    loadingView.remove()
             ***REMOVED***
             case .failure(let error):
+                loadingView.remove()
                 if case let .requestFailed(statusCode, message) = error as! HttpError {
                     print("discogsClient.failure: statusCode: \(statusCode) - message: \(message)")
             ***REMOVED***
-
-                loadingView.removeFromSuperview()
         ***REMOVED***
     ***REMOVED***
 ***REMOVED***
 
     func configureTableView() {
+        tableView.register(UINib(nibName: "ReleaseTableViewCell", bundle: nil), forCellReuseIdentifier: "ReleaseCell")
         tableView.register(UINib(nibName: "TrackTableViewCell", bundle: nil), forCellReuseIdentifier: "TrackCell")
         tableView.register(UINib(nibName: "VideoTableViewCell", bundle: nil), forCellReuseIdentifier: "VideoCell")
 
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 21
-
-        if let tableHeaderView = Bundle.main.loadNibNamed("ReleaseView", owner: self, options: nil)?[0] as? UIView {
-            tableView.tableHeaderView = tableHeaderView
-    ***REMOVED***
 ***REMOVED***
 
     ***REMOVED*** MARK: - Table View
@@ -109,6 +93,7 @@ class ReleaseViewController: UITableViewController {
         guard let releaseSection = ReleaseSections(rawValue: section) else { return nil ***REMOVED***
 
         switch releaseSection {
+        case .teaser: return nil
         case .artist: return "Artist"
         case .tracks: return "Tracks"
         case .notes: return "Notes"
@@ -118,14 +103,14 @@ class ReleaseViewController: UITableViewController {
 ***REMOVED***
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-***REMOVED***        return 5 - removedSectionsCount
-        return 5
+        return 6
 ***REMOVED***
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let releaseSection = ReleaseSections(rawValue: section) else { return 0 ***REMOVED***
 
         switch releaseSection {
+        case .teaser: return 1
         case .artist: return release?.artists.count ?? 0
         case .tracks: return release?.tracklist.count ?? 0
         case .notes:
@@ -140,6 +125,10 @@ class ReleaseViewController: UITableViewController {
         guard let releaseSection = ReleaseSections(rawValue: indexPath.section) else { fatalError("Invalid section") ***REMOVED***
 
         switch releaseSection {
+        case .teaser:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ReleaseCell", for: indexPath) as! ReleaseTableViewCell
+            cell.release = release
+            return cell
         case .artist:
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
             cell.selectionStyle = .default
@@ -148,7 +137,7 @@ class ReleaseViewController: UITableViewController {
             cell.textLabel?.font = UIFont.systemFont(ofSize: 15.0)
             cell.textLabel?.textColor = view.tintColor
             let artist = release?.artists[indexPath.row]
-            cell.textLabel?.text = [artist?.role, artist?.name].flatMap{ $0 ***REMOVED***.filter{ !$0.isEmpty ***REMOVED***.joined(separator: " - ")
+            cell.textLabel?.text = [artist?.role, artist?.name].flatMap{$0***REMOVED***.filter{!$0.isEmpty***REMOVED***.joined(separator: " - ")
             return cell
         case .tracks:
             let cell = tableView.dequeueReusableCell(withIdentifier: "TrackCell", for: indexPath) as! TrackTableViewCell
@@ -159,7 +148,7 @@ class ReleaseViewController: UITableViewController {
             cell.selectionStyle = .none
             cell.accessoryType = .none
             cell.textLabel?.numberOfLines = 0
-            cell.textLabel?.font = UIFont.systemFont(ofSize: 15.0)
+            cell.textLabel?.font = UIFont.systemFont(ofSize: 14.0)
             cell.textLabel?.textColor = .black
             cell.textLabel?.text = release?.notes
             return cell
@@ -171,7 +160,7 @@ class ReleaseViewController: UITableViewController {
             cell.textLabel?.font = UIFont.systemFont(ofSize: 15.0)
             cell.textLabel?.textColor = .black
             let artist = release?.extraArtists[indexPath.row]
-            cell.textLabel?.text = [artist?.role, artist?.name].flatMap{ $0 ***REMOVED***.filter{ !$0.isEmpty ***REMOVED***.joined(separator: " - ")
+            cell.textLabel?.text = [artist?.role, artist?.name].flatMap{$0***REMOVED***.filter{!$0.isEmpty***REMOVED***.joined(separator: " - ")
             return cell
         case .videos:
             let cell = tableView.dequeueReusableCell(withIdentifier: "VideoCell", for: indexPath) as! VideoTableViewCell
@@ -194,7 +183,6 @@ class ReleaseViewController: UITableViewController {
         default: return
     ***REMOVED***
 ***REMOVED***
-
 
     ***REMOVED*** MARK: - Segues
 

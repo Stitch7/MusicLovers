@@ -71,4 +71,10 @@ class LoadingView: UIView {
         containerView.addHorizontallyCenteredConstraints(forView: spinner, inSuperView: containerView)
         containerView.addHorizontallyCenteredConstraints(forView: label, inSuperView: containerView)
 ***REMOVED***
+
+    func remove() {
+        DispatchQueue.main.async {
+            self.removeFromSuperview()
+    ***REMOVED***
+***REMOVED***
 ***REMOVED***
