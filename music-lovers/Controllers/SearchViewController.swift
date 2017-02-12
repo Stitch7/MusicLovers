@@ -17,7 +17,14 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
             fatalError("Invalid DiscogsApi.BaseUrl in Config")
         }
 
-        let credentials = Credentials(key: Config.DiscogsApi.Key, secret: Config.DiscogsApi.Secret)
+        let key = Config.DiscogsApi.Key
+        let secret = Config.DiscogsApi.Secret
+
+        if key.characters.count == 0 || secret.characters.count == 0 {
+            fatalError("\n\nPlease add Discogs API credentials to Config.swift\n\n")
+        }
+
+        let credentials = Credentials(key: key, secret: secret)
         let foundationClient = FoundationClient(url: url, credentials: credentials)
         return DiscogsClient(httpClient: foundationClient)
     }()
