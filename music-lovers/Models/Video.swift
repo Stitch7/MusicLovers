@@ -14,6 +14,16 @@ struct Video {
     let duration: Int
     let embed: Bool
     let uri: URL
+
+    var durationString: String {
+        let m = (duration % 3600) / 60
+        let mFormatted = String(m).leftPadding(toLength: 2, withPad: "0")
+
+        let s = (duration % 3600) % 60
+        let sFormatted = String(s).leftPadding(toLength: 2, withPad: "0")
+
+        return "\(mFormatted):\(sFormatted)"
+    }
 }
 
 extension Video: JSONInitializable {

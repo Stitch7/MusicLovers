@@ -19,18 +19,8 @@ class VideoTableViewCell: UITableViewCell {
             guard let video = self.video else { return }
 
             self.titleLabel.text = video.title
-            self.durationLabel.text = toMinutesString(seconds: video.duration)
+            self.durationLabel.text = video.durationString
         }
-    }
-
-    func toMinutesString(seconds: Int) -> String {
-        let m = (seconds % 3600) / 60
-        let mFormatted = String(m).leftPadding(toLength: 2, withPad: "0")
-
-        let s = (seconds % 3600) % 60
-        let sFormatted = String(s).leftPadding(toLength: 2, withPad: "0")
-
-        return "\(mFormatted):\(sFormatted)"
     }
 
     override func awakeFromNib() {
