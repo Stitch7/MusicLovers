@@ -1,0 +1,72 @@
+{
+    "profile":"One of the most renowned German HipHop-acts (Hamburg-based). In May 2003 they announced to drop the \"Absolute\" of their name, changing it thus to \"[a=Beginner]\".",
+    "releases_url":"https://api.discogs.com/artists/67095/releases",
+    "name":"Absolute Beginner",
+    "uri":"https://www.discogs.com/artist/67095-Absolute-Beginner",
+    "members":[
+               {
+               "active":true,
+               "resource_url":"https://api.discogs.com/artists/618853",
+               "id":618853,
+               "name":"Dennis Lisk"
+               },
+               {
+               "active":true,
+               "resource_url":"https://api.discogs.com/artists/790431",
+               "id":790431,
+               "name":"Guido Wei\u00df"
+               },
+               {
+               "active":true,
+               "resource_url":"https://api.discogs.com/artists/2412858",
+               "id":2412858,
+               "name":"Jan Phillip Ei\u00dffeldt"
+               },
+               {
+               "active":false,
+               "resource_url":"https://api.discogs.com/artists/172882",
+               "id":172882,
+               "name":"Martin Wilkes"
+               },
+               {
+               "active":false,
+               "resource_url":"https://api.discogs.com/artists/284378",
+               "id":284378,
+               "name":"Torsten Otto"
+               }
+               ],
+    "urls":[
+            "http://www.beginner.de/",
+            "https://de.wikipedia.org/wiki/Beginner"
+            ],
+    "images":[
+              {
+              "uri":"https://api-img.discogs.com/bc-77TzVrcBHMW0Ev__4P5VxluU=/300x300/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-67095-001.jpg.jpg",
+              "height":300,
+              "width":300,
+              "resource_url":"https://api-img.discogs.com/bc-77TzVrcBHMW0Ev__4P5VxluU=/300x300/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-67095-001.jpg.jpg",
+              "type":"primary",
+              "uri150":"https://api-img.discogs.com/wLvlItnx6TQPOL8set7kWeqhuWw=/150x150/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/A-67095-001.jpg.jpg"
+              }
+              ],
+    "resource_url":"https://api.discogs.com/artists/67095",
+    "aliases":[
+               {
+               "resource_url":"https://api.discogs.com/artists/117528",
+               "id":117528,
+               "name":"Beginner"
+               }
+               ],
+    "id":67095,
+    "data_quality":"Needs Vote",
+    "namevariations":[
+                      "AB's",
+                      "Absolute Beginners",
+                      "Absoluten Beginnern",
+                      "Absolutte Beginner",
+                      "Beginner",
+                      "Beginner Allstars",
+                      "Beginnern",
+                      "Boba Feh"
+                      ]
+}

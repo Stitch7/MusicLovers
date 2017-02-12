@@ -1,0 +1,1841 @@
+{
+    "pagination":{
+        "per_page":50,
+        "pages":2,
+        "page":1,
+        "urls":{
+            "last":"https://api.discogs.com/database/search?per_page=50&page=2&title=Bambule",
+            "next":"https://api.discogs.com/database/search?per_page=50&page=2&title=Bambule"
+        },
+        "items":53
+    },
+    "results":[
+               {
+               "thumb":"",
+               "title":"Bambule",
+               "uri":"/label/464924-Bambule",
+               "resource_url":"https://api.discogs.com/labels/464924",
+               "type":"label",
+               "id":464924
+               },
+               {
+               "thumb":"",
+               "title":"Bambule (3)",
+               "uri":"/artist/2078774-Bambule-3",
+               "resource_url":"https://api.discogs.com/artists/2078774",
+               "type":"artist",
+               "id":2078774
+               },
+               {
+               "style":[
+                        "Ska"
+                        ],
+               "thumb":"https://api-img.discogs.com/8Mf0n5BKtCNVj94FKUpt5_hYFAM=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-5396308-1392321641-3586.jpeg.jpg",
+               "format":[
+                         "CD",
+                         "Album"
+                         ],
+               "country":"Czech Republic",
+               "barcode":[
+                          "8595024305627"
+                          ],
+               "uri":"/Sto-Zv%C3%AD%C5%99at-Bambule/release/5396308",
+               "community":{
+               "want":1,
+               "have":2
+               },
+               "label":[
+                        "Happy Music Production",
+                        "Happy Music Production",
+                        "Happy Music Production",
+                        "Studio Happy",
+                        "Studio Happy"
+                        ],
+               "catno":"HMP 0562 P",
+               "year":"1998",
+               "genre":[
+                        "Rock"
+                        ],
+               "title":"Sto Zv\u00ed\u0159at - Bambule",
+               "resource_url":"https://api.discogs.com/releases/5396308",
+               "type":"release",
+               "id":5396308
+               },
+               {
+               "style":[
+                        "Beat",
+                        "Rockabilly",
+                        "Surf"
+                        ],
+               "thumb":"https://api-img.discogs.com/PuGzq-KkbLHLj2F5UI_wRa2xl0E=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-5619095-1398149862-6896.jpeg.jpg",
+               "format":[
+                         "Vinyl",
+                         "7\"",
+                         "45 RPM",
+                         "Single"
+                         ],
+               "country":"Greece",
+               "barcode":[
+
+               ],
+               "uri":"/Die-Bambulisten-Bambule/release/5619095",
+               "community":{
+               "want":8,
+               "have":1
+               },
+               "label":[
+                        "Telefunken",
+                        "Telefunken"
+                        ],
+               "catno":"U 55 712",
+               "year":"1964",
+               "genre":[
+                        "Rock"
+                        ],
+               "title":"Die Bambulisten - Bambule",
+               "resource_url":"https://api.discogs.com/releases/5619095",
+               "type":"release",
+               "id":5619095
+               },
+               {
+               "style":[
+                        "Experimental"
+                        ],
+               "thumb":"https://api-img.discogs.com/QDL0Jm7YnGPflKGaBs1lowwidQI=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2369076-1279995986.jpeg.jpg",
+               "format":[
+                         "File",
+                         "MP3"
+                         ],
+               "country":"Germany",
+               "barcode":[
+
+               ],
+               "uri":"/Pjtr-Kaufmann-Bambule/release/2369076",
+               "community":{
+               "want":0,
+               "have":2
+               },
+               "label":[
+                        "Ramin Ton"
+                        ],
+               "catno":"RTN003",
+               "year":"2008",
+               "genre":[
+                        "Electronic",
+                        "Pop"
+                        ],
+               "title":"Pjtr Kaufmann - Bambule",
+               "resource_url":"https://api.discogs.com/releases/2369076",
+               "type":"release",
+               "id":2369076
+               },
+               {
+               "style":[
+
+               ],
+               "thumb":"https://api-img.discogs.com/-3nTESEQDZZd5CJ7vw2W9rPX99c=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-534832-1442305639-2912.jpeg.jpg",
+               "format":[
+                         "CD",
+                         "Album"
+                         ],
+               "country":"Germany",
+               "barcode":[
+                          "GEMA/BIEM",
+                          "6 02507 00952 6",
+                          "602507009526",
+                          "LC 1846",
+                          "UMD70095 070 095-2 01 +",
+                          "IFPI L002",
+                          "IFPI 01BF",
+                          "MADE IN GERMANY BY UNIVERSAL M&L"
+                          ],
+               "uri":"/Absolute-Beginner-Bambule/release/534832",
+               "community":{
+               "want":34,
+               "have":277
+               },
+               "label":[
+                        "Buback",
+                        "Universal Music GmbH",
+                        "Buback",
+                        "Universal Music GmbH",
+                        "Turtle Bay Studios",
+                        "Studio-Nord-Bremen",
+                        "Turtle Bay Studios",
+                        "Turtle Bay Studios",
+                        "Sempex Musikverlag",
+                        "Edition Tromo",
+                        "Freibank",
+                        "Scoop Musikverlag"
+                        ],
+               "catno":"070 095-2",
+               "year":"1998",
+               "genre":[
+                        "Hip Hop"
+                        ],
+               "title":"Absolute Beginner - Bambule",
+               "resource_url":"https://api.discogs.com/releases/534832",
+               "type":"release",
+               "id":534832
+               },
+               {
+               "thumb":"",
+               "title":"Bambule (2)",
+               "uri":"/label/643684-Bambule-2",
+               "resource_url":"https://api.discogs.com/labels/643684",
+               "type":"label",
+               "id":643684
+               },
+               {
+               "style":[
+                        "EBM"
+                        ],
+               "thumb":"https://api-img.discogs.com/sg6wPHHMKSIFlqHiqkRx9-m1aFM=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-4737262-1374511767-6764.jpeg.jpg",
+               "format":[
+                         "CD",
+                         "EP",
+                         "Limited Edition",
+                         "Numbered"
+                         ],
+               "country":"Germany",
+               "barcode":[
+                          "4 025858 036885",
+                          "4025858036885",
+                          "HOA265380 www.black-rain-media-group.de",
+                          "IFPI 062B",
+                          "LC 09355"
+                          ],
+               "uri":"/Tyske-Ludder-Bambule/release/4737262",
+               "community":{
+               "want":10,
+               "have":32
+               },
+               "label":[
+                        "Black Rain",
+                        "Black Rain",
+                        "Black Rain",
+                        "Studio 600",
+                        "Studio 600",
+                        "Studio 600"
+                        ],
+               "catno":"BR099",
+               "year":"2013",
+               "genre":[
+                        "Electronic"
+                        ],
+               "title":"Tyske Ludder - Bambule",
+               "resource_url":"https://api.discogs.com/releases/4737262",
+               "type":"release",
+               "id":4737262
+               },
+               {
+               "style":[
+
+               ],
+               "thumb":"https://api-img.discogs.com/f1_BUXaAY1w3QF_mG_9XuusA2Zc=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-6257915-1455122191-5682.jpeg.jpg",
+               "format":[
+                         "CD",
+                         "Album"
+                         ],
+               "country":"Europe",
+               "barcode":[
+                          "LC 01846",
+                          "6 02507 00952 6",
+                          "BIEM",
+                          "MCPS",
+                          "06025 070 095-2 02 / 51118375",
+                          "MADE IN GERMANY BY UNIVERSAL M & L  A",
+                          "IFPI L001",
+                          "IFPI 0136"
+                          ],
+               "uri":"/Absolute-Beginner-Bambule/release/6257915",
+               "community":{
+               "want":9,
+               "have":28
+               },
+               "label":[
+                        "Buback",
+                        "Universal",
+                        "Universal",
+                        "Buback Tontr\u00e4ger GmbH",
+                        "Universal Music GmbH",
+                        "Turtle Bay Studios",
+                        "Studio-Nord-Bremen"
+                        ],
+               "catno":"070 095-2",
+               "year":"1998",
+               "genre":[
+                        "Hip Hop"
+                        ],
+               "title":"Absolute Beginner - Bambule",
+               "resource_url":"https://api.discogs.com/releases/6257915",
+               "type":"release",
+               "id":6257915
+               },
+               {
+               "style":[
+                        "Beat",
+                        "Rockabilly",
+                        "Surf"
+                        ],
+               "thumb":"https://api-img.discogs.com/PuGzq-KkbLHLj2F5UI_wRa2xl0E=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-5619095-1398149862-6896.jpeg.jpg",
+               "format":[
+                         "Vinyl",
+                         "7\"",
+                         "45 RPM",
+                         "Single"
+                         ],
+               "country":"Greece",
+               "barcode":[
+
+               ],
+               "uri":"/Die-Bambulisten-Bambule/master/679039",
+               "community":{
+               "want":20,
+               "have":7
+               },
+               "label":[
+                        "Telefunken",
+                        "Telefunken"
+                        ],
+               "catno":"U 55 712",
+               "year":"1964",
+               "genre":[
+                        "Rock"
+                        ],
+               "title":"Die Bambulisten - Bambule",
+               "resource_url":"https://api.discogs.com/masters/679039",
+               "type":"master",
+               "id":679039
+               },
+               {
+               "thumb":"https://api-img.discogs.com/jKgfcdJKbkCQOA695STch1gWzfs=/150x150/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/A-147756-1114048505.jpg.jpg",
+               "title":"Bambule",
+               "uri":"/artist/147756-Bambule",
+               "resource_url":"https://api.discogs.com/artists/147756",
+               "type":"artist",
+               "id":147756
+               },
+               {
+               "thumb":"https://api-img.discogs.com/ujMnW30sw7XYBBfhO3LGt47FS7o=/150x150/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/A-1974040-1289695505.jpeg.jpg",
+               "title":"Bambule (2)",
+               "uri":"/artist/1974040-Bambule-2",
+               "resource_url":"https://api.discogs.com/artists/1974040",
+               "type":"artist",
+               "id":1974040
+               },
+               {
+               "style":[
+                        "Conscious",
+                        "Boom Bap"
+                        ],
+               "thumb":"https://api-img.discogs.com/BYRafK7flVPq2MvUqNcrHalKMtk=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-4894256-1473258084-6073.jpeg.jpg",
+               "format":[
+                         "CD",
+                         "Album"
+                         ],
+               "country":"Germany",
+               "barcode":[
+                          "LC 1846",
+                          "GEMA/BIEM",
+                          "6 02507 00952 6",
+                          "X-6184/ UMD70095 A",
+                          "IFPI LB38",
+                          "IFPI 0790"
+                          ],
+               "uri":"/Absolute-Beginner-Bambule/release/4894256",
+               "community":{
+               "want":19,
+               "have":66
+               },
+               "label":[
+                        "Buback",
+                        "Universal",
+                        "Sonopress"
+                        ],
+               "catno":"UMD-70095",
+               "year":"1998",
+               "genre":[
+                        "Hip Hop"
+                        ],
+               "title":"Absolute Beginner - Bambule",
+               "resource_url":"https://api.discogs.com/releases/4894256",
+               "type":"release",
+               "id":4894256
+               },
+               {
+               "style":[
+
+               ],
+               "thumb":"https://api-img.discogs.com/IUdgSI-9Z2g0OvG_RFqEL1XLBow=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-6069555-1410271391-4667.jpeg.jpg",
+               "format":[
+                         "CD",
+                         "Album"
+                         ],
+               "country":"Germany",
+               "barcode":[
+                          "602507009526",
+                          "LC 01846",
+                          "BIEM",
+                          "MCPS",
+                          "UMD70095 070 095-2 01 +",
+                          "MADE IN GERMANY BY UNIVERSAL M & L",
+                          "IFPI L002",
+                          "IFPI 01Y1"
+                          ],
+               "uri":"/Absolute-Beginner-Bambule/release/6069555",
+               "community":{
+               "want":9,
+               "have":9
+               },
+               "label":[
+                        "Buback",
+                        "Universal",
+                        "Universal",
+                        "Buback Tontr\u00e4ger GmbH",
+                        "Universal Music GmbH",
+                        "Turtle Bay Studios",
+                        "Studio-Nord-Bremen",
+                        "Universal M & L, Germany"
+                        ],
+               "catno":"070 095-2",
+               "genre":[
+                        "Hip Hop"
+                        ],
+               "title":"Absolute Beginner - Bambule",
+               "resource_url":"https://api.discogs.com/releases/6069555",
+               "type":"release",
+               "id":6069555
+               },
+               {
+               "style":[
+
+               ],
+               "thumb":"https://api-img.discogs.com/8mPYPKpfWEQoYBs8ZT88YGJPApo=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-5204641-1387389300-4995.jpeg.jpg",
+               "format":[
+                         "CD",
+                         "Album",
+                         "Repress"
+                         ],
+               "country":"Europe",
+               "barcode":[
+                          "602507009526",
+                          "IFPI L001",
+                          "06025  070 095-2  02 / 51118375",
+                          "Made in Germany by EDC",
+                          "BIEM/MCPS",
+                          "LC 01846"
+                          ],
+               "uri":"/Absolute-Beginner-Bambule/release/5204641",
+               "community":{
+               "want":12,
+               "have":11
+               },
+               "label":[
+                        "Buback",
+                        "Universal",
+                        "Universal",
+                        "Buback Tontr\u00e4ger GmbH",
+                        "Universal Music GmbH",
+                        "EDC, Germany",
+                        "Turtle Bay Studios",
+                        "Studio-Nord-Bremen"
+                        ],
+               "catno":"070 095-2",
+               "genre":[
+                        "Hip Hop"
+                        ],
+               "title":"Absolute Beginner - Bambule",
+               "resource_url":"https://api.discogs.com/releases/5204641",
+               "type":"release",
+               "id":5204641
+               },
+               {
+               "style":[
+                        "Conscious",
+                        "Boom Bap"
+                        ],
+               "thumb":"https://api-img.discogs.com/ZKmRX2bseif_jhIeFDVrbq-GM8E=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3699432-1340877282-3728.jpeg.jpg",
+               "format":[
+                         "CD",
+                         "Album",
+                         "Promo"
+                         ],
+               "country":"Germany",
+               "barcode":[
+                          "LC 1846",
+                          "GEMA/BIEM",
+                          "SONO PRESS X-3472/ UMD70810 A",
+                          "MADE IN GERMANY BY UNIVERSAL M&L",
+                          "IFPI 0716"
+                          ],
+               "uri":"/Absolute-Beginner-Bambule/release/3699432",
+               "community":{
+               "want":17,
+               "have":10
+               },
+               "label":[
+                        "Buback",
+                        "Universal",
+                        "Buback",
+                        "Universal Music GmbH",
+                        "Turtle Bay Studios",
+                        "Studio-Nord-Bremen"
+                        ],
+               "catno":"070 810-2",
+               "year":"1998",
+               "genre":[
+                        "Hip Hop"
+                        ],
+               "title":"Absolute Beginner - Bambule",
+               "resource_url":"https://api.discogs.com/releases/3699432",
+               "type":"release",
+               "id":3699432
+               },
+               {
+               "style":[
+
+               ],
+               "thumb":"https://api-img.discogs.com/i6OzciTKG8ubSqJ892uDX7-aG58=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-9140251-1475470297-3875.jpeg.jpg",
+               "format":[
+                         "CD",
+                         "Album",
+                         "Reissue"
+                         ],
+               "country":"Germany",
+               "barcode":[
+                          "6 02507 00952 6",
+                          "602507009526",
+                          "[4x Universal logo] 06025 070 095-2 04 # 51118375",
+                          "MADE IN GERMANY BY EDC A",
+                          "IFPI LZ87",
+                          "IFPI 0150",
+                          "BIEM",
+                          "MCPS",
+                          "GEMA",
+                          "LC 01846"
+                          ],
+               "uri":"/Absolute-Beginner-Bambule/release/9140251",
+               "community":{
+               "want":1,
+               "have":1
+               },
+               "label":[
+                        "Universal",
+                        "Universal",
+                        "Buback",
+                        "Buback",
+                        "Buback Tontr\u00e4ger GmbH",
+                        "Universal Music GmbH",
+                        "Turtle Bay Studios",
+                        "Turtle Bay Studios",
+                        "Turtle Bay Studios",
+                        "Studio-Nord-Bremen",
+                        "Sempex Musikverlag",
+                        "Edition Tromo",
+                        "Freibank",
+                        "Scoop Musikverlag",
+                        "EDC, Germany"
+                        ],
+               "catno":"070 095-2",
+               "genre":[
+                        "Hip Hop"
+                        ],
+               "title":"Absolute Beginner - Bambule",
+               "resource_url":"https://api.discogs.com/releases/9140251",
+               "type":"release",
+               "id":9140251
+               },
+               {
+               "style":[
+
+               ],
+               "thumb":"https://api-img.discogs.com/yxLYp-Firtolp2hfvNEkGsxpkb4=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-4282389-1360611218-8533.jpeg.jpg",
+               "format":[
+                         "CD",
+                         "Album"
+                         ],
+               "country":"Germany",
+               "barcode":[
+                          "6 02507 00952 6",
+                          "602507009526",
+                          "UMD70095 070 095-2 01 +",
+                          "MADE IN GERMANY",
+                          "BIEM",
+                          "MCPS",
+                          "LC 01846"
+                          ],
+               "uri":"/Absolute-Beginner-Bambule/release/4282389",
+               "community":{
+               "want":18,
+               "have":88
+               },
+               "label":[
+                        "Universal",
+                        "Universal",
+                        "Buback",
+                        "Buback",
+                        "Buback Tontr\u00e4ger GmbH",
+                        "Universal Music GmbH",
+                        "Turtle Bay Studios",
+                        "Turtle Bay Studios",
+                        "Turtle Bay Studios",
+                        "Studio-Nord-Bremen",
+                        "Sempex Musikverlag",
+                        "Edition Tromo",
+                        "Freibank",
+                        "Scoop Musikverlag"
+                        ],
+               "catno":"070 095-2",
+               "year":"1998",
+               "genre":[
+                        "Hip Hop"
+                        ],
+               "title":"Absolute Beginner - Bambule",
+               "resource_url":"https://api.discogs.com/releases/4282389",
+               "type":"release",
+               "id":4282389
+               },
+               {
+               "style":[
+                        "Conscious"
+                        ],
+               "thumb":"https://api-img.discogs.com/O3YFuRmXTO7JLicTmLyE759zPmw=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-335195-1312144328.jpeg.jpg",
+               "format":[
+                         "Vinyl",
+                         "LP",
+                         "Album"
+                         ],
+               "country":"Germany",
+               "barcode":[
+                          "6 02507 00971 7",
+                          "UMA 70097 A SNB",
+                          "UMA 70097 B SNB",
+                          "UMA 70097 C SNB",
+                          "UMA 70097 D SNB",
+                          "GEMA",
+                          "LC 1846"
+                          ],
+               "uri":"/Absolute-Beginner-Bambule/master/50925",
+               "community":{
+               "want":754,
+               "have":3072
+               },
+               "label":[
+                        "Buback",
+                        "Universal",
+                        "BMG",
+                        "Buback Tontr\u00e4ger GmbH",
+                        "Universal Music GmbH",
+                        "Sempex Musikverlag",
+                        "Edition Tromo",
+                        "Freibank",
+                        "Scoop Musikverlag",
+                        "Turtle Bay Studios",
+                        "Turtle Bay Studios",
+                        "Turtle Bay Studios",
+                        "Studio-Nord-Bremen"
+                        ],
+               "catno":"UMA-70097",
+               "year":"1998",
+               "genre":[
+                        "Hip Hop"
+                        ],
+               "title":"Absolute Beginner - Bambule",
+               "resource_url":"https://api.discogs.com/masters/50925",
+               "type":"master",
+               "id":50925
+               },
+               {
+               "style":[
+                        "Beat",
+                        "Surf",
+                        "Rockabilly"
+                        ],
+               "thumb":"https://api-img.discogs.com/YTphah_QBDtv181E0fUuv0-WFeI=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2926742-1460366618-8584.jpeg.jpg",
+               "format":[
+                         "Vinyl",
+                         "7\"",
+                         "45 RPM",
+                         "Single"
+                         ],
+               "country":"Germany",
+               "barcode":[
+
+               ],
+               "uri":"/Die-Bambulisten-Bambule/release/2926742",
+               "community":{
+               "want":12,
+               "have":6
+               },
+               "label":[
+                        "Telefunken"
+                        ],
+               "catno":"U 55 712",
+               "genre":[
+                        "Rock"
+                        ],
+               "title":"Die Bambulisten - Bambule",
+               "resource_url":"https://api.discogs.com/releases/2926742",
+               "type":"release",
+               "id":2926742
+               },
+               {
+               "style":[
+                        "Conscious"
+                        ],
+               "thumb":"https://api-img.discogs.com/xFUpbOiKKB_LfcsMajlbY0tCgG4=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-8829867-1471268008-2674.jpeg.jpg",
+               "format":[
+                         "Vinyl",
+                         "LP",
+                         "Album",
+                         "Repress"
+                         ],
+               "country":"Germany",
+               "barcode":[
+                          "602507009717",
+                          "80439M1/A www.gzvinyl.com - 0700971-A UMA 70097A SNB B406214-01 A1",
+                          "80439M2/A2 0700971 \u2013 B B406214-01 B1 UMA 70097 B SNB",
+                          "UMA 70097 C SNB 80439M3/A1 B406214-02 C1 0700971-C",
+                          "UMA 70097D SNB B406214-02 D1 80439M4/A 0700971-D",
+                          "80439M1/A www.gzvinyl.com - 0700971-A",
+                          "UMA 70097A SNB",
+                          "B406214-01 A1",
+                          "80439M2/A2 0700971 \u2013 B",
+                          "UMA 70097 B SNB",
+                          "B406214-01 B1",
+                          "80439M3/A1 0700971-C",
+                          "UMA 70097 C SNB",
+                          "B406214-02 C1",
+                          "80439M4/A 0700971-D",
+                          "UMA 70097D SNB",
+                          "B406214-02 D1",
+                          "GEMA",
+                          "LC 1846"
+                          ],
+               "uri":"/Absolute-Beginner-Bambule/release/8829867",
+               "community":{
+               "want":12,
+               "have":365
+               },
+               "label":[
+                        "Buback",
+                        "Universal",
+                        "BMG",
+                        "Buback Tontr\u00e4ger GmbH",
+                        "Universal Music GmbH",
+                        "Sempex Musikverlag",
+                        "Edition Tromo",
+                        "Freibank",
+                        "Scoop Musikverlag",
+                        "Turtle Bay Studios",
+                        "Turtle Bay Studios",
+                        "Turtle Bay Studios",
+                        "Studio-Nord-Bremen",
+                        "Optimal Media Production",
+                        "GZ Media",
+                        "www.gzvinyl.com"
+                        ],
+               "catno":"UMA-70097",
+               "year":"2016",
+               "genre":[
+                        "Hip Hop"
+                        ],
+               "title":"Absolute Beginner - Bambule",
+               "resource_url":"https://api.discogs.com/releases/8829867",
+               "type":"release",
+               "id":8829867
+               },
+               {
+               "style":[
+                        "Conscious"
+                        ],
+               "thumb":"https://api-img.discogs.com/O3YFuRmXTO7JLicTmLyE759zPmw=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-335195-1312144328.jpeg.jpg",
+               "format":[
+                         "Vinyl",
+                         "LP",
+                         "Album"
+                         ],
+               "country":"Germany",
+               "barcode":[
+                          "6 02507 00971 7",
+                          "UMA 70097 A SNB",
+                          "UMA 70097 B SNB",
+                          "UMA 70097 C SNB",
+                          "UMA 70097 D SNB",
+                          "GEMA",
+                          "LC 1846"
+                          ],
+               "uri":"/Absolute-Beginner-Bambule/release/335195",
+               "community":{
+               "want":434,
+               "have":2076
+               },
+               "label":[
+                        "Buback",
+                        "Universal",
+                        "BMG",
+                        "Buback Tontr\u00e4ger GmbH",
+                        "Universal Music GmbH",
+                        "Sempex Musikverlag",
+                        "Edition Tromo",
+                        "Freibank",
+                        "Scoop Musikverlag",
+                        "Turtle Bay Studios",
+                        "Turtle Bay Studios",
+                        "Turtle Bay Studios",
+                        "Studio-Nord-Bremen"
+                        ],
+               "catno":"UMA-70097",
+               "year":"1998",
+               "genre":[
+                        "Hip Hop"
+                        ],
+               "title":"Absolute Beginner - Bambule",
+               "resource_url":"https://api.discogs.com/releases/335195",
+               "type":"release",
+               "id":335195
+               },
+               {
+               "style":[
+                        "Tech House"
+                        ],
+               "thumb":"https://api-img.discogs.com/TntSZILy5zF-1fQbtwZOHrptG4E=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2559248-1290422744.jpeg.jpg",
+               "format":[
+                         "File",
+                         "MP3",
+                         "EP"
+                         ],
+               "country":"Germany",
+               "barcode":[
+
+               ],
+               "uri":"/Sven-Kegel-Bambule-EP/release/2559248",
+               "community":{
+               "want":0,
+               "have":1
+               },
+               "label":[
+                        "Diametral"
+                        ],
+               "catno":"DREX004",
+               "year":"2010",
+               "genre":[
+                        "Electronic"
+                        ],
+               "title":"Sven Kegel - Bambule EP",
+               "resource_url":"https://api.discogs.com/releases/2559248",
+               "type":"release",
+               "id":2559248
+               },
+               {
+               "style":[
+                        "Krautrock"
+                        ],
+               "thumb":"https://api-img.discogs.com/DAvbltUUwfdngw2q8CuKGsZG2k8=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3944107-1366791109-6264.jpeg.jpg",
+               "format":[
+                         "Vinyl",
+                         "7\"",
+                         "45 RPM",
+                         "Single"
+                         ],
+               "country":"Germany",
+               "barcode":[
+                          "gema",
+                          "brain-511-A PF",
+                          "brain-511-B PF",
+                          "st-511-a",
+                          "st-511-b"
+                          ],
+               "uri":"/Der-Chef-Bambule-Rock/release/3944107",
+               "community":{
+               "want":18,
+               "have":2
+               },
+               "label":[
+                        "Brain",
+                        "Oktave"
+                        ],
+               "catno":"brain 511",
+               "year":"1974",
+               "genre":[
+                        "Rock"
+                        ],
+               "title":"Der Chef - Bambule Rock",
+               "resource_url":"https://api.discogs.com/releases/3944107",
+               "type":"release",
+               "id":3944107
+               },
+               {
+               "style":[
+                        "Electro",
+                        "Techno"
+                        ],
+               "thumb":"https://api-img.discogs.com/vouhAhbQFDdUtoTaAjgK5-6rNl0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-5375041-1391946179-3481.jpeg.jpg",
+               "format":[
+                         "Vinyl",
+                         "12\"",
+                         "EP"
+                         ],
+               "country":"Germany",
+               "barcode":[
+
+               ],
+               "uri":"/Superstrobe-Bambule-EP/master/839586",
+               "community":{
+               "want":5,
+               "have":6
+               },
+               "label":[
+                        "Praxxiz"
+                        ],
+               "catno":"PRZ019",
+               "year":"2014",
+               "genre":[
+                        "Electronic"
+                        ],
+               "title":"Superstrobe - Bambule EP",
+               "resource_url":"https://api.discogs.com/masters/839586",
+               "type":"master",
+               "id":839586
+               },
+               {
+               "style":[
+                        "Electro",
+                        "Techno"
+                        ],
+               "thumb":"https://api-img.discogs.com/vouhAhbQFDdUtoTaAjgK5-6rNl0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-5375041-1391946179-3481.jpeg.jpg",
+               "format":[
+                         "Vinyl",
+                         "12\"",
+                         "EP"
+                         ],
+               "country":"Germany",
+               "barcode":[
+
+               ],
+               "uri":"/Superstrobe-Bambule-EP/release/5375041",
+               "community":{
+               "want":5,
+               "have":6
+               },
+               "label":[
+                        "Praxxiz"
+                        ],
+               "catno":"PRZ019",
+               "year":"2014",
+               "genre":[
+                        "Electronic"
+                        ],
+               "title":"Superstrobe - Bambule EP",
+               "resource_url":"https://api.discogs.com/releases/5375041",
+               "type":"release",
+               "id":5375041
+               },
+               {
+               "style":[
+                        "Instrumental"
+                        ],
+               "thumb":"https://api-img.discogs.com/1Uq6asmSXymgA9L8PLC3i73aHSM=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-451061-1182268265.jpeg.jpg",
+               "format":[
+                         "Vinyl",
+                         "LP",
+                         "Album"
+                         ],
+               "country":"Germany",
+               "barcode":[
+                          "GEMA",
+                          "LC 01846"
+                          ],
+               "uri":"/Absolute-Beginner-Bambule-Beats/release/451061",
+               "community":{
+               "want":155,
+               "have":127
+               },
+               "label":[
+                        "Buback",
+                        "Universal"
+                        ],
+               "catno":"UMA - 70108",
+               "year":"1998",
+               "genre":[
+                        "Hip Hop"
+                        ],
+               "title":"Absolute Beginner - Bambule Beats",
+               "resource_url":"https://api.discogs.com/releases/451061",
+               "type":"release",
+               "id":451061
+               },
+               {
+               "style":[
+                        "Electro",
+                        "Techno"
+                        ],
+               "thumb":"https://api-img.discogs.com/pfigA45B8LtbrIm03P058DuPQbs=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-7043423-1432393438-4696.jpeg.jpg",
+               "format":[
+                         "File",
+                         "MP3",
+                         "EP"
+                         ],
+               "country":"Germany",
+               "barcode":[
+
+               ],
+               "uri":"/Superstrobe-Bambule-EP/release/7043423",
+               "community":{
+               "want":0,
+               "have":0
+               },
+               "label":[
+                        "Praxxiz"
+                        ],
+               "catno":"PRZ019",
+               "year":"2013",
+               "genre":[
+                        "Electronic"
+                        ],
+               "title":"Superstrobe - Bambule EP",
+               "resource_url":"https://api.discogs.com/releases/7043423",
+               "type":"release",
+               "id":7043423
+               },
+               {
+               "thumb":"",
+               "title":"Bambule' Records",
+               "uri":"/label/581802-Bambule-Records",
+               "resource_url":"https://api.discogs.com/labels/581802",
+               "type":"label",
+               "id":581802
+               },
+               {
+               "style":[
+                        "Electro"
+                        ],
+               "thumb":"https://api-img.discogs.com/4llN8ReEeaVU80YMUx71Km5hkjk=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-6944523-1430079680-1270.jpeg.jpg",
+               "format":[
+                         "Vinyl",
+                         "7\""
+                         ],
+               "country":"Germany",
+               "barcode":[
+
+               ],
+               "uri":"/Various-Viva-Bambule/release/6944523",
+               "community":{
+               "want":2,
+               "have":3
+               },
+               "label":[
+                        "Not On Label"
+                        ],
+               "catno":"none",
+               "year":"2002",
+               "genre":[
+                        "Electronic",
+                        "Rock",
+                        "Non-Music"
+                        ],
+               "title":"Various - Viva - Bambule",
+               "resource_url":"https://api.discogs.com/releases/6944523",
+               "type":"release",
+               "id":6944523
+               },
+               {
+               "style":[
+                        "Ragga HipHop",
+                        "Conscious"
+                        ],
+               "thumb":"https://api-img.discogs.com/aMqJ-4ZXpwxd8RjgsCkDq3qMhHA=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-124397-1231451986.jpeg.jpg",
+               "format":[
+                         "Vinyl",
+                         "LP",
+                         "Album"
+                         ],
+               "country":"Germany",
+               "barcode":[
+                          "7 31454 37251 0",
+                          "731454372510",
+                          "GEMA",
+                          "LC 04909",
+                          "SNB",
+                          "543 725-1 A",
+                          "543 725-1 B",
+                          "543 725-1 C",
+                          "543 725-1 D"
+                          ],
+               "uri":"/Absolute-Beginner-BambuleBoombule-The-Remixed-Album/release/124397",
+               "community":{
+               "want":198,
+               "have":306
+               },
+               "label":[
+                        "Motor Music",
+                        "Buback",
+                        "Motor Music GMBH",
+                        "Studio-Nord-Bremen",
+                        "Turtle Bay Studios",
+                        "Eimsbush Basement",
+                        "Sempex Musikverlag",
+                        "Edition Tromo",
+                        "Freibank",
+                        "Scoop Musikverlag",
+                        "Turtle Bay Studios",
+                        "Boogie Park Studio",
+                        "Eimsbush Basement",
+                        "NoS\u00e9 Studios",
+                        "NHB Studios, Hamburg",
+                        "Bakery Studio",
+                        "One Blood Studio",
+                        "Pilatuspool Studios",
+                        "Bushbeats"
+                        ],
+               "catno":"5437251",
+               "year":"2000",
+               "genre":[
+                        "Electronic",
+                        "Hip Hop",
+                        "Reggae"
+                        ],
+               "title":"Absolute Beginner - Bambule:Boombule - The Remixed Album",
+               "resource_url":"https://api.discogs.com/releases/124397",
+               "type":"release",
+               "id":124397
+               },
+               {
+               "style":[
+                        "Conscious",
+                        "Boom Bap"
+                        ],
+               "thumb":"https://api-img.discogs.com/GhihybjnS0kW7uYYItArk4DoK7s=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-530418-1395423084-1309.jpeg.jpg",
+               "format":[
+                         "CD",
+                         "Album"
+                         ],
+               "country":"Germany",
+               "barcode":[
+                          "7 31454 37252 7",
+                          "731454372527",
+                          "BIEM/SABAM",
+                          "LC 01846"
+                          ],
+               "uri":"/Absolute-Beginner-BambuleBoombule-The-Remixed-Album/release/530418",
+               "community":{
+               "want":9,
+               "have":158
+               },
+               "label":[
+                        "Motor Music",
+                        "Sempex Musikverlag",
+                        "Edition Tromo",
+                        "Freibank",
+                        "Scoop Musikverlag",
+                        "One Blood Studio",
+                        "Turtle Bay Studios",
+                        "Boogie Park Studio",
+                        "Eimsbush Basement",
+                        "NoS\u00e9 Studios",
+                        "NHB Studios, Hamburg",
+                        "Pilatuspool Studios",
+                        "Bakery Studio, Heidelberg",
+                        "Studio-Nord-Bremen"
+                        ],
+               "catno":"5437252",
+               "year":"2000",
+               "genre":[
+                        "Hip Hop"
+                        ],
+               "title":"Absolute Beginner - Bambule:Boombule - The Remixed Album",
+               "resource_url":"https://api.discogs.com/releases/530418",
+               "type":"release",
+               "id":530418
+               },
+               {
+               "style":[
+                        "Techno",
+                        "Experimental",
+                        "Hardcore",
+                        "Broken Beat"
+                        ],
+               "thumb":"https://api-img.discogs.com/MAXMgH1nA7dPJCLQi3vSYGzeUHA=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-152858-1164423854.jpeg.jpg",
+               "format":[
+                         "Vinyl",
+                         "12\"",
+                         "33 \u2153 RPM"
+                         ],
+               "country":"UK",
+               "barcode":[
+
+               ],
+               "uri":"/Cunning-Meets-Bambule-Cunning-Meets-Bambule/release/152858",
+               "community":{
+               "want":196,
+               "have":133
+               },
+               "label":[
+                        "Praxis"
+                        ],
+               "catno":"Praxis 19",
+               "year":"1996",
+               "genre":[
+                        "Electronic"
+                        ],
+               "title":"Cunning Meets Bambule - Cunning Meets Bambule",
+               "resource_url":"https://api.discogs.com/releases/152858",
+               "type":"release",
+               "id":152858
+               },
+               {
+               "style":[
+                        "Techno",
+                        "Experimental",
+                        "Hardcore",
+                        "Broken Beat"
+                        ],
+               "thumb":"https://api-img.discogs.com/MAXMgH1nA7dPJCLQi3vSYGzeUHA=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-152858-1164423854.jpeg.jpg",
+               "format":[
+                         "Vinyl",
+                         "12\"",
+                         "33 \u2153 RPM"
+                         ],
+               "country":"UK",
+               "barcode":[
+
+               ],
+               "uri":"/Cunning-Meets-Bambule-Cunning-Meets-Bambule/master/609765",
+               "community":{
+               "want":220,
+               "have":136
+               },
+               "label":[
+                        "Praxis"
+                        ],
+               "catno":"Praxis 19",
+               "year":"1996",
+               "genre":[
+                        "Electronic"
+                        ],
+               "title":"Cunning Meets Bambule - Cunning Meets Bambule",
+               "resource_url":"https://api.discogs.com/masters/609765",
+               "type":"master",
+               "id":609765
+               },
+               {
+               "style":[
+                        "Illbient",
+                        "Techno",
+                        "Experimental"
+                        ],
+               "thumb":"https://api-img.discogs.com/L4g1oRcgldTdZ0-fc2h4slszCHM=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-5014321-1382167097-1153.png.jpg",
+               "format":[
+                         "Vinyl",
+                         "12\"",
+                         "33 \u2153 RPM",
+                         "White Label"
+                         ],
+               "country":"UK",
+               "barcode":[
+
+               ],
+               "uri":"/Cunning-Meets-Bambule-Cunning-Meets-Bambule/release/5014321",
+               "community":{
+               "want":24,
+               "have":3
+               },
+               "label":[
+                        "Praxis"
+                        ],
+               "catno":"Praxis 19",
+               "year":"1996",
+               "genre":[
+                        "Electronic"
+                        ],
+               "title":"Cunning Meets Bambule - Cunning Meets Bambule",
+               "resource_url":"https://api.discogs.com/releases/5014321",
+               "type":"release",
+               "id":5014321
+               },
+               {
+               "style":[
+                        "Ragga HipHop",
+                        "Conscious"
+                        ],
+               "thumb":"https://api-img.discogs.com/aMqJ-4ZXpwxd8RjgsCkDq3qMhHA=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-124397-1231451986.jpeg.jpg",
+               "format":[
+                         "Vinyl",
+                         "LP",
+                         "Album"
+                         ],
+               "country":"Germany",
+               "barcode":[
+                          "7 31454 37251 0",
+                          "731454372510",
+                          "GEMA",
+                          "LC 04909",
+                          "SNB",
+                          "543 725-1 A",
+                          "543 725-1 B",
+                          "543 725-1 C",
+                          "543 725-1 D"
+                          ],
+               "uri":"/Absolute-Beginner-BambuleBoombule-The-Remixed-Album/master/52011",
+               "community":{
+               "want":326,
+               "have":750
+               },
+               "label":[
+                        "Motor Music",
+                        "Buback",
+                        "Motor Music GMBH",
+                        "Studio-Nord-Bremen",
+                        "Turtle Bay Studios",
+                        "Eimsbush Basement",
+                        "Sempex Musikverlag",
+                        "Edition Tromo",
+                        "Freibank",
+                        "Scoop Musikverlag",
+                        "Turtle Bay Studios",
+                        "Boogie Park Studio",
+                        "Eimsbush Basement",
+                        "NoS\u00e9 Studios",
+                        "NHB Studios, Hamburg",
+                        "Bakery Studio",
+                        "One Blood Studio",
+                        "Pilatuspool Studios",
+                        "Bushbeats"
+                        ],
+               "catno":"5437251",
+               "year":"2000",
+               "genre":[
+                        "Electronic",
+                        "Hip Hop",
+                        "Reggae"
+                        ],
+               "title":"Absolute Beginner - Bambule:Boombule - The Remixed Album",
+               "resource_url":"https://api.discogs.com/masters/52011",
+               "type":"master",
+               "id":52011
+               },
+               {
+               "style":[
+                        "Conscious",
+                        "Boom Bap"
+                        ],
+               "thumb":"https://api-img.discogs.com/4_tMH9MbGasnpTvWUbsfuesJhas=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-9260878-1477553170-9822.jpeg.jpg",
+               "format":[
+                         "CD",
+                         "Album"
+                         ],
+               "country":"Germany",
+               "barcode":[
+                          "7 31454 37252 7",
+                          "731454372527",
+                          "GEMA",
+                          "LC 04909",
+                          "07314 543 725-2 01 / 51036819",
+                          "IFPI L001",
+                          "none",
+                          "MADE IN GERMANY BY UNIVERSAL M & L  A"
+                          ],
+               "uri":"/Absolute-Beginner-BambuleBoombule-The-Remixed-Album/release/9260878",
+               "community":{
+               "want":2,
+               "have":8
+               },
+               "label":[
+                        "Motor Music",
+                        "Sempex Musikverlag",
+                        "Edition Tromo",
+                        "Freibank",
+                        "Scoop Musikverlag",
+                        "One Blood Studio",
+                        "Turtle Bay Studios",
+                        "Turtle Bay Studios",
+                        "Boogie Park Studio",
+                        "Eimsbush Basement",
+                        "NoS\u00e9 Studios",
+                        "NHB Studios, Hamburg",
+                        "Pilatuspool Studios",
+                        "Bakery Studio, Heidelberg",
+                        "Studio-Nord-Bremen",
+                        "Buback",
+                        "Buback Tontr\u00e4ger GmbH",
+                        "Motor Music",
+                        "Motor Music",
+                        "Buback",
+                        "Universal M & L, Germany"
+                        ],
+               "catno":"543 725-2",
+               "year":"2000",
+               "genre":[
+                        "Hip Hop"
+                        ],
+               "title":"Absolute Beginner - Bambule:Boombule - The Remixed Album",
+               "resource_url":"https://api.discogs.com/releases/9260878",
+               "type":"release",
+               "id":9260878
+               },
+               {
+               "style":[
+                        "Conscious",
+                        "Boom Bap",
+                        "Ragga HipHop"
+                        ],
+               "thumb":"",
+               "format":[
+                         "CD",
+                         "Album",
+                         "Promo"
+                         ],
+               "country":"Germany",
+               "barcode":[
+
+               ],
+               "uri":"/Absolute-Beginner-Boombule-Bambule-Remixed/release/2820350",
+               "community":{
+               "want":7,
+               "have":10
+               },
+               "label":[
+                        "Motor Music"
+                        ],
+               "catno":"none",
+               "year":"2000",
+               "genre":[
+                        "Hip Hop"
+                        ],
+               "title":"Absolute Beginner - Boombule - Bambule Remixed",
+               "resource_url":"https://api.discogs.com/releases/2820350",
+               "type":"release",
+               "id":2820350
+               },
+               {
+               "style":[
+                        "Ragga HipHop",
+                        "Conscious"
+                        ],
+               "thumb":"https://api-img.discogs.com/TrGREP2DO1eaEfamJ8BrP-Hj1I8=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-9241679-1477654766-8694.jpeg.jpg",
+               "format":[
+                         "Vinyl",
+                         "LP",
+                         "Album",
+                         "Reissue"
+                         ],
+               "country":"Germany",
+               "barcode":[
+                          "0 731454 372510",
+                          "0731454372510",
+                          "GEMA"
+                          ],
+               "uri":"/Absolute-Beginner-BambuleBoombule-The-Remixed-Album/release/9241679",
+               "community":{
+               "want":8,
+               "have":116
+               },
+               "label":[
+                        "Universal Music Group",
+                        "Beginner",
+                        "Vertigo/Capitol",
+                        "Studio-Nord-Bremen",
+                        "Turtle Bay Studios",
+                        "Eimsbush Basement",
+                        "Sempex Musikverlag",
+                        "Edition Tromo",
+                        "Scoop Musikverlag",
+                        "Freibank",
+                        "Turtle Bay Studios",
+                        "Boogie Park Studio",
+                        "Eimsbush Basement",
+                        "NoS\u00e9 Studios",
+                        "NHB Studios, Hamburg",
+                        "One Blood Studio",
+                        "Pilatuspool Studios",
+                        "Bakery Studio",
+                        "Bushbeats"
+                        ],
+               "catno":"5437251",
+               "year":"2016",
+               "genre":[
+                        "Electronic",
+                        "Hip Hop",
+                        "Reggae"
+                        ],
+               "title":"Absolute Beginner - Bambule:Boombule - The Remixed Album",
+               "resource_url":"https://api.discogs.com/releases/9241679",
+               "type":"release",
+               "id":9241679
+               },
+               {
+               "thumb":"",
+               "title":"Bambuleras",
+               "uri":"/artist/4379343-Bambuleras",
+               "resource_url":"https://api.discogs.com/artists/4379343",
+               "type":"artist",
+               "id":4379343
+               },
+               {
+               "style":[
+                        "Pop Rap"
+                        ],
+               "thumb":"https://api-img.discogs.com/de4ZJsEDrGPaKSzeYtpzUjZcZLI=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1867391-1316807822.jpeg.jpg",
+               "format":[
+                         "Cassette",
+                         "Promo"
+                         ],
+               "country":"Germany",
+               "barcode":[
+
+               ],
+               "uri":"/Beginner-Kleinigkeiten-Aus-Dem-Album-Bambule/release/1867391",
+               "community":{
+               "want":34,
+               "have":14
+               },
+               "label":[
+                        "Buback",
+                        "Universal"
+                        ],
+               "catno":"UMC-70811",
+               "year":"1998",
+               "genre":[
+                        "Hip Hop"
+                        ],
+               "title":"Beginner* - Kleinigkeiten Aus Dem Album Bambule",
+               "resource_url":"https://api.discogs.com/releases/1867391",
+               "type":"release",
+               "id":1867391
+               },
+               {
+               "style":[
+                        "Vocal",
+                        "Schlager"
+                        ],
+               "thumb":"https://api-img.discogs.com/D9MX--JwM1TfHZVznrRnBEtvGF0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2052238-1417272345-5920.jpeg.jpg",
+               "format":[
+                         "Vinyl",
+                         "7\"",
+                         "45 RPM",
+                         "Mono",
+                         "Repress"
+                         ],
+               "country":"Czechoslovakia",
+               "barcode":[
+                          "D 03487",
+                          "D 03488",
+                          "h",
+                          "BIEM",
+                          "69 2"
+                          ],
+               "uri":"/Milan-Drobn%C3%BD-Na%C4%8Fa-Urb%C3%A1nkov%C3%A1-Bambule-Bijou-B%C3%A1c-Mosaznej-D%C5%BEab%C3%A1n/release/2052238",
+               "community":{
+               "want":0,
+               "have":7
+               },
+               "label":[
+                        "Supraphon"
+                        ],
+               "catno":"0 43 0763",
+               "year":"1969",
+               "genre":[
+                        "Pop"
+                        ],
+               "title":"Milan Drobn\u00fd / Na\u010fa Urb\u00e1nkov\u00e1 - Bambule Bijou B\u00e1c / Mosaznej D\u017eb\u00e1n",
+               "resource_url":"https://api.discogs.com/releases/2052238",
+               "type":"release",
+               "id":2052238
+               },
+               {
+               "style":[
+                        "Vocal",
+                        "Schlager"
+                        ],
+               "thumb":"https://api-img.discogs.com/a_ie1Jtd82dhA2PDdLJCeCjbrCs=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2053381-1261133956.jpeg.jpg",
+               "format":[
+                         "Vinyl",
+                         "7\"",
+                         "45 RPM",
+                         "Mono"
+                         ],
+               "country":"Czechoslovakia",
+               "barcode":[  
+                          "D 03487",
+                          "D 03488",
+                          "h",
+                          "BIEM",
+                          "69 1"
+                          ],
+               "uri":"/Milan-Drobn%C3%BD-Na%C4%8Fa-Urb%C3%A1nkov%C3%A1-Bratislavsk%C3%A1-Lyra/release/2053381",
+               "community":{  
+               "want":1,
+               "have":4
+               },
+               "label":[  
+                        "Supraphon",
+                        "Bratislavsk\u00e1 L\u00fdra"
+                        ],
+               "catno":"0 43 0763",
+               "year":"1969",
+               "genre":[  
+                        "Pop"
+                        ],
+               "title":"Milan Drobn\u00fd / Na\u010fa Urb\u00e1nkov\u00e1 - Bambule Bijou B\u00e1c / Mosaznej D\u017eb\u00e1n",
+               "resource_url":"https://api.discogs.com/releases/2053381",
+               "type":"release",
+               "id":2053381
+               },
+               {  
+               "style":[  
+               
+               ],
+               "thumb":"https://api-img.discogs.com/9GBaY5_508qzBDSpEoP13qVQBLs=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2055223-1261245123.jpeg.jpg",
+               "format":[  
+                         "Vinyl",
+                         "LP",
+                         "White Label"
+                         ],
+               "country":"Germany",
+               "barcode":[  
+                          "543 726-1-A ",
+                          "543 726-1-B ",
+                          "543 726-1-C ",
+                          "543 726-1-D ",
+                          "SNB"
+                          ],
+               "uri":"/Absolute-Beginner-Bambule-Boombule-The-Remix-Instrumentals/release/2055223",
+               "community":{  
+               "want":68,
+               "have":54
+               },
+               "label":[  
+                        "Motor",
+                        "Buback",
+                        "Studio-Nord-Bremen"
+                        ],
+               "catno":"543 726-1",
+               "year":"2000",
+               "genre":[  
+                        "Hip Hop"
+                        ],
+               "title":"Absolute Beginner - Bambule / Boombule - The Remix Instrumentals",
+               "resource_url":"https://api.discogs.com/releases/2055223",
+               "type":"release",
+               "id":2055223
+               },
+               {  
+               "style":[  
+               
+               ],
+               "thumb":"https://api-img.discogs.com/bPNFhsR0w0R45G8whNWjt8T9KCQ=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1109367-1196086623.jpeg.jpg",
+               "format":[  
+                         "Flexi-disc",
+                         "7\"",
+                         "Promo"
+                         ],
+               "country":"Germany",
+               "barcode":[  
+                          "LC04909",
+                          "GEMA",
+                          "ELD-02/00"
+                          ],
+               "uri":"/Absolute-Beginner-Bambule-Boombule-The-Remixed-Album/release/1109367",
+               "community":{  
+               "want":34,
+               "have":98
+               },
+               "label":[  
+                        "Motor Music",
+                        "Eldorado Media"
+                        ],
+               "catno":"1003502",
+               "year":"2000",
+               "genre":[  
+                        "Hip Hop"
+                        ],
+               "title":"Absolute Beginner - Bambule Boombule - The Remixed Album",
+               "resource_url":"https://api.discogs.com/releases/1109367",
+               "type":"release",
+               "id":1109367
+               },
+               {  
+               "style":[  
+                        "Vocal",
+                        "Schlager"
+                        ],
+               "thumb":"https://api-img.discogs.com/B0aXX3IeMEJf7caJnNJTJNYE9-Q=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-7491475-1478336143-4049.jpeg.jpg",
+               "format":[  
+                         "Vinyl",
+                         "7\"",
+                         "45 RPM",
+                         "Mono"
+                         ],
+               "country":"Czechoslovakia",
+               "barcode":[  
+                          "D 03487/A C",
+                          "D 03488/B C",
+                          "BIEM",
+                          "70 1",
+                          "h"
+                          ],
+               "uri":"/Milan-Drobn%C3%BD-A-The-Rainbow-Na%C4%8Fa-Urb%C3%A1nkov%C3%A1-Bambule-Bijou-B%C3%A1c-Mosaznej-D%C5%BEb%C3%A1n/release/7491475",
+               "community":{  
+               "want":0,
+               "have":5
+               },
+               "label":[  
+                        "Supraphon",
+                        "Zp\u011bva\u010dka Supraphonu"
+                        ],
+               "catno":"0 43 0763",
+               "year":"1970",
+               "genre":[  
+                        "Pop"
+                        ],
+               "title":"Milan Drobn\u00fd A The Rainbow / Na\u010fa Urb\u00e1nkov\u00e1 - Bambule Bijou B\u00e1c / Mosaznej D\u017eb\u00e1n",
+               "resource_url":"https://api.discogs.com/releases/7491475",
+               "type":"release",
+               "id":7491475
+               },
+               {  
+               "style":[  
+                        "Vocal",
+                        "Schlager"
+                        ],
+               "thumb":"https://api-img.discogs.com/hDaUqZCgVsQqvb13lVoZ8EbcMwc=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-9294098-1478106405-3838.jpeg.jpg",
+               "format":[  
+                         "Vinyl",
+                         "7\"",
+                         "45 RPM",
+                         "Mono",
+                         "Repress"
+                         ],
+               "country":"Czechoslovakia",
+               "barcode":[  
+                          "D 03487",
+                          "D 03488",
+                          "D 03487/B B",
+                          "D 03488/A B",
+                          "BIEM",
+                          "h",
+                          "69 2"
+                          ],
+               "uri":"/Milan-Drobn%C3%BD-Na%C4%8Fa-Urb%C3%A1nkov%C3%A1-Bambule-Bijou-B%C3%A1c-Mosaznej-D%C5%BEb%C3%A1n/release/9294098",
+               "community":{  
+               "want":0,
+               "have":2
+               },
+               "label":[  
+                        "Supraphon",
+                        "Zp\u011bva\u010dka Supraphonu"
+                        ],
+               "catno":"0 43 0763",
+               "year":"1969",
+               "genre":[  
+                        "Pop"
+                        ],
+               "title":"Milan Drobn\u00fd / Na\u010fa Urb\u00e1nkov\u00e1 - Bambule Bijou B\u00e1c / Mosaznej D\u017eb\u00e1n",
+               "resource_url":"https://api.discogs.com/releases/9294098",
+               "type":"release",
+               "id":9294098
+               },
+               {  
+               "style":[  
+                        "Vocal",
+                        "Schlager"
+                        ],
+               "thumb":"https://api-img.discogs.com/a_ie1Jtd82dhA2PDdLJCeCjbrCs=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2053381-1261133956.jpeg.jpg",
+               "format":[  
+                         "Vinyl",
+                         "7\"",
+                         "45 RPM",
+                         "Mono"
+                         ],
+               "country":"Czechoslovakia",
+               "barcode":[  
+                          "D 03487",
+                          "D 03488",
+                          "h",
+                          "BIEM",
+                          "69 1"
+                          ],
+               "uri":"/Milan-Drobn%C3%BD-Na%C4%8Fa-Urb%C3%A1nkov%C3%A1-Bratislavsk%C3%A1-Lyra/master/208492",
+               "community":{  
+               "want":1,
+               "have":18
+               },
+               "label":[  
+                        "Supraphon",
+                        "Bratislavsk\u00e1 L\u00fdra"
+                        ],
+               "catno":"0 43 0763",
+               "year":"1969",
+               "genre":[  
+                        "Pop"
+                        ],
+               "title":"Milan Drobn\u00fd / Na\u010fa Urb\u00e1nkov\u00e1 - Bambule Bijou B\u00e1c / Mosaznej D\u017eb\u00e1n",
+               "resource_url":"https://api.discogs.com/masters/208492",
+               "type":"master",
+               "id":208492
+               },
+               {  
+               "style":[  
+                        "Punk"
+                        ],
+               "thumb":"https://api-img.discogs.com/KqjCUIxAmZ3KYqy7eQ8sI29WjO4=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3102092-1315838692.jpeg.jpg",
+               "format":[  
+                         "Cassette",
+                         "Album"
+                         ],
+               "country":"Germany",
+               "barcode":[  
+               
+               ],
+               "uri":"/Muff-Potter-Bambule-Kleine-Geschichten-Aus-Dem-Gro%C3%9Fen-Knast/release/3102092",
+               "community":{  
+               "want":28,
+               "have":34
+               },
+               "label":[  
+                        "Not On Label (Muff Potter Self-released)"
+                        ],
+               "catno":"none",
+               "year":"1994",
+               "genre":[  
+                        "Rock"
+                        ],
+               "title":"Muff Potter - Bambule (Kleine Geschichten Aus Dem Gro\u00dfen Knast)",
+               "resource_url":"https://api.discogs.com/releases/3102092",
+               "type":"release",
+               "id":3102092
+               },
+               {  
+               "style":[  
+                        "Punk"
+                        ],
+               "thumb":"https://api-img.discogs.com/3pPNX21Nd6VykzDgTfhePGrxidM=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-4771128-1375003337-5685.jpeg.jpg",
+               "format":[  
+                         "Vinyl",
+                         "LP"
+                         ],
+               "country":"Germany",
+               "barcode":[  
+               
+               ],
+               "uri":"/Tanzende-Kadaver-Bambule-Rarit%C3%A4ten-Obskures-1996-2009/master/580016",
+               "community":{  
+               "want":0,
+               "have":12
+               },
+               "label":[  
+                        "Ron Jeremy Tribute Records"
+                        ],
+               "catno":"RJT-LP-002",
+               "year":"2009",
+               "genre":[  
+                        "Rock"
+                        ],
+               "title":"Tanzende Kadaver - Bambule : Rarit\u00e4ten & Obskures 1996 - 2009",
+               "resource_url":"https://api.discogs.com/masters/580016",
+               "type":"master",
+               "id":580016
+               }
+               ]
+}

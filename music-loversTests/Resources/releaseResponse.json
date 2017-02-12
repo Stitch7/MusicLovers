@@ -1,0 +1,1001 @@
+{
+    "videos":[
+              {
+              "duration":252,
+              "embed":true,
+              "title":"Absolut Beginner - Das Boot - Bambule",
+              "description":"Absolut Beginner - Das Boot - Bambule",
+              "uri":"https://www.youtube.com/watch?v=i8EbRZpsJb0"
+              },
+              {
+              "duration":209,
+              "embed":true,
+              "title":"Absolut Beginner - Hammerhart - Bambule",
+              "description":"Absolut Beginner - Hammerhart - Bambule",
+              "uri":"https://www.youtube.com/watch?v=QJYKISKGuKI"
+              },
+              {
+              "duration":261,
+              "embed":true,
+              "title":"Absolut Beginner - Rock On - Bambule",
+              "description":"Absolut Beginner - Rock On - Bambule",
+              "uri":"https://www.youtube.com/watch?v=DWd9Fx30TBw"
+              },
+              {
+              "duration":256,
+              "embed":true,
+              "title":"Absolut Beginner - Liebeslied - Bambule",
+              "description":"Absolut Beginner - Liebeslied - Bambule",
+              "uri":"https://www.youtube.com/watch?v=AEWVbTtZ8H4"
+              },
+              {
+              "duration":278,
+              "embed":true,
+              "title":"Absolut Beginner - F\u00fcchse - Bambule",
+              "description":"Absolut Beginner - F\u00fcchse - Bambule",
+              "uri":"https://www.youtube.com/watch?v=7IZHihkxIGU"
+              },
+              {
+              "duration":259,
+              "embed":true,
+              "title":"Absolut Beginner - Fahr'n - Bambule",
+              "description":"Absolut Beginner - Fahr'n - Bambule",
+              "uri":"https://www.youtube.com/watch?v=fTldd6k0gpc"
+              },
+              {
+              "duration":281,
+              "embed":true,
+              "title":"Absolut Beginner - Showmaster - Bambule",
+              "description":"Absolut Beginner - Showmaster - Bambule",
+              "uri":"https://www.youtube.com/watch?v=2_lc8J_2kTE"
+              },
+              {
+              "duration":235,
+              "embed":true,
+              "title":"Absolut Beginner - Geht Was - Bambule",
+              "description":"Absolut Beginner - Geht Was - Bambule",
+              "uri":"https://www.youtube.com/watch?v=Bcou06Zym4k"
+              },
+              {
+              "duration":304,
+              "embed":true,
+              "title":"Absolut Beginner - Geh Bitte - Bambule",
+              "description":"Absolut Beginner - Geh Bitte - Bambule",
+              "uri":"https://www.youtube.com/watch?v=INcDZD5IAAk"
+              },
+              {
+              "duration":295,
+              "embed":true,
+              "title":"Absolut Beginner - Nie Nett - Bambule",
+              "description":"Absolut Beginner - Nie Nett - Bambule",
+              "uri":"https://www.youtube.com/watch?v=vpn9DsEfP1I"
+              },
+              {
+              "duration":260,
+              "embed":true,
+              "title":"Absolut Beginner - Mikro in der Hand - Bambule",
+              "description":"Absolut Beginner - Mikro in der Hand - Bambule",
+              "uri":"https://www.youtube.com/watch?v=44GOPm4qFrU"
+              },
+              {
+              "duration":247,
+              "embed":true,
+              "title":"Absolut Beginner - Nicht Allein - Bambule",
+              "description":"Absolut Beginner - Nicht Allein - Bambule",
+              "uri":"https://www.youtube.com/watch?v=6AhCXvmVYe8"
+              }
+              ],
+    "series":[
+
+    ],
+    "labels":[
+              {
+              "name":"Buback",
+              "entity_type":"1",
+              "catno":"070 095-2",
+              "resource_url":"https://api.discogs.com/labels/8738",
+              "id":8738,
+              "entity_type_name":"Label"
+              },
+              {
+              "name":"Universal Music GmbH",
+              "entity_type":"1",
+              "catno":"UMD 70095",
+              "resource_url":"https://api.discogs.com/labels/38506",
+              "id":38506,
+              "entity_type_name":"Label"
+              }
+              ],
+    "community":{
+        "status":"Accepted",
+        "rating":{
+            "count":64,
+            "average":4.36
+        },
+        "want":34,
+        "contributors":[
+                        {
+                        "username":"Polynomial-C",
+                        "resource_url":"https://api.discogs.com/users/Polynomial-C"
+                        },
+                        {
+                        "username":"mawiles",
+                        "resource_url":"https://api.discogs.com/users/mawiles"
+                        },
+                        {
+                        "username":"bigbadbraun",
+                        "resource_url":"https://api.discogs.com/users/bigbadbraun"
+                        },
+                        {
+                        "username":"subzzee",
+                        "resource_url":"https://api.discogs.com/users/subzzee"
+                        },
+                        {
+                        "username":"NLK",
+                        "resource_url":"https://api.discogs.com/users/NLK"
+                        },
+                        {
+                        "username":"misasa",
+                        "resource_url":"https://api.discogs.com/users/misasa"
+                        },
+                        {
+                        "username":"baalofconfusion",
+                        "resource_url":"https://api.discogs.com/users/baalofconfusion"
+                        },
+                        {
+                        "username":"Dr.Obnoxious",
+                        "resource_url":"https://api.discogs.com/users/Dr.Obnoxious"
+                        },
+                        {
+                        "username":"twentynine",
+                        "resource_url":"https://api.discogs.com/users/twentynine"
+                        },
+                        {
+                        "username":"Habitak_Berlin",
+                        "resource_url":"https://api.discogs.com/users/Habitak_Berlin"
+                        },
+                        {
+                        "username":"gaga789",
+                        "resource_url":"https://api.discogs.com/users/gaga789"
+                        },
+                        {
+                        "username":"unfinishedsympathy",
+                        "resource_url":"https://api.discogs.com/users/unfinishedsympathy"
+                        },
+                        {
+                        "username":"Juri81",
+                        "resource_url":"https://api.discogs.com/users/Juri81"
+                        },
+                        {
+                        "username":"Freezer_Records",
+                        "resource_url":"https://api.discogs.com/users/Freezer_Records"
+                        },
+                        {
+                        "username":"yoyoyeyo",
+                        "resource_url":"https://api.discogs.com/users/yoyoyeyo"
+                        }
+                        ],
+        "have":277,
+        "submitter":{
+            "username":"Polynomial-C",
+            "resource_url":"https://api.discogs.com/users/Polynomial-C"
+        },
+        "data_quality":"Needs Vote"
+    },
+    "year":1998,
+    "images":[
+              {
+              "uri":"https://api-img.discogs.com/U33kyQ_8DI9BKWc4u-Nuh9pEX34=/fit-in/500x500/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-534832-1442305639-2912.jpeg.jpg",
+              "height":500,
+              "width":500,
+              "resource_url":"https://api-img.discogs.com/U33kyQ_8DI9BKWc4u-Nuh9pEX34=/fit-in/500x500/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-534832-1442305639-2912.jpeg.jpg",
+              "type":"primary",
+              "uri150":"https://api-img.discogs.com/-3nTESEQDZZd5CJ7vw2W9rPX99c=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-534832-1442305639-2912.jpeg.jpg"
+              },
+              {
+              "uri":"https://api-img.discogs.com/Zm_suodLdmKIBnbgcJX_FZI5ND0=/fit-in/600x476/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-534832-1173318703.jpeg.jpg",
+              "height":476,
+              "width":600,
+              "resource_url":"https://api-img.discogs.com/Zm_suodLdmKIBnbgcJX_FZI5ND0=/fit-in/600x476/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-534832-1173318703.jpeg.jpg",
+              "type":"secondary",
+              "uri150":"https://api-img.discogs.com/OVPBNcwmRI6GKSKYENkcYudCDKw=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-534832-1173318703.jpeg.jpg"
+              },
+              {
+              "uri":"https://api-img.discogs.com/Ox8Ry97gKbh9m1zG9rUIszunv14=/fit-in/600x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-534832-1173318716.jpeg.jpg",
+              "height":595,
+              "width":600,
+              "resource_url":"https://api-img.discogs.com/Ox8Ry97gKbh9m1zG9rUIszunv14=/fit-in/600x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-534832-1173318716.jpeg.jpg",
+              "type":"secondary",
+              "uri150":"https://api-img.discogs.com/jx1GAeV-CvSTyUhDjHSxg33hlo8=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-534832-1173318716.jpeg.jpg"
+              },
+              {
+              "uri":"https://api-img.discogs.com/Dcclkvc1c4wMgdX2gBqL58T3In8=/fit-in/600x594/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-534832-1173318787.jpeg.jpg",
+              "height":594,
+              "width":600,
+              "resource_url":"https://api-img.discogs.com/Dcclkvc1c4wMgdX2gBqL58T3In8=/fit-in/600x594/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-534832-1173318787.jpeg.jpg",
+              "type":"secondary",
+              "uri150":"https://api-img.discogs.com/dzCq-g23-j6SQ4--xZOxJIbDxQI=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-534832-1173318787.jpeg.jpg"
+              },
+              {
+              "uri":"https://api-img.discogs.com/Qk2QICK-B4uftF3i0cFmQco26PY=/fit-in/264x400/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-534832-1173318802.jpeg.jpg",
+              "height":400,
+              "width":264,
+              "resource_url":"https://api-img.discogs.com/Qk2QICK-B4uftF3i0cFmQco26PY=/fit-in/264x400/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-534832-1173318802.jpeg.jpg",
+              "type":"secondary",
+              "uri150":"https://api-img.discogs.com/mCfwjvQR3ZMamZWvUfa4kGFplbc=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-534832-1173318802.jpeg.jpg"
+              }
+              ],
+    "format_quantity":1,
+    "id":534832,
+    "genres":[
+              "Hip Hop"
+              ],
+    "thumb":"https://api-img.discogs.com/-3nTESEQDZZd5CJ7vw2W9rPX99c=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-534832-1442305639-2912.jpeg.jpg",
+    "num_for_sale":16,
+    "title":"Bambule",
+    "artists":[
+               {
+               "join":",",
+               "name":"Absolute Beginner",
+               "anv":"",
+               "tracks":"",
+               "role":"",
+               "resource_url":"https://api.discogs.com/artists/67095",
+               "id":67095
+               }
+               ],
+    "date_changed":"2016-03-21T14:55:46-07:00",
+    "master_id":50925,
+    "lowest_price":4.0,
+    "status":"Accepted",
+    "released_formatted":"10 Nov 1998",
+    "formats":[
+               {
+               "qty":"1",
+               "descriptions":[
+                               "Album"
+                               ],
+               "name":"CD"
+               }
+               ],
+    "estimated_weight":85,
+    "master_url":"https://api.discogs.com/masters/50925",
+    "released":"1998-11-10",
+    "date_added":"2005-10-26T05:35:12-07:00",
+    "extraartists":[
+                    {
+                    "join":"",
+                    "name":"Kool Keats",
+                    "anv":"",
+                    "tracks":"",
+                    "role":"Artwork",
+                    "resource_url":"https://api.discogs.com/artists/2288710",
+                    "id":2288710
+                    },
+                    {
+                    "join":"",
+                    "name":"Diana L\u00fctge",
+                    "anv":"",
+                    "tracks":"",
+                    "role":"Artwork [Co-Artwork (Collage)]",
+                    "resource_url":"https://api.discogs.com/artists/4953902",
+                    "id":4953902
+                    },
+                    {
+                    "join":"",
+                    "name":"D\u00f6rte Fitschen-Rath",
+                    "anv":"",
+                    "tracks":"",
+                    "role":"Artwork [Co-Artwork]",
+                    "resource_url":"https://api.discogs.com/artists/2322841",
+                    "id":2322841
+                    },
+                    {
+                    "join":"",
+                    "name":"Bernd Steinwedel",
+                    "anv":"",
+                    "tracks":"",
+                    "role":"Mastered By",
+                    "resource_url":"https://api.discogs.com/artists/314110",
+                    "id":314110
+                    },
+                    {
+                    "join":"",
+                    "name":"Mathias Bothor",
+                    "anv":"",
+                    "tracks":"",
+                    "role":"Photography By",
+                    "resource_url":"https://api.discogs.com/artists/481967",
+                    "id":481967
+                    },
+                    {
+                    "join":"",
+                    "name":"Absolute Beginner",
+                    "anv":"Beginner",
+                    "tracks":"",
+                    "role":"Producer, Recorded By, Mixed By",
+                    "resource_url":"https://api.discogs.com/artists/67095",
+                    "id":67095
+                    },
+                    {
+                    "join":"",
+                    "name":"Matthias Arfmann",
+                    "anv":"",
+                    "tracks":"",
+                    "role":"Producer, Recorded By, Mixed By",
+                    "resource_url":"https://api.discogs.com/artists/42522",
+                    "id":42522
+                    },
+                    {
+                    "join":"",
+                    "name":"Denyo",
+                    "anv":"",
+                    "tracks":"",
+                    "role":"Rap",
+                    "resource_url":"https://api.discogs.com/artists/174008",
+                    "id":174008
+                    },
+                    {
+                    "join":"",
+                    "name":"Ei\u00dffeldt",
+                    "anv":"",
+                    "tracks":"",
+                    "role":"Rap",
+                    "resource_url":"https://api.discogs.com/artists/83520",
+                    "id":83520
+                    },
+                    {
+                    "join":"",
+                    "name":"DJ Mad",
+                    "anv":"",
+                    "tracks":"",
+                    "role":"Scratches [Cuts]",
+                    "resource_url":"https://api.discogs.com/artists/56913",
+                    "id":56913
+                    }
+                    ],
+    "tracklist":[
+                 {
+                 "duration":"4:09",
+                 "position":"1",
+                 "type_":"track",
+                 "extraartists":[
+                                 {
+                                 "join":"",
+                                 "name":"Ei\u00dffeldt",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Producer [Beats]",
+                                 "resource_url":"https://api.discogs.com/artists/83520",
+                                 "id":83520
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"Ei\u00dffeldt",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/83520",
+                                 "id":83520
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"denyo",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/174008",
+                                 "id":174008
+                                 }
+                                 ],
+                 "title":"Das Boot"
+                 },
+                 {
+                 "duration":"3:23",
+                 "position":"2",
+                 "type_":"track",
+                 "extraartists":[
+                                 {
+                                 "join":"",
+                                 "name":"Ei\u00dffeldt",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Producer [Beats]",
+                                 "resource_url":"https://api.discogs.com/artists/83520",
+                                 "id":83520
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"Ei\u00dffeldt",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/83520",
+                                 "id":83520
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"denyo",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/174008",
+                                 "id":174008
+                                 }
+                                 ],
+                 "title":"Hammerhart"
+                 },
+                 {
+                 "duration":"4:17",
+                 "position":"3",
+                 "type_":"track",
+                 "extraartists":[
+                                 {
+                                 "join":"",
+                                 "name":"denyo",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Producer [Beats]",
+                                 "resource_url":"https://api.discogs.com/artists/174008",
+                                 "id":174008
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"Ei\u00dffeldt",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/83520",
+                                 "id":83520
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"Platin Martin",
+                                 "anv":"PlatinMartin",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/143307",
+                                 "id":143307
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"denyo",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/174008",
+                                 "id":174008
+                                 }
+                                 ],
+                 "title":"Rock On"
+                 },
+                 {
+                 "duration":"4:12",
+                 "position":"4",
+                 "type_":"track",
+                 "extraartists":[
+                                 {
+                                 "join":"",
+                                 "name":"Ei\u00dffeldt",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Producer [Beats]",
+                                 "resource_url":"https://api.discogs.com/artists/83520",
+                                 "id":83520
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"Ei\u00dffeldt",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/83520",
+                                 "id":83520
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"denyo",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/174008",
+                                 "id":174008
+                                 }
+                                 ],
+                 "title":"Liebes Lied"
+                 },
+                 {
+                 "duration":"4:34",
+                 "position":"5",
+                 "type_":"track",
+                 "extraartists":[
+                                 {
+                                 "join":"",
+                                 "name":"Samy Deluxe",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Featuring",
+                                 "resource_url":"https://api.discogs.com/artists/88398",
+                                 "id":88398
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"Ei\u00dffeldt",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Producer [Beats]",
+                                 "resource_url":"https://api.discogs.com/artists/83520",
+                                 "id":83520
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"Platin Martin",
+                                 "anv":"PlatinMartin",
+                                 "tracks":"",
+                                 "role":"Producer [Beats]",
+                                 "resource_url":"https://api.discogs.com/artists/143307",
+                                 "id":143307
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"Ei\u00dffeldt",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/83520",
+                                 "id":83520
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"Samy Sorge",
+                                 "anv":"S. Sorge",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/257156",
+                                 "id":257156
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"denyo",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/174008",
+                                 "id":174008
+                                 }
+                                 ],
+                 "title":"F\u00fcchse"
+                 },
+                 {
+                 "duration":"4:14",
+                 "position":"6",
+                 "type_":"track",
+                 "extraartists":[
+                                 {
+                                 "join":"",
+                                 "name":"Ei\u00dffeldt",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Producer [Beats]",
+                                 "resource_url":"https://api.discogs.com/artists/83520",
+                                 "id":83520
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"denyo",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Producer [Beats]",
+                                 "resource_url":"https://api.discogs.com/artists/174008",
+                                 "id":174008
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"Ei\u00dffeldt",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/83520",
+                                 "id":83520
+                                 }
+                                 ],
+                 "title":"Fahr'n"
+                 },
+                 {
+                 "duration":"4:15",
+                 "position":"7",
+                 "type_":"track",
+                 "extraartists":[
+                                 {
+                                 "join":"",
+                                 "name":"Ei\u00dffeldt",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Producer [Beats]",
+                                 "resource_url":"https://api.discogs.com/artists/83520",
+                                 "id":83520
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"Ei\u00dffeldt",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/83520",
+                                 "id":83520
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"denyo",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/174008",
+                                 "id":174008
+                                 }
+                                 ],
+                 "title":"Showmaster"
+                 },
+                 {
+                 "duration":"3:51",
+                 "position":"8",
+                 "type_":"track",
+                 "extraartists":[
+                                 {
+                                 "join":"",
+                                 "name":"Ei\u00dffeldt",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Producer [Beats]",
+                                 "resource_url":"https://api.discogs.com/artists/83520",
+                                 "id":83520
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"Ei\u00dffeldt",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/83520",
+                                 "id":83520
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"denyo",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/174008",
+                                 "id":174008
+                                 }
+                                 ],
+                 "title":"Geht Was"
+                 },
+                 {
+                 "duration":"5:01",
+                 "position":"9",
+                 "type_":"track",
+                 "extraartists":[
+                                 {
+                                 "join":"",
+                                 "name":"DJ Mad",
+                                 "anv":"Mad",
+                                 "tracks":"",
+                                 "role":"Producer [Beats]",
+                                 "resource_url":"https://api.discogs.com/artists/56913",
+                                 "id":56913
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"Ei\u00dffeldt",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/83520",
+                                 "id":83520
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"Platin Martin",
+                                 "anv":"PlatinMartin",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/143307",
+                                 "id":143307
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"denyo",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/174008",
+                                 "id":174008
+                                 }
+                                 ],
+                 "title":"Geh Bitte"
+                 },
+                 {
+                 "duration":"4:52",
+                 "position":"10",
+                 "type_":"track",
+                 "extraartists":[
+                                 {
+                                 "join":"",
+                                 "name":"DAS BO",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Featuring",
+                                 "resource_url":"https://api.discogs.com/artists/53438",
+                                 "id":53438
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"Ferris MC",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Featuring",
+                                 "resource_url":"https://api.discogs.com/artists/50577",
+                                 "id":50577
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"Ei\u00dffeldt",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Producer [Beats]",
+                                 "resource_url":"https://api.discogs.com/artists/83520",
+                                 "id":83520
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"DAS BO",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/53438",
+                                 "id":53438
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"Ei\u00dffeldt",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/83520",
+                                 "id":83520
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"Ferris MC",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/50577",
+                                 "id":50577
+                                 },
+                                 {
+                                 "join":"",
+                                 "name":"denyo",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/174008",
+                                 "id":174008
+                                 }
+                                 ],
+                 "title":"Nie Nett"
+                 },
+                 {  
+                 "duration":"4:17",
+                 "position":"11",
+                 "type_":"track",
+                 "extraartists":[  
+                                 {  
+                                 "join":"",
+                                 "name":"David P.",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Featuring",
+                                 "resource_url":"https://api.discogs.com/artists/94131",
+                                 "id":94131
+                                 },
+                                 {  
+                                 "join":"",
+                                 "name":"Ei\u00dffeldt",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Producer [Beats]",
+                                 "resource_url":"https://api.discogs.com/artists/83520",
+                                 "id":83520
+                                 },
+                                 {  
+                                 "join":"",
+                                 "name":"David Papo",
+                                 "anv":"D. Papo",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/2816060",
+                                 "id":2816060
+                                 },
+                                 {  
+                                 "join":"",
+                                 "name":"Ei\u00dffeldt",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/83520",
+                                 "id":83520
+                                 },
+                                 {  
+                                 "join":"",
+                                 "name":"denyo",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/174008",
+                                 "id":174008
+                                 }
+                                 ],
+                 "title":"Mikro In Der Hand"
+                 },
+                 {  
+                 "duration":"4:06",
+                 "position":"12",
+                 "type_":"track",
+                 "extraartists":[  
+                                 {  
+                                 "join":"",
+                                 "name":"denyo",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Producer [Beats]",
+                                 "resource_url":"https://api.discogs.com/artists/174008",
+                                 "id":174008
+                                 },
+                                 {  
+                                 "join":"",
+                                 "name":"Ei\u00dffeldt",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/83520",
+                                 "id":83520
+                                 },
+                                 {  
+                                 "join":"",
+                                 "name":"denyo",
+                                 "anv":"",
+                                 "tracks":"",
+                                 "role":"Written-By [Text]",
+                                 "resource_url":"https://api.discogs.com/artists/174008",
+                                 "id":174008
+                                 }
+                                 ],
+                 "title":"Nicht Allein"
+                 }
+                 ],
+    "notes":"Track 12 is misspelled \"Ncht Allein\" on the back cover. The correct title is given in the booklet.\r\n\r\nAll tracks produced, recorded, and mixed at Turtle Bay Studios April-August '98.\r\nMastered at Studio Nord Bremen.\r\n\r\n\u2117 1998 Buback Tontr\u00e4ger \r\n\u00a9 1998 Universal Music GmbH\r\n\r\nDistributed by the local BMG company.\r\n\r\nMade in the EU. \r\n\r\nThis is a GEMA/BIEM release. Please note, there is a [url=http://www.discogs.com/release/4282389]similar BIEM/MCPS release[/url] as well.",
+    "identifiers":[  
+                   {  
+                   "type":"Rights Society",
+                   "value":"GEMA/BIEM"
+                   },
+                   {  
+                   "type":"Barcode",
+                   "description":"Printed",
+                   "value":"6 02507 00952 6"
+                   },
+                   {  
+                   "type":"Barcode",
+                   "description":"Scanned",
+                   "value":"602507009526"
+                   },
+                   {  
+                   "type":"Label Code",
+                   "value":"LC 1846"
+                   },
+                   {  
+                   "type":"Matrix / Runout",
+                   "value":"UMD70095 070 095-2 01 +"
+                   },
+                   {  
+                   "type":"Mastering SID Code",
+                   "value":"IFPI L002"
+                   },
+                   {  
+                   "type":"Mould SID Code",
+                   "value":"IFPI 01BF"
+                   },
+                   {  
+                   "type":"Other",
+                   "value":"MADE IN GERMANY BY UNIVERSAL M&L"
+                   }
+                   ],
+    "companies":[  
+                 {  
+                 "name":"Buback",
+                 "entity_type":"13",
+                 "catno":"",
+                 "resource_url":"https://api.discogs.com/labels/8738",
+                 "id":8738,
+                 "entity_type_name":"Phonographic Copyright (p)"
+                 },
+                 {  
+                 "name":"Universal Music GmbH",
+                 "entity_type":"14",
+                 "catno":"",
+                 "resource_url":"https://api.discogs.com/labels/38506",
+                 "id":38506,
+                 "entity_type_name":"Copyright (c)"
+                 },
+                 {  
+                 "name":"Turtle Bay Studios",
+                 "entity_type":"23",
+                 "catno":"",
+                 "resource_url":"https://api.discogs.com/labels/276444",
+                 "id":276444,
+                 "entity_type_name":"Recorded At"
+                 },
+                 {  
+                 "name":"Studio-Nord-Bremen",
+                 "entity_type":"29",
+                 "catno":"",
+                 "resource_url":"https://api.discogs.com/labels/263985",
+                 "id":263985,
+                 "entity_type_name":"Mastered At"
+                 },
+                 {  
+                 "name":"Turtle Bay Studios",
+                 "entity_type":"26",
+                 "catno":"",
+                 "resource_url":"https://api.discogs.com/labels/276444",
+                 "id":276444,
+                 "entity_type_name":"Produced At"
+                 },
+                 {  
+                 "name":"Turtle Bay Studios",
+                 "entity_type":"27",
+                 "catno":"",
+                 "resource_url":"https://api.discogs.com/labels/276444",
+                 "id":276444,
+                 "entity_type_name":"Mixed At"
+                 },
+                 {  
+                 "name":"Sempex Musikverlag",
+                 "entity_type":"21",
+                 "catno":"",
+                 "resource_url":"https://api.discogs.com/labels/320268",
+                 "id":320268,
+                 "entity_type_name":"Published By"
+                 },
+                 {  
+                 "name":"Edition Tromo",
+                 "entity_type":"21",
+                 "catno":"",
+                 "resource_url":"https://api.discogs.com/labels/342131",
+                 "id":342131,
+                 "entity_type_name":"Published By"
+                 },
+                 {  
+                 "name":"Freibank",
+                 "entity_type":"21",
+                 "catno":"",
+                 "resource_url":"https://api.discogs.com/labels/21699",
+                 "id":21699,
+                 "entity_type_name":"Published By"
+                 },
+                 {  
+                 "name":"Scoop Musikverlag",
+                 "entity_type":"21",
+                 "catno":"",
+                 "resource_url":"https://api.discogs.com/labels/576396",
+                 "id":576396,
+                 "entity_type_name":"Published By"
+                 }
+                 ],
+    "uri":"https://www.discogs.com/Absolute-Beginner-Bambule/release/534832",
+    "country":"Germany",
+    "resource_url":"https://api.discogs.com/releases/534832",
+    "data_quality":"Needs Vote"
+}
