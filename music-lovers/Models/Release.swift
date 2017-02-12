@@ -1,10 +1,10 @@
-***REMOVED***
-***REMOVED***  Release.swift
-***REMOVED***  music-lovers
-***REMOVED***
-***REMOVED***  Created by Christopher Reitz on 08/02/2017.
-***REMOVED***  Copyright © 2017 Christopher Reitz. All rights reserved.
-***REMOVED***
+//
+//  Release.swift
+//  music-lovers
+//
+//  Created by Christopher Reitz on 08/02/2017.
+//  Copyright © 2017 Christopher Reitz. All rights reserved.
+//
 
 import Foundation
 
@@ -32,13 +32,13 @@ struct Release {
     let uri: URL
     let videos: [Video]
     let year: Int
-***REMOVED***
+}
 
 extension Release {
     var mainImage: Image? {
         return images.first
-***REMOVED***
-***REMOVED***
+    }
+}
 
 extension Release: JSONInitializable {
     init?(json: JSON) {
@@ -73,7 +73,7 @@ extension Release: JSONInitializable {
             let year = json["year"] as? Int
         else {
             return nil
-    ***REMOVED***
+        }
 
         let notes = json["notes"] as? String ?? ""
         let videosJson = json["videos"] as? [JSON] ?? [JSON]()
@@ -101,5 +101,5 @@ extension Release: JSONInitializable {
         self.uri = uri
         self.videos = videosJson.flatMap(Video.init)
         self.year = year
-***REMOVED***
-***REMOVED***
+    }
+}

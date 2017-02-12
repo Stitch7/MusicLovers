@@ -1,10 +1,10 @@
-***REMOVED***
-***REMOVED***  Member.swift
-***REMOVED***  music-lovers
-***REMOVED***
-***REMOVED***  Created by Christopher Reitz on 10/02/2017.
-***REMOVED***  Copyright © 2017 Christopher Reitz. All rights reserved.
-***REMOVED***
+//
+//  Member.swift
+//  music-lovers
+//
+//  Created by Christopher Reitz on 10/02/2017.
+//  Copyright © 2017 Christopher Reitz. All rights reserved.
+//
 
 import Foundation
 
@@ -13,7 +13,7 @@ struct Member {
     let active: Bool
     let name: String
     let resourceUrl: URL
-***REMOVED***
+}
 
 extension Member: JSONInitializable {
     init?(json: JSON) {
@@ -25,11 +25,11 @@ extension Member: JSONInitializable {
             let resourceUrl = URL(string: resourceUrlStr)
         else {
             return nil
-    ***REMOVED***
+        }
 
         self.id = id
         self.active = active
         self.name = name
         self.resourceUrl = resourceUrl
-***REMOVED***
-***REMOVED***
+    }
+}

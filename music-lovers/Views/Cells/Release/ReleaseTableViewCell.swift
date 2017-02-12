@@ -1,10 +1,10 @@
-***REMOVED***
-***REMOVED***  ReleaseTableViewCell.swift
-***REMOVED***  music-lovers
-***REMOVED***
-***REMOVED***  Created by Christopher Reitz on 10/02/2017.
-***REMOVED***  Copyright © 2017 Christopher Reitz. All rights reserved.
-***REMOVED***
+//
+//  ReleaseTableViewCell.swift
+//  music-lovers
+//
+//  Created by Christopher Reitz on 10/02/2017.
+//  Copyright © 2017 Christopher Reitz. All rights reserved.
+//
 
 import UIKit
 
@@ -22,20 +22,20 @@ class ReleaseTableViewCell: UITableViewCell {
 
     var release: Release? {
         didSet {
-            guard let release = self.release else { return ***REMOVED***
+            guard let release = self.release else { return }
 
-            labelsValueLabel.text = Array(Set(release.labels.map{ $0.name ***REMOVED***)).joined(separator: "\n")
-            formatsValueLabel.text = release.formats.map{ $0.name ***REMOVED***.joined(separator: ", ")
+            labelsValueLabel.text = Array(Set(release.labels.map{ $0.name })).joined(separator: "\n")
+            formatsValueLabel.text = release.formats.map{ $0.name }.joined(separator: ", ")
             releasedValueLabel.text = "\(release.country), \(release.year)"
             genreValueLabel.text = release.genres.joined(separator: ", ")
 
             if let imageUrl = release.mainImage?.uri {
                 UIImage.downloadFrom(url: imageUrl) { image in
                     self.coverImageView.image = image
-            ***REMOVED***
-        ***REMOVED***
-    ***REMOVED***
-***REMOVED***
+                }
+            }
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -66,5 +66,5 @@ class ReleaseTableViewCell: UITableViewCell {
         formatsValueLabel.numberOfLines = 0
         releasedValueLabel.numberOfLines = 0
         genreValueLabel.numberOfLines = 0
-***REMOVED***
-***REMOVED***
+    }
+}

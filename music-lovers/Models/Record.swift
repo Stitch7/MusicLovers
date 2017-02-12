@@ -1,10 +1,10 @@
-***REMOVED***
-***REMOVED***  Record.swift
-***REMOVED***  music-lovers
-***REMOVED***
-***REMOVED***  Created by Christopher Reitz on 10/02/2017.
-***REMOVED***  Copyright © 2017 Christopher Reitz. All rights reserved.
-***REMOVED***
+//
+//  Record.swift
+//  music-lovers
+//
+//  Created by Christopher Reitz on 10/02/2017.
+//  Copyright © 2017 Christopher Reitz. All rights reserved.
+//
 
 import Foundation
 
@@ -20,7 +20,7 @@ struct Record {
     let thumb: URL
     let type: String
     let year: Int
-***REMOVED***
+}
 extension Record: JSONInitializable {
     init?(json: JSON) {
         guard
@@ -39,7 +39,7 @@ extension Record: JSONInitializable {
             let year = json["year"] as? Int
         else {
             return nil
-    ***REMOVED***
+        }
 
         self.id = id
         self.title = title
@@ -52,5 +52,5 @@ extension Record: JSONInitializable {
         self.thumb = thumb
         self.type = type
         self.year = year
-***REMOVED***
-***REMOVED***
+    }
+}

@@ -1,10 +1,10 @@
-***REMOVED***
-***REMOVED***  SearchItem.swift
-***REMOVED***  music-lovers
-***REMOVED***
-***REMOVED***  Created by Christopher Reitz on 08/02/2017.
-***REMOVED***  Copyright © 2017 Christopher Reitz. All rights reserved.
-***REMOVED***
+//
+//  SearchItem.swift
+//  music-lovers
+//
+//  Created by Christopher Reitz on 08/02/2017.
+//  Copyright © 2017 Christopher Reitz. All rights reserved.
+//
 
 import Foundation
 
@@ -22,7 +22,7 @@ struct SearchItem {
     let barcode: [String]
     let catno: String
     let year: String
-***REMOVED***
+}
 
 extension SearchItem: JSONInitializable {
     init?(json: JSON) {
@@ -44,7 +44,7 @@ extension SearchItem: JSONInitializable {
             let year = json["year"] as? String
         else {
             return nil
-    ***REMOVED***
+        }
 
         self.id = id
         self.title = title
@@ -59,5 +59,5 @@ extension SearchItem: JSONInitializable {
         self.barcode = barcode
         self.catno = catno
         self.year = year
-***REMOVED***
-***REMOVED***
+    }
+}

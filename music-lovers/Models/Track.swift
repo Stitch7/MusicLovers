@@ -1,10 +1,10 @@
-***REMOVED***
-***REMOVED***  Track.swift
-***REMOVED***  music-lovers
-***REMOVED***
-***REMOVED***  Created by Christopher Reitz on 08/02/2017.
-***REMOVED***  Copyright © 2017 Christopher Reitz. All rights reserved.
-***REMOVED***
+//
+//  Track.swift
+//  music-lovers
+//
+//  Created by Christopher Reitz on 08/02/2017.
+//  Copyright © 2017 Christopher Reitz. All rights reserved.
+//
 
 import Foundation
 
@@ -13,7 +13,7 @@ struct Track {
     let title: String
     let duration: String
     let extraArtists: [Artist]?
-***REMOVED***
+}
 
 extension Track: JSONInitializable {
     init?(json: JSON) {
@@ -23,7 +23,7 @@ extension Track: JSONInitializable {
             let duration = json["duration"] as? String
         else {
             return nil
-    ***REMOVED***
+        }
 
         self.position = position
         self.title = title
@@ -32,7 +32,7 @@ extension Track: JSONInitializable {
         var extraArtists: [Artist]? = nil
         if let extraArtistsJson = json["extraartists"] as? [JSON] {
             extraArtists = extraArtistsJson.flatMap(Artist.init)
-    ***REMOVED***
+        }
         self.extraArtists = extraArtists
-***REMOVED***
-***REMOVED***
+    }
+}

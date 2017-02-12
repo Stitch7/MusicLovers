@@ -1,10 +1,10 @@
-***REMOVED***
-***REMOVED***  String+leftPadding.swift
-***REMOVED***  music-lovers
-***REMOVED***
-***REMOVED***  Created by Christopher Reitz on 09/02/2017.
-***REMOVED***  Copyright © 2017 Christopher Reitz. All rights reserved.
-***REMOVED***
+//
+//  String+leftPadding.swift
+//  music-lovers
+//
+//  Created by Christopher Reitz on 09/02/2017.
+//  Copyright © 2017 Christopher Reitz. All rights reserved.
+//
 
 import Foundation
 
@@ -13,8 +13,8 @@ extension String {
         let newLength = self.characters.count
         if newLength < toLength {
             return String(repeatElement(character, count: toLength - newLength)) + self
-    ***REMOVED*** else {
+        } else {
             return self.substring(from: index(self.startIndex, offsetBy: newLength - toLength))
-    ***REMOVED***
-***REMOVED***
-***REMOVED***
+        }
+    }
+}

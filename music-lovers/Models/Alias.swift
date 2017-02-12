@@ -1,10 +1,10 @@
-***REMOVED***
-***REMOVED***  Alias.swift
-***REMOVED***  music-lovers
-***REMOVED***
-***REMOVED***  Created by Christopher Reitz on 10/02/2017.
-***REMOVED***  Copyright © 2017 Christopher Reitz. All rights reserved.
-***REMOVED***
+//
+//  Alias.swift
+//  music-lovers
+//
+//  Created by Christopher Reitz on 10/02/2017.
+//  Copyright © 2017 Christopher Reitz. All rights reserved.
+//
 
 import Foundation
 
@@ -12,7 +12,7 @@ struct Alias {
     let id: Int
     let name: String
     let resourceUrl: URL
-***REMOVED***
+}
 
 extension Alias: JSONInitializable {
     init?(json: JSON) {
@@ -23,10 +23,10 @@ extension Alias: JSONInitializable {
             let resourceUrl = URL(string: resourceUrlStr)
         else {
             return nil
-    ***REMOVED***
+        }
 
         self.id = id
         self.name = name
         self.resourceUrl = resourceUrl
-***REMOVED***
-***REMOVED***
+    }
+}

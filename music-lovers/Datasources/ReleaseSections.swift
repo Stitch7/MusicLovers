@@ -1,10 +1,10 @@
-***REMOVED***
-***REMOVED***  ReleaseSections.swift
-***REMOVED***  music-lovers
-***REMOVED***
-***REMOVED***  Created by Christopher Reitz on 10/02/2017.
-***REMOVED***  Copyright © 2017 Christopher Reitz. All rights reserved.
-***REMOVED***
+//
+//  ReleaseSections.swift
+//  music-lovers
+//
+//  Created by Christopher Reitz on 10/02/2017.
+//  Copyright © 2017 Christopher Reitz. All rights reserved.
+//
 
 import UIKit
 
@@ -15,7 +15,7 @@ enum ReleaseSections: Int {
     case notes
     case credits
     case videos
-***REMOVED***
+}
 
 extension ReleaseSections: SectionsDataEnum {
 
@@ -26,7 +26,7 @@ extension ReleaseSections: SectionsDataEnum {
         tableView.register(UINib(nibName: "TrackTableViewCell", bundle: nil), forCellReuseIdentifier: "TrackCell")
         tableView.register(UINib(nibName: "VideoTableViewCell", bundle: nil), forCellReuseIdentifier: "VideoCell")
         tableView.estimatedRowHeight = 21
-***REMOVED***
+    }
 
     var name: String? {
         switch self {
@@ -36,11 +36,11 @@ extension ReleaseSections: SectionsDataEnum {
         case .notes: return "Notes"
         case .credits: return "Credits"
         case .videos: return "Videos"
-    ***REMOVED***
-***REMOVED***
+        }
+    }
 
     func numberOfRows(object: Any) -> Int {
-        guard let release = object as? Release else { return 0 ***REMOVED***
+        guard let release = object as? Release else { return 0 }
 
         switch self {
         case .teaser: return 1
@@ -49,8 +49,8 @@ extension ReleaseSections: SectionsDataEnum {
         case .notes: return release.notes.characters.count > 0 ? 1 : 0
         case .credits: return release.extraArtists.count
         case .videos: return release.videos.count
-    ***REMOVED***
-***REMOVED***
+        }
+    }
 
     func generateCell(for tableView: UITableView, at indexPath: IndexPath, with object: Any?) -> UITableViewCell {
         let release = object as? Release
@@ -61,14 +61,14 @@ extension ReleaseSections: SectionsDataEnum {
         case .notes: return generateNotesCell(for: tableView, at: indexPath, with: release)
         case .credits: return generateCreditsCell(for: tableView, at: indexPath, with: release)
         case .videos: return generateVideosCell(for: tableView, at: indexPath, with: release)
-    ***REMOVED***
-***REMOVED***
+        }
+    }
 
     func generateTeaserCell(for tableView: UITableView, at indexPath: IndexPath, with release: Release?) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReleaseCell", for: indexPath) as! ReleaseTableViewCell
         cell.release = release
         return cell
-***REMOVED***
+    }
 
     func generateArtistCell(for tableView: UITableView, at indexPath: IndexPath, with release: Release?) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
@@ -76,19 +76,17 @@ extension ReleaseSections: SectionsDataEnum {
         cell.accessoryType = .disclosureIndicator
         cell.textLabel?.numberOfLines = 0
         cell.textLabel?.font = UIFont.systemFont(ofSize: 15.0)
-        ***REMOVED*** TODO
-***REMOVED***        cell.textLabel?.textColor = UIApplication.shared.keyWindow?.tintColor
-        cell.textLabel?.textColor = .blue
+        cell.textLabel?.textColor = UIApplication.tintColor
         let artist = release?.artists[indexPath.row]
-        cell.textLabel?.text = [artist?.role, artist?.name].flatMap{$0***REMOVED***.filter{!$0.isEmpty***REMOVED***.joined(separator: " - ")
+        cell.textLabel?.text = [artist?.role, artist?.name].flatMap{$0}.filter{!$0.isEmpty}.joined(separator: " - ")
         return cell
-***REMOVED***
+    }
 
     func generateTracksCell(for tableView: UITableView, at indexPath: IndexPath, with release: Release?) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TrackCell", for: indexPath) as! TrackTableViewCell
         cell.track = release?.tracklist[indexPath.row]
         return cell
-***REMOVED***
+    }
 
     func generateNotesCell(for tableView: UITableView, at indexPath: IndexPath, with release: Release?) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
@@ -99,7 +97,7 @@ extension ReleaseSections: SectionsDataEnum {
         cell.textLabel?.textColor = .black
         cell.textLabel?.text = release?.notes
         return cell
-***REMOVED***
+    }
 
     func generateCreditsCell(for tableView: UITableView, at indexPath: IndexPath, with release: Release?) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
@@ -109,13 +107,13 @@ extension ReleaseSections: SectionsDataEnum {
         cell.textLabel?.font = UIFont.systemFont(ofSize: 15.0)
         cell.textLabel?.textColor = .black
         let artist = release?.extraArtists[indexPath.row]
-        cell.textLabel?.text = [artist?.role, artist?.name].flatMap{$0***REMOVED***.filter{!$0.isEmpty***REMOVED***.joined(separator: " - ")
+        cell.textLabel?.text = [artist?.role, artist?.name].flatMap{$0}.filter{!$0.isEmpty}.joined(separator: " - ")
         return cell
-***REMOVED***
+    }
 
     func generateVideosCell(for tableView: UITableView, at indexPath: IndexPath, with release: Release?) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "VideoCell", for: indexPath) as! VideoTableViewCell
         cell.video = release?.videos[indexPath.row]
         return cell
-***REMOVED***
-***REMOVED***
+    }
+}

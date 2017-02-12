@@ -1,10 +1,10 @@
-***REMOVED***
-***REMOVED***  Artist.swift
-***REMOVED***  music-lovers
-***REMOVED***
-***REMOVED***  Created by Christopher Reitz on 08/02/2017.
-***REMOVED***  Copyright © 2017 Christopher Reitz. All rights reserved.
-***REMOVED***
+//
+//  Artist.swift
+//  music-lovers
+//
+//  Created by Christopher Reitz on 08/02/2017.
+//  Copyright © 2017 Christopher Reitz. All rights reserved.
+//
 
 import Foundation
 
@@ -20,13 +20,13 @@ struct Artist {
     let members: [Member]?
     let namevariations: [String]?
     let urls: [URL]?
-***REMOVED***
+}
 
 extension Artist {
     var mainImage: Image? {
         return images?.first
-***REMOVED***
-***REMOVED***
+    }
+}
 
 extension Artist: JSONInitializable {
     init?(json: JSON) {
@@ -37,18 +37,18 @@ extension Artist: JSONInitializable {
             let resourceUrl = URL(string: resourceUrlStr)
         else {
             return nil
-    ***REMOVED***
+        }
 
         let imagesJson = json["images"] as? [JSON] ?? [JSON]()
         let aliasesJson = json["aliases"] as? [JSON] ?? [JSON]()
         let membersJson = json["members"] as? [JSON] ?? [JSON]()
 
-        ***REMOVED*** Combine `uri` + `urls`
+        // Combine `uri` + `urls`
         let urlsStr = json["urls"] as? [String]
-        var urls = urlsStr?.flatMap{URL(string: $0)***REMOVED***
+        var urls = urlsStr?.flatMap{URL(string: $0)}
         if let uriStr = json["uri"] as? String, let uri = URL(string: uriStr) {
             urls?.append(uri)
-    ***REMOVED***
+        }
 
         self.id = id
         self.name = name
@@ -60,5 +60,5 @@ extension Artist: JSONInitializable {
         self.members = membersJson.flatMap(Member.init)
         self.namevariations = json["namevariations"] as? [String]
         self.urls = urls
-***REMOVED***
-***REMOVED***
+    }
+}

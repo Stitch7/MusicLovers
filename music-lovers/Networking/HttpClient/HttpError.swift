@@ -1,13 +1,13 @@
-***REMOVED***
-***REMOVED***  HttpError.swift
-***REMOVED***  music-lovers
-***REMOVED***
-***REMOVED***  Created by Christopher Reitz on 08/02/2017.
-***REMOVED***  Copyright © 2017 Christopher Reitz. All rights reserved.
-***REMOVED***
+//
+//  HttpError.swift
+//  music-lovers
+//
+//  Created by Christopher Reitz on 08/02/2017.
+//  Copyright © 2017 Christopher Reitz. All rights reserved.
+//
 
 enum HttpError: Error {
     case invalidUrl
     case requestFailed(statusCode: Int, message: String)
     case unknown(Error?)
-***REMOVED***
+}

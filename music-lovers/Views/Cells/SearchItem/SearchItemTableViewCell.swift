@@ -1,10 +1,10 @@
-***REMOVED***
-***REMOVED***  SearchItemTableViewCell.swift
-***REMOVED***  music-lovers
-***REMOVED***
-***REMOVED***  Created by Christopher Reitz on 09/02/2017.
-***REMOVED***  Copyright © 2017 Christopher Reitz. All rights reserved.
-***REMOVED***
+//
+//  SearchItemTableViewCell.swift
+//  music-lovers
+//
+//  Created by Christopher Reitz on 09/02/2017.
+//  Copyright © 2017 Christopher Reitz. All rights reserved.
+//
 
 import UIKit
 
@@ -18,14 +18,14 @@ class SearchItemTableViewCell: UITableViewCell {
     
     var searchItem: SearchItem? {
         didSet {
-            guard let searchItem = self.searchItem else { return ***REMOVED***
+            guard let searchItem = self.searchItem else { return }
 
             titleLabel.text = searchItem.title
             labelLabel.text = Array(Set(searchItem.label)).joined(separator: ", ")
             genreLabel.text = searchItem.genre.joined(separator: ", ")
             countryYearLabel.text = searchItem.country + ", " + searchItem.year
-    ***REMOVED***
-***REMOVED***
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -36,5 +36,5 @@ class SearchItemTableViewCell: UITableViewCell {
 
         titleLabel.numberOfLines = 0
         labelLabel.numberOfLines = 3
-***REMOVED***
-***REMOVED***
+    }
+}

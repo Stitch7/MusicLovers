@@ -1,10 +1,10 @@
-***REMOVED***
-***REMOVED***  Video.swift
-***REMOVED***  music-lovers
-***REMOVED***
-***REMOVED***  Created by Christopher Reitz on 08/02/2017.
-***REMOVED***  Copyright © 2017 Christopher Reitz. All rights reserved.
-***REMOVED***
+//
+//  Video.swift
+//  music-lovers
+//
+//  Created by Christopher Reitz on 08/02/2017.
+//  Copyright © 2017 Christopher Reitz. All rights reserved.
+//
 
 import Foundation
 
@@ -14,7 +14,7 @@ struct Video {
     let duration: Int
     let embed: Bool
     let uri: URL
-***REMOVED***
+}
 
 extension Video: JSONInitializable {
     init?(json: JSON) {
@@ -27,12 +27,12 @@ extension Video: JSONInitializable {
             let uri = URL(string: uriStr)
         else {
             return nil
-    ***REMOVED***
+        }
 
         self.title = title
         self.description = description
         self.duration = duration
         self.embed = embed
         self.uri = uri
-***REMOVED***
-***REMOVED***
+    }
+}

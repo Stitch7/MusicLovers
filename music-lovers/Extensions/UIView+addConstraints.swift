@@ -1,10 +1,10 @@
-***REMOVED***
-***REMOVED***  UIView+addConstraints.swift
-***REMOVED***  music-lovers
-***REMOVED***
-***REMOVED***  Created by Christopher Reitz on 09/02/2017.
-***REMOVED***  Copyright © 2017 Christopher Reitz. All rights reserved.
-***REMOVED***
+//
+//  UIView+addConstraints.swift
+//  music-lovers
+//
+//  Created by Christopher Reitz on 09/02/2017.
+//  Copyright © 2017 Christopher Reitz. All rights reserved.
+//
 
 import UIKit
 
@@ -14,7 +14,7 @@ extension UIView {
                                                       options: [],
                                                       metrics: nil,
                                                       views: views))
-***REMOVED***
+    }
 
     func addHorizontallyCenteredConstraints(forView view: UIView, inSuperView superView: UIView) {
         let constraints = NSLayoutConstraint.constraints(
@@ -25,7 +25,7 @@ extension UIView {
         )
 
         addConstraints(constraints)
-***REMOVED***
+    }
 
     func addVerticallyCenteredConstraints(forView view: UIView, inSuperView superView: UIView) {
         let constraints = NSLayoutConstraint.constraints(
@@ -36,19 +36,19 @@ extension UIView {
         )
 
         addConstraints(constraints)
-***REMOVED***
-***REMOVED***
+    }
+}
 
 extension UIViewController {
     func addConstraints(format: String, views: [String : Any]) {
         view.addConstraints(format: format, views: views)
-***REMOVED***
+    }
 
     func addHorizontallyCenterConstraints(forView view: UIView, inSuperView superView: UIView) {
         view.addHorizontallyCenteredConstraints(forView: view, inSuperView: superView)
-***REMOVED***
+    }
 
     func addVerticallyCenteredConstraints(forView view: UIView, inSuperView superView: UIView) {
         view.addVerticallyCenteredConstraints(forView: view, inSuperView: superView)
-***REMOVED***
-***REMOVED***
+    }
+}

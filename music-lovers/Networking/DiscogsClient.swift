@@ -1,20 +1,20 @@
-***REMOVED***
-***REMOVED***  DiscogsClient.swift
-***REMOVED***  music-lovers
-***REMOVED***
-***REMOVED***  Created by Christopher Reitz on 08/02/2017.
-***REMOVED***  Copyright © 2017 Christopher Reitz. All rights reserved.
-***REMOVED***
+//
+//  DiscogsClient.swift
+//  music-lovers
+//
+//  Created by Christopher Reitz on 08/02/2017.
+//  Copyright © 2017 Christopher Reitz. All rights reserved.
+//
 
 import Foundation
 
 struct DiscogsClient {
 
-    ***REMOVED*** MARK: - Properties
+    // MARK: - Properties
 
     let httpClient: HttpClient
 
-    ***REMOVED*** MARK: - Endpoints
+    // MARK: - Endpoints
 
     func search(title: String, completion: @escaping (Result<[SearchItem]>) -> ()) {
         let path = "/database/search"
@@ -29,30 +29,30 @@ struct DiscogsClient {
             guard
                 let dictionaries = json as? JSON,
                 let results = dictionaries["results"] as? [JSON]
-            else { return nil ***REMOVED***
+            else { return nil }
 
             return results.flatMap(SearchItem.init)
-    ***REMOVED***)
+        })
         httpClient.load(resource: resource, completion: completion)
-***REMOVED***
+    }
 
     func release(id: Int, completion: @escaping (Result<Release>) -> ()) {
         let path = "/releases/\(id)"
         let resource = Resource<Release>(path: path, parseJSON: { json in
-            guard let releaseJson = json as? JSON else { return nil ***REMOVED***
+            guard let releaseJson = json as? JSON else { return nil }
             return Release(json: releaseJson)
-    ***REMOVED***)
+        })
         httpClient.load(resource: resource, completion: completion)
-***REMOVED***
+    }
 
     func artist(id: Int, completion: @escaping (Result<Artist>) -> ()) {
         let path = "/artists/\(id)"
         let resource = Resource<Artist>(path: path, parseJSON: { json in
-            guard let artistJson = json as? JSON else { return nil ***REMOVED***
+            guard let artistJson = json as? JSON else { return nil }
             return Artist(json: artistJson)
-    ***REMOVED***)
+        })
         httpClient.load(resource: resource, completion: completion)
-***REMOVED***
+    }
 
     func discography(artistId: Int, completion: @escaping (Result<[Record]>) -> ()) {
         let path = "/artists/\(artistId)/releases"
@@ -60,10 +60,10 @@ struct DiscogsClient {
             guard
                 let dictionaries = json as? JSON,
                 let releases = dictionaries["releases"] as? [JSON]
-            else { return nil ***REMOVED***
+            else { return nil }
 
             return releases.flatMap(Record.init)
-    ***REMOVED***)
+        })
         httpClient.load(resource: resource, completion: completion)
-***REMOVED***
-***REMOVED***
+    }
+}

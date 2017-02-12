@@ -1,10 +1,10 @@
-***REMOVED***
-***REMOVED***  TrackTableViewCell.swift
-***REMOVED***  music-lovers
-***REMOVED***
-***REMOVED***  Created by Christopher Reitz on 09/02/2017.
-***REMOVED***  Copyright © 2017 Christopher Reitz. All rights reserved.
-***REMOVED***
+//
+//  TrackTableViewCell.swift
+//  music-lovers
+//
+//  Created by Christopher Reitz on 09/02/2017.
+//  Copyright © 2017 Christopher Reitz. All rights reserved.
+//
 
 import UIKit
 
@@ -16,13 +16,13 @@ class TrackTableViewCell: UITableViewCell {
 
     var track: Track? {
         didSet {
-            guard let track = self.track else { return ***REMOVED***
+            guard let track = self.track else { return }
 
             self.positionLabel.text = track.position
             self.titleLabel.text = track.title
             self.durationLabel.text = track.duration
-    ***REMOVED***
-***REMOVED***
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,5 +34,5 @@ class TrackTableViewCell: UITableViewCell {
 
         durationLabel.textAlignment = .right
         durationLabel.textColor = .darkGray
-***REMOVED***
-***REMOVED***
+    }
+}

@@ -1,26 +1,26 @@
-***REMOVED***
-***REMOVED***  SearchViewController.swift
-***REMOVED***  music-lovers
-***REMOVED***
-***REMOVED***  Created by Christopher Reitz on 08/02/2017.
-***REMOVED***  Copyright © 2017 Christopher Reitz. All rights reserved.
-***REMOVED***
+//
+//  SearchViewController.swift
+//  music-lovers
+//
+//  Created by Christopher Reitz on 08/02/2017.
+//  Copyright © 2017 Christopher Reitz. All rights reserved.
+//
 
 import UIKit
 
 class SearchViewController: UITableViewController, UISearchBarDelegate {
 
-    ***REMOVED*** MARK: - Properties
+    // MARK: - Properties
 
     var discogsClient: DiscogsClient = {
         guard let url = URL(string: Config.DiscogsApi.BaseUrl) else {
             fatalError("Invalid DiscogsApi.BaseUrl in Config")
-    ***REMOVED***
+        }
 
         let credentials = Credentials(key: Config.DiscogsApi.Key, secret: Config.DiscogsApi.Secret)
         let foundationClient = FoundationClient(url: url, credentials: credentials)
         return DiscogsClient(httpClient: foundationClient)
-***REMOVED***()
+    }()
 
     var detailViewController: ReleaseViewController? = nil
     let searchController = UISearchController(searchResultsController: nil)
@@ -30,7 +30,7 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
     let loadingView = LoadingView()
     let noResultsView = NoResultsView()
 
-    ***REMOVED*** MARK: - UIViewController
+    // MARK: - UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,25 +40,25 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
         configureTableView()
         configureLoadingView()
         configureNoResultsView()
-***REMOVED***
+    }
 
     override func viewWillAppear(_ animated: Bool) {
         self.clearsSelectionOnViewWillAppear = self.splitViewController!.isCollapsed
         super.viewWillAppear(animated)
         tableView.tableHeaderView = searchController.searchBar
-***REMOVED***
+    }
 
     func configureDetailViewController() {
-        guard let split = self.splitViewController else { return ***REMOVED***
+        guard let split = self.splitViewController else { return }
 
         let controllers = split.viewControllers
         let navigationVC = controllers[controllers.count-1] as! UINavigationController
         self.detailViewController = navigationVC.topViewController as? ReleaseViewController
-***REMOVED***
+    }
 
     func configureNavigationBar() {
         title = "Music Lovers"
-***REMOVED***
+    }
 
     func configureTableView() {
         tableView.register(UINib(nibName: "SearchItemTableViewCell", bundle: nil), forCellReuseIdentifier: "SearchItemCell")
@@ -72,7 +72,7 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
         searchController.searchBar.sizeToFit()
         searchController.searchBar.delegate = self
         searchController.searchBar.placeholder = "Search for a record name"
-***REMOVED***
+    }
 
     func configureLoadingView() {
         searchController.view.addSubview(loadingView)
@@ -80,7 +80,7 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
         let views =  ["loadingView": loadingView]
         searchController.view.addConstraints(format: "V:|[loadingView]|", views: views)
         searchController.view.addConstraints(format: "H:|[loadingView]|", views: views)
-***REMOVED***
+    }
 
     func configureNoResultsView() {
         searchController.view.addSubview(noResultsView)
@@ -88,17 +88,17 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
         let views =  ["noResultsView": noResultsView]
         searchController.view.addConstraints(format: "V:|[noResultsView]|", views: views)
         searchController.view.addConstraints(format: "H:|[noResultsView]|", views: views)
-***REMOVED***
+    }
 
-    ***REMOVED*** MARK: - Table View
+    // MARK: - Table View
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "showDetail", sender: indexPath)
-***REMOVED***
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return searchItems.count
-***REMOVED***
+    }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SearchItemCell", for: indexPath) as! SearchItemTableViewCell
@@ -109,25 +109,25 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
         let cacheKey = NSString(string: searchItem.thumb.absoluteString)
         if let cachedImage = cache.object(forKey: cacheKey) {
             cell.coverImageView?.image = cachedImage
-    ***REMOVED*** else {
+        } else {
             cell.coverImageView?.image = UIImage(named: "default-release")
             UIImage.downloadFrom(url: searchItem.thumb) { image in
-                guard let coverImage = image else { return ***REMOVED***
+                guard let coverImage = image else { return }
                 self.cache.setObject(coverImage, forKey: cacheKey)
 
                 if let updateCell = tableView.cellForRow(at: indexPath) as? SearchItemTableViewCell {
                     updateCell.coverImageView?.image = coverImage
-            ***REMOVED***
-        ***REMOVED***
-    ***REMOVED***
+                }
+            }
+        }
 
         return cell
-***REMOVED***
+    }
 
-    ***REMOVED*** MARK: - UISearchBarDelegate
+    // MARK: - UISearchBarDelegate
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        guard let searchString = searchController.searchBar.text else { return ***REMOVED***
+        guard let searchString = searchController.searchBar.text else { return }
 
         noResultsView.isHidden = true
         loadingView.isHidden = false
@@ -139,9 +139,9 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
                     DispatchQueue.main.async {
                         self.noResultsView.isHidden = false
                         self.loadingView.isHidden = true
-                ***REMOVED***
+                    }
                     return
-            ***REMOVED***
+                }
 
                 DispatchQueue.main.async {
                     self.title = searchString
@@ -150,25 +150,25 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
                     print("reloaded")
 
                     self.loadingView.isHidden = true
-            ***REMOVED***
+                }
             case .failure(let error):
                 if case let .requestFailed(statusCode, message) = error as! HttpError {
                     print("discogsClient.failure: statusCode: \(statusCode) - message: \(message)")
-            ***REMOVED***
+                }
 
                 DispatchQueue.main.async {
                     self.loadingView.isHidden = true
-            ***REMOVED***
-        ***REMOVED***
-    ***REMOVED***
-***REMOVED***
+                }
+            }
+        }
+    }
 
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchController.searchBar.resignFirstResponder()
         tableView.reloadData()
-***REMOVED***
+    }
 
-    ***REMOVED*** MARK: - Segues
+    // MARK: - Segues
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
@@ -180,7 +180,7 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
                 releaseVC.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
                 releaseVC.navigationItem.leftItemsSupplementBackButton = true
                 searchController.searchBar.resignFirstResponder()
-        ***REMOVED***
-    ***REMOVED***
-***REMOVED***
-***REMOVED***
+            }
+        }
+    }
+}

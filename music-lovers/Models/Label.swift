@@ -1,10 +1,10 @@
-***REMOVED***
-***REMOVED***  Label.swift
-***REMOVED***  music-lovers
-***REMOVED***
-***REMOVED***  Created by Christopher Reitz on 08/02/2017.
-***REMOVED***  Copyright © 2017 Christopher Reitz. All rights reserved.
-***REMOVED***
+//
+//  Label.swift
+//  music-lovers
+//
+//  Created by Christopher Reitz on 08/02/2017.
+//  Copyright © 2017 Christopher Reitz. All rights reserved.
+//
 
 import Foundation
 
@@ -15,7 +15,7 @@ struct Label {
     let catNo: String
     let entityType: String
     let entityTypeName: String
-***REMOVED***
+}
 
 extension Label: JSONInitializable {
     init?(json: JSON) {
@@ -29,7 +29,7 @@ extension Label: JSONInitializable {
             let entityTypeName = json["entity_type_name"] as? String
         else {
             return nil
-    ***REMOVED***
+        }
 
         self.id = id
         self.name = name
@@ -37,5 +37,5 @@ extension Label: JSONInitializable {
         self.catNo = catNo
         self.entityType = entityType
         self.entityTypeName = entityTypeName
-***REMOVED***
-***REMOVED***
+    }
+}

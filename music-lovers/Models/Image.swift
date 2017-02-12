@@ -1,10 +1,10 @@
-***REMOVED***
-***REMOVED***  Image.swift
-***REMOVED***  music-lovers
-***REMOVED***
-***REMOVED***  Created by Christopher Reitz on 08/02/2017.
-***REMOVED***  Copyright © 2017 Christopher Reitz. All rights reserved.
-***REMOVED***
+//
+//  Image.swift
+//  music-lovers
+//
+//  Created by Christopher Reitz on 08/02/2017.
+//  Copyright © 2017 Christopher Reitz. All rights reserved.
+//
 
 import Foundation
 
@@ -15,7 +15,7 @@ struct Image {
     let resourceUrl: URL
     let uri: URL
     let uri150: URL
-***REMOVED***
+}
 
 extension Image: JSONInitializable {
     init?(json: JSON) {
@@ -31,7 +31,7 @@ extension Image: JSONInitializable {
             let uri150 = URL(string: uri150Str)
         else {
             return nil
-    ***REMOVED***
+        }
 
         self.type = type
         self.width = width
@@ -39,5 +39,5 @@ extension Image: JSONInitializable {
         self.resourceUrl = resourceUrl
         self.uri = uri
         self.uri150 = uri150
-***REMOVED***
-***REMOVED***
+    }
+}

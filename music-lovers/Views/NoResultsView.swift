@@ -1,16 +1,16 @@
-***REMOVED***
-***REMOVED***  NoResultsView.swift
-***REMOVED***  music-lovers
-***REMOVED***
-***REMOVED***  Created by Christopher Reitz on 09/02/2017.
-***REMOVED***  Copyright © 2017 Christopher Reitz. All rights reserved.
-***REMOVED***
+//
+//  NoResultsView.swift
+//  music-lovers
+//
+//  Created by Christopher Reitz on 09/02/2017.
+//  Copyright © 2017 Christopher Reitz. All rights reserved.
+//
 
 import UIKit
 
 class NoResultsView: UIView {
 
-    ***REMOVED*** MARK: - Properties
+    // MARK: - Properties
 
     var label: UILabel = {
         let label = UILabel()
@@ -20,31 +20,31 @@ class NoResultsView: UIView {
         label.textColor = .darkGray
         label.textAlignment = .center
         return label
-***REMOVED***()
+    }()
 
-    ***REMOVED*** MARK: - Initializers
+    // MARK: - Initializers
 
     override init(frame: CGRect) {
         super.init(frame: frame)
 
         configure()
         configureSubviews()
-***REMOVED***
+    }
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-***REMOVED***
+    }
 
     private func configure() {
         translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = .white
         isHidden = true
-***REMOVED***
+    }
 
     private func configureSubviews() {
         addSubview(label)
 
         addVerticallyCenteredConstraints(forView: label, inSuperView: self)
         addHorizontallyCenteredConstraints(forView: label, inSuperView: self)
-***REMOVED***
-***REMOVED***
+    }
+}
