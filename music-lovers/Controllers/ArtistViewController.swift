@@ -17,17 +17,23 @@ class ArtistViewController: UITableViewController {
             title = baseArtist?.name
         }
     }
-    var discogsClient: DiscogsClient?
 
-    let loadingView = LoadingView()
     lazy var dataSource: SectionsDataSource<ArtistSections> = {
         SectionsDataSource<ArtistSections>(tableView: self.tableView)
     }()
+
+    var delegate: SectionsDataDelegate<ArtistSections>?
+    var discogsClient: DiscogsClient?
+    let loadingView = LoadingView()
 
     // MARK: - UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.delegate = SectionsDataDelegate<ArtistSections>(tableView: self.tableView) { indexPath in
+            self.didSelectRowAt(indexPath: indexPath)
+        }
 
         configure(loadingView: loadingView)
         loadData()
@@ -49,13 +55,12 @@ class ArtistViewController: UITableViewController {
                 }
 
                 self.dataSource.object = artist
+                self.delegate?.object = artist
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
+                    self.loadingView.remove()
                     if let image = artist.mainImage {
                         UIImage.downloadFrom(url: image.uri, completion: { image in
-                            defer {
-                                self.loadingView.remove()
-                            }
                             guard let artistImage = image else { return }
                             let artistImageView = UIImageView(image: artistImage)
                             self.tableView.setAndLayoutTableHeaderView(header: artistImageView)
@@ -71,9 +76,9 @@ class ArtistViewController: UITableViewController {
         }
     }
 
-    // MARK: - UITableViewDelegate
+    // MARK: - Events
 
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func didSelectRowAt(indexPath: IndexPath) {
         guard let artistSection = ArtistSections(rawValue: indexPath.section) else { fatalError("Invalid section") }
 
         switch artistSection {

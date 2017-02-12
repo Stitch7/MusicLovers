@@ -14,6 +14,8 @@ class SectionsDataSource<SectionsEnum>: NSObject, UITableViewDataSource where Se
 
     var object: Any?
 
+    // MARK: - Initializers
+
     init(tableView: UITableView) {
         tableView.rowHeight = UITableViewAutomaticDimension
         SectionsEnum.setup(tableView: tableView)
@@ -25,7 +27,11 @@ class SectionsDataSource<SectionsEnum>: NSObject, UITableViewDataSource where Se
     // MARK: - UITableViewDataSource
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return SectionsEnum(rawValue: section)?.name
+        guard let object = self.object else { return nil }
+
+        let sectionsEnum = SectionsEnum(rawValue: section)
+        let num = sectionsEnum?.numberOfRows(object: object) ?? 0
+        return num > 0 ? sectionsEnum?.name : nil
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {

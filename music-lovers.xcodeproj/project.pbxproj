@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		307354F71E4E88CF00EF1AD9 /* UIApplication+tintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307354F61E4E88CF00EF1AD9 /* UIApplication+tintColor.swift */; };
 		307354F91E4E8A9600EF1AD9 /* UIViewController+MusicLovers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307354F81E4E8A9600EF1AD9 /* UIViewController+MusicLovers.swift */; };
+		307354FB1E50B51400EF1AD9 /* SectionsDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307354FA1E50B51400EF1AD9 /* SectionsDataDelegate.swift */; };
 		30A1CD0E1E4E640B00047390 /* SectionsDataEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A1CD0D1E4E640B00047390 /* SectionsDataEnum.swift */; };
 		30A877591E4B328D00C419F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A877581E4B328D00C419F9 /* AppDelegate.swift */; };
 		30A8775B1E4B328D00C419F9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8775A1E4B328D00C419F9 /* SearchViewController.swift */; };
@@ -76,6 +77,7 @@
 /* Begin PBXFileReference section */
 		307354F61E4E88CF00EF1AD9 /* UIApplication+tintColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+tintColor.swift"; sourceTree = "<group>"; };
 		307354F81E4E8A9600EF1AD9 /* UIViewController+MusicLovers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+MusicLovers.swift"; sourceTree = "<group>"; };
+		307354FA1E50B51400EF1AD9 /* SectionsDataDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsDataDelegate.swift; sourceTree = "<group>"; };
 		30A1CD0D1E4E640B00047390 /* SectionsDataEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsDataEnum.swift; sourceTree = "<group>"; };
 		30A877551E4B328D00C419F9 /* music-lovers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "music-lovers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A877581E4B328D00C419F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +154,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		307354FC1E50B64B00EF1AD9 /* SectionsData */ = {
+			isa = PBXGroup;
+			children = (
+				30A1CD0D1E4E640B00047390 /* SectionsDataEnum.swift */,
+				30FE5C2D1E4E54DE00E9E592 /* SectionsDataSource.swift */,
+				307354FA1E50B51400EF1AD9 /* SectionsDataDelegate.swift */,
+			);
+			name = SectionsData;
+			sourceTree = "<group>";
+		};
 		30A8774C1E4B328D00C419F9 = {
 			isa = PBXGroup;
 			children = (
@@ -344,10 +356,9 @@
 		30FE5C2C1E4E484100E9E592 /* Datasources */ = {
 			isa = PBXGroup;
 			children = (
+				307354FC1E50B64B00EF1AD9 /* SectionsData */,
 				30FE5C2F1E4E56EF00E9E592 /* ArtistSections.swift */,
 				30FE5C311E4E570800E9E592 /* ReleaseSections.swift */,
-				30A1CD0D1E4E640B00047390 /* SectionsDataEnum.swift */,
-				30FE5C2D1E4E54DE00E9E592 /* SectionsDataSource.swift */,
 			);
 			path = Datasources;
 			sourceTree = "<group>";
@@ -503,6 +514,7 @@
 				30A877C61E4CDBC400C419F9 /* LoadingView.swift in Sources */,
 				30A8779C1E4B976100C419F9 /* Format.swift in Sources */,
 				30A8779A1E4B973800C419F9 /* Label.swift in Sources */,
+				307354FB1E50B51400EF1AD9 /* SectionsDataDelegate.swift in Sources */,
 				30A877981E4B971800C419F9 /* Artist.swift in Sources */,
 				30A8778F1E4B5A2C00C419F9 /* JSONInitializable.swift in Sources */,
 				30A877BB1E4C9E7D00C419F9 /* VideoTableViewCell.swift in Sources */,

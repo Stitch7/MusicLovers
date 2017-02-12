@@ -17,17 +17,23 @@ class ReleaseViewController: UITableViewController {
             self.loadData()
         }
     }
-    var discogsClient: DiscogsClient?
 
-    let loadingView = LoadingView()
     lazy var dataSource: SectionsDataSource<ReleaseSections> = {
         SectionsDataSource<ReleaseSections>(tableView: self.tableView)
     }()
+
+    var delegate: SectionsDataDelegate<ReleaseSections>?
+    var discogsClient: DiscogsClient?
+    let loadingView = LoadingView()
 
     // MARK: - UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.delegate = SectionsDataDelegate<ReleaseSections>(tableView: self.tableView) { indexPath in
+            self.didSelectRowAt(indexPath: indexPath)
+        }
 
         configure(loadingView: loadingView)
         loadData()
@@ -52,6 +58,7 @@ class ReleaseViewController: UITableViewController {
                 }
 
                 self.dataSource.object = release
+                self.delegate?.object = release
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                     self.title = release.title
@@ -67,9 +74,9 @@ class ReleaseViewController: UITableViewController {
         }
     }
 
-    // MARK: - UITableViewDelegate
+    // MARK: - Events
 
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func didSelectRowAt(indexPath: IndexPath) {
         guard let releaseSection = ReleaseSections(rawValue: indexPath.section) else { fatalError("Invalid section") }
 
         switch releaseSection {
