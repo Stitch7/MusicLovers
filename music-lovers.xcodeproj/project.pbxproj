@@ -26,6 +26,8 @@
 		305021F31E50E1BA00D6BC61 /* artistResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 305021F21E50E1BA00D6BC61 /* artistResponse.json */; };
 		305021F51E50E24B00D6BC61 /* discographyResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 305021F41E50E24B00D6BC61 /* discographyResponse.json */; };
 		305021F71E50E56A00D6BC61 /* String+leftPaddingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305021F61E50E56A00D6BC61 /* String+leftPaddingTests.swift */; };
+		305021FF1E51014500D6BC61 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 305022011E51014500D6BC61 /* Localizable.strings */; };
+		305022051E51032000D6BC61 /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305022041E51032000D6BC61 /* String+localized.swift */; };
 		307354F71E4E88CF00EF1AD9 /* UIApplication+tintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307354F61E4E88CF00EF1AD9 /* UIApplication+tintColor.swift */; };
 		307354F91E4E8A9600EF1AD9 /* UIViewController+MusicLovers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307354F81E4E8A9600EF1AD9 /* UIViewController+MusicLovers.swift */; };
 		307354FB1E50B51400EF1AD9 /* SectionsDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307354FA1E50B51400EF1AD9 /* SectionsDataDelegate.swift */; };
@@ -113,6 +115,13 @@
 		305021F21E50E1BA00D6BC61 /* artistResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = artistResponse.json; sourceTree = "<group>"; };
 		305021F41E50E24B00D6BC61 /* discographyResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = discographyResponse.json; sourceTree = "<group>"; };
 		305021F61E50E56A00D6BC61 /* String+leftPaddingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+leftPaddingTests.swift"; sourceTree = "<group>"; };
+		305021F91E50EA3C00D6BC61 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		305021FA1E50EA3C00D6BC61 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		305022001E51014500D6BC61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		305022031E51014A00D6BC61 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		305022041E51032000D6BC61 /* String+localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+localized.swift"; sourceTree = "<group>"; };
+		305022061E51076600D6BC61 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		305022071E51076600D6BC61 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		307354F61E4E88CF00EF1AD9 /* UIApplication+tintColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+tintColor.swift"; sourceTree = "<group>"; };
 		307354F81E4E8A9600EF1AD9 /* UIViewController+MusicLovers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+MusicLovers.swift"; sourceTree = "<group>"; };
 		307354FA1E50B51400EF1AD9 /* SectionsDataDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsDataDelegate.swift; sourceTree = "<group>"; };
@@ -347,6 +356,7 @@
 				30A877661E4B328D00C419F9 /* Info.plist */,
 				30A877631E4B328D00C419F9 /* LaunchScreen.storyboard */,
 				30A8775E1E4B328D00C419F9 /* Main.storyboard */,
+				305022011E51014500D6BC61 /* Localizable.strings */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -420,6 +430,7 @@
 				30CF22971E4E33E400464097 /* UITableView+setAndLayoutTableHeaderView.swift */,
 				30A877C71E4CDD5900C419F9 /* UIView+addConstraints.swift */,
 				307354F81E4E8A9600EF1AD9 /* UIViewController+MusicLovers.swift */,
+				305022041E51032000D6BC61 /* String+localized.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -520,6 +531,8 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
+				fr,
 			);
 			mainGroup = 30A8774C1E4B328D00C419F9;
 			productRefGroup = 30A877561E4B328D00C419F9 /* Products */;
@@ -541,6 +554,7 @@
 				30CF228B1E4DF8AB00464097 /* RecordTableViewCell.xib in Resources */,
 				30A877AD1E4BE03B00C419F9 /* SearchItemTableViewCell.xib in Resources */,
 				30A877651E4B328D00C419F9 /* LaunchScreen.storyboard in Resources */,
+				305021FF1E51014500D6BC61 /* Localizable.strings in Resources */,
 				30A877621E4B328D00C419F9 /* Assets.xcassets in Resources */,
 				30A877B21E4C816100C419F9 /* TrackTableViewCell.xib in Resources */,
 				30CF229F1E4E3DF300464097 /* ReleaseTableViewCell.xib in Resources */,
@@ -594,6 +608,7 @@
 				30CF22A31E4E428400464097 /* UIImage+downloadFrom.swift in Sources */,
 				30A8778B1E4B599300C419F9 /* HttpError.swift in Sources */,
 				30CF228D1E4DFED400464097 /* Member.swift in Sources */,
+				305022051E51032000D6BC61 /* String+localized.swift in Sources */,
 				30A877C41E4CBFD700C419F9 /* ArtistViewController.swift in Sources */,
 				30CF228A1E4DF8AB00464097 /* RecordTableViewCell.swift in Sources */,
 				30A877AC1E4BE03B00C419F9 /* SearchItemTableViewCell.swift in Sources */,
@@ -649,10 +664,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		305022011E51014500D6BC61 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				305022001E51014500D6BC61 /* Base */,
+				305022031E51014A00D6BC61 /* de */,
+				305022071E51076600D6BC61 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		30A8775E1E4B328D00C419F9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				30A8775F1E4B328D00C419F9 /* Base */,
+				305021FA1E50EA3C00D6BC61 /* de */,
+				305022061E51076600D6BC61 /* fr */,
 			);
 			name = Main.storyboard;
 			path = .;
@@ -662,6 +689,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				30A877641E4B328D00C419F9 /* Base */,
+				305021F91E50EA3C00D6BC61 /* de */,
 			);
 			name = LaunchScreen.storyboard;
 			path = .;
@@ -674,6 +702,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -724,6 +753,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

@@ -27,61 +27,61 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8WO-wc-osa">
-                        <rect key="frame" x="116" y="8" width="75" height="16"/>
+                        <rect key="frame" x="116" y="8" width="90" height="16"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="75" id="8ha-ho-sX5"/>
+                            <constraint firstAttribute="width" constant="90" id="8ha-ho-sX5"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCh-Sd-7kS">
-                        <rect key="frame" x="196" y="8" width="365" height="16"/>
+                        <rect key="frame" x="211" y="8" width="350" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FW-ZC-cRo">
-                        <rect key="frame" x="116" y="29" width="75" height="16"/>
+                        <rect key="frame" x="116" y="29" width="90" height="16"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="75" id="FGM-TJ-Eib"/>
+                            <constraint firstAttribute="width" constant="90" id="FGM-TJ-Eib"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IND-KI-jWT">
-                        <rect key="frame" x="196" y="29" width="365" height="16"/>
+                        <rect key="frame" x="211" y="29" width="350" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRU-pQ-HFV">
-                        <rect key="frame" x="116" y="50" width="75" height="16"/>
+                        <rect key="frame" x="116" y="50" width="90" height="16"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="75" id="SiX-2Z-QI8"/>
+                            <constraint firstAttribute="width" constant="90" id="SiX-2Z-QI8"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HA2-LA-sL6">
-                        <rect key="frame" x="196" y="50" width="365" height="16"/>
+                        <rect key="frame" x="211" y="50" width="350" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="249-F6-x7w">
-                        <rect key="frame" x="116" y="71" width="75" height="16"/>
+                        <rect key="frame" x="116" y="71" width="90" height="16"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="75" id="dRv-Ux-INL"/>
+                            <constraint firstAttribute="width" constant="90" id="dRv-Ux-INL"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6LM-jl-ELK">
-                        <rect key="frame" x="196" y="71" width="365" height="16"/>
+                        <rect key="frame" x="211" y="71" width="350" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>

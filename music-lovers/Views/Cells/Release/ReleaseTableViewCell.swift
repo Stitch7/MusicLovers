@@ -42,10 +42,10 @@ class ReleaseTableViewCell: UITableViewCell {
 
         coverImageView.image = UIImage(named: "default-release")
 
-        labelsLabel.text = "Labels:"
-        formatsLabel.text = "Formats:"
-        releasedLabel.text = "Release:"
-        genreLabel.text = "Genre:"
+        labelsLabel.text = "Labels:".localized
+        formatsLabel.text = "Formats:".localized
+        releasedLabel.text = "Release:".localized
+        genreLabel.text = "Genre:".localized
 
         labelsLabel.textAlignment = .right
         formatsLabel.textAlignment = .right

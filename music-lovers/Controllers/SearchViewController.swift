@@ -64,7 +64,7 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
     }
 
     func configureNavigationBar() {
-        title = "Music Lovers"
+        title = "Music Lovers".localized
     }
 
     func configureTableView() {
@@ -78,7 +78,7 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.sizeToFit()
         searchController.searchBar.delegate = self
-        searchController.searchBar.placeholder = "Search for a record name"
+        searchController.searchBar.placeholder = "Search for a record name".localized
     }
 
     func configureLoadingView() {
@@ -154,7 +154,6 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
                     self.title = searchString
                     self.searchItems = searchItems
                     self.tableView.reloadData()
-                    print("reloaded")
 
                     self.loadingView.isHidden = true
                 }

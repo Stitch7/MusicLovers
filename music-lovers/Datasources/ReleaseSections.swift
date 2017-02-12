@@ -31,11 +31,11 @@ extension ReleaseSections: SectionsDataEnum {
     var name: String? {
         switch self {
         case .teaser: return nil
-        case .artist: return "Artist"
-        case .tracks: return "Tracks"
-        case .notes: return "Notes"
-        case .credits: return "Credits"
-        case .videos: return "Videos"
+        case .artist: return "Artist".localized
+        case .tracks: return "Tracks".localized
+        case .notes: return "Notes".localized
+        case .credits: return "Credits".localized
+        case .videos: return "Videos".localized
         }
     }
 

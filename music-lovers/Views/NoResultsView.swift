@@ -15,7 +15,7 @@ class NoResultsView: UIView {
     var label: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "No Results"
+        label.text = "No Results".localized
         label.font = UIFont.systemFont(ofSize: 22.0, weight: UIFontWeightLight)
         label.textColor = .darkGray
         label.textAlignment = .center

@@ -29,12 +29,12 @@ extension ArtistSections: SectionsDataEnum {
 
     var name: String? {
         switch self {
-        case .profile: return "Profile"
-        case .discography: return "Discography"
-        case .members: return "Members"
-        case .aliases: return "Aliases"
-        case .namevariations: return "Name Variations"
-        case .urls: return "Links"
+        case .profile: return "Profile".localized
+        case .discography: return "Discography".localized
+        case .members: return "Members".localized
+        case .aliases: return "Aliases".localized
+        case .namevariations: return "Name Variations".localized
+        case .urls: return "Links".localized
         }
     }
 
@@ -91,7 +91,7 @@ extension ArtistSections: SectionsDataEnum {
     func setupDiscographyCell(cell: UITableViewCell, at indexPath: IndexPath, with artist: Artist?) {
         cell.accessoryType = .disclosureIndicator
         cell.textLabel?.textColor = UIApplication.tintColor
-        cell.textLabel?.text = "Discography"
+        cell.textLabel?.text = "Discography".localized
     }
 
     func setupMembersCell(cell: UITableViewCell, at indexPath: IndexPath, with artist: Artist?) {

@@ -1,0 +1,39 @@
+/* 
+  Localizable.strings (EN)
+  music-lovers
+
+  Created by Christopher Reitz on 12/02/2017.
+  Copyright © 2017 Christopher Reitz. All rights reserved.
+*/
+
+"Music Lovers" = "Music Lovers";
+
+/* Search */
+"Search for a record name" = "Search for a record name";
+
+/* Release */
+"Artist" = "Artist";
+"Tracks" = "Tracks";
+"Notes" = "Notes";
+"Credits" = "Credits";
+"Videos" = "Videos";
+
+/* Release Cell */
+"Labels:" = "Labels:";
+"Formats:" = "Formats:";
+"Release:" = "Release:";
+"Genre:" = "Genre:";
+
+/* Artist */
+"Profile" = "Profile";
+"Discography" = "Discography";
+"Members" = "Members";
+"Aliases" = "Aliases";
+"Variations" = "Variations";
+"Links" = "Links";
+
+/* Loading View */
+"Loading" = "Loading";
+
+/* No Results View */
+"No Results" = "No Results";

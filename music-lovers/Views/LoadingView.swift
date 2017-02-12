@@ -24,7 +24,7 @@ class LoadingView: UIView {
     var label: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "LOADING"
+        label.text = "Loading".localized.uppercased()
         label.font = UIFont.systemFont(ofSize: 13.0)
         label.textColor = .darkGray
         label.textAlignment = .center

@@ -71,7 +71,7 @@ class DiscographyViewController: UITableViewController {
     // MARK: - Table View
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Discography"
+        return "Discography".localized
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
