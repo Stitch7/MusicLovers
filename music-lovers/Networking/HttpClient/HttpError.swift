@@ -7,6 +7,7 @@
 ***REMOVED***
 
 enum HttpError: Error {
+    case invalidUrl
     case requestFailed(statusCode: Int, message: String)
     case unknown(Error?)
 ***REMOVED***

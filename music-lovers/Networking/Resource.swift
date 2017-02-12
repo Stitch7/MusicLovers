@@ -14,6 +14,7 @@ struct Resource<T> {
     let needsAuth: Bool
     let method: HttpMethod<Data>
     let parse: (Data) -> T?
+
     func parseError(data: Data?) -> String? {
         let defaultOptions = JSONSerialization.ReadingOptions()
         let json = try? JSONSerialization.jsonObject(with: data!, options: defaultOptions) as? [String: String]

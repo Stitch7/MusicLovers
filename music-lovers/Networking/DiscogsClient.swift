@@ -19,7 +19,9 @@ struct DiscogsClient {
     func search(title: String, completion: @escaping (Result<[SearchItem]>) -> ()) {
         let path = "/database/search"
         let queryParameter = [
+            URLQueryItem(name: "release_title", value: title),
             URLQueryItem(name: "title", value: title),
+            URLQueryItem(name: "type", value: "release"),
             URLQueryItem(name: "per_page", value: "50"),
             URLQueryItem(name: "page", value: "1")
         ]
@@ -36,8 +38,7 @@ struct DiscogsClient {
 
     func release(id: Int, completion: @escaping (Result<Release>) -> ()) {
         let path = "/releases/\(id)"
-        let queryParameter: [URLQueryItem]? = nil
-        let resource = Resource<Release>(path: path, queryParameter: queryParameter, parseJSON: { json in
+        let resource = Resource<Release>(path: path, parseJSON: { json in
             guard let releaseJson = json as? JSON else { return nil ***REMOVED***
             return Release(json: releaseJson)
     ***REMOVED***)
@@ -46,8 +47,7 @@ struct DiscogsClient {
 
     func artist(id: Int, completion: @escaping (Result<Artist>) -> ()) {
         let path = "/artists/\(id)"
-        let queryParameter: [URLQueryItem]? = nil
-        let resource = Resource<Artist>(path: path, queryParameter: queryParameter, parseJSON: { json in
+        let resource = Resource<Artist>(path: path, parseJSON: { json in
             guard let artistJson = json as? JSON else { return nil ***REMOVED***
             return Artist(json: artistJson)
     ***REMOVED***)
@@ -56,8 +56,7 @@ struct DiscogsClient {
 
     func discography(artistId: Int, completion: @escaping (Result<[Record]>) -> ()) {
         let path = "/artists/\(artistId)/releases"
-        let queryParameter: [URLQueryItem]? = nil
-        let resource = Resource<[Record]>(path: path, queryParameter: queryParameter, parseJSON: { json in
+        let resource = Resource<[Record]>(path: path, parseJSON: { json in
             guard
                 let dictionaries = json as? JSON,
                 let releases = dictionaries["releases"] as? [JSON]

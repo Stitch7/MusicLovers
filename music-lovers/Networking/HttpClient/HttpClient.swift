@@ -15,14 +15,8 @@ protocol HttpClient {
 ***REMOVED***
 
 extension URLRequest {
-    init<T>(credentials: Credentials?, url: URL, resource: Resource<T>) {
+    init<T>(url: URL, resource: Resource<T>) {
         self.init(url: url)
-
-        if resource.needsAuth {
-            if let creds = credentials {
-                setValue("Discogs key=\(creds.key), secret=\(creds.secret)", forHTTPHeaderField: "Authorization")
-        ***REMOVED***
-    ***REMOVED***
 
         httpMethod = resource.method.string
         if case let .post(data) = resource.method {

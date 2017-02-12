@@ -26,18 +26,24 @@ final class FoundationClient: HttpClient {
         var urlComponents = URLComponents(url: baseUrl, resolvingAgainstBaseURL: false)!
 
         var path = resource.path
-        if false == path.hasPrefix("/") {
+        if !path.hasPrefix("/") {
             path = "/" + path
     ***REMOVED***
         urlComponents.path = path
         urlComponents.queryItems = resource.queryParameter
 
         guard let url = urlComponents.url else {
-            ***REMOVED*** TODO
-            fatalError("Invalid Url")
+            completion(.failure(HttpError.invalidUrl))
+            return
     ***REMOVED***
 
-        let request = URLRequest(credentials: credentials, url: url, resource: resource)
+        var request = URLRequest(url: url, resource: resource)
+        if resource.needsAuth {
+            if let creds = credentials {
+                request.setValue("Discogs key=\(creds.key), secret=\(creds.secret)", forHTTPHeaderField: "Authorization")
+        ***REMOVED***
+    ***REMOVED***
+
         URLSession.shared.dataTask(with: request) { data, response, error in
             guard
                 error == nil,
