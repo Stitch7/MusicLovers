@@ -58,13 +58,19 @@ class ArtistViewController: UITableViewController {
                 self.delegate?.object = artist
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
-                    self.loadingView.remove()
                     if let image = artist.mainImage {
                         UIImage.downloadFrom(url: image.uri, completion: { image in
                             guard let artistImage = image else { return }
                             let artistImageView = UIImageView(image: artistImage)
-                            self.tableView.setAndLayoutTableHeaderView(header: artistImageView)
+                            self.tableView.setAndLayoutTableHeaderView(header: artistImageView,
+                                                                       maxHeight: self.tableView.frame.width)
+
+                            self.tableView.setBlurredBackground(image: artistImage)
+                            self.loadingView.remove()
                         })
+                    }
+                    else {
+                        self.loadingView.remove()
                     }
                 }
             case .failure(let error):

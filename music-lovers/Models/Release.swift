@@ -49,7 +49,6 @@ extension Release: JSONInitializable {
             let id = json["id"] as? Int,
             let artistsJson = json["artists"] as? [JSON],
             let companiesJson = json["companies"] as? [JSON],
-            let country = json["country"] as? String,
             let dataQuality = json["data_quality"] as? String,
             let dateAddedStr = json["date_added"] as? String,
             let dateAdded = dateFormatter.date(from: dateAddedStr),
@@ -75,6 +74,7 @@ extension Release: JSONInitializable {
             return nil
         }
 
+        let country = json["country"] as? String ?? ""
         let notes = json["notes"] as? String ?? ""
         let videosJson = json["videos"] as? [JSON] ?? [JSON]()
 

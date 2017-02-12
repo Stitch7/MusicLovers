@@ -10,11 +10,18 @@ import UIKit
 
 extension UITableView {
     // Set the tableHeaderView so that the required height can be determined, update the header's frame and set it again
-    func setAndLayoutTableHeaderView(header: UIView) {
+    func setAndLayoutTableHeaderView(header: UIView, maxHeight: CGFloat? = nil) {
         tableHeaderView = header
         header.setNeedsLayout()
         header.layoutIfNeeded()
-        let height = header.systemLayoutSizeFitting(UILayoutFittingCompressedSize).height
+
+        var height = header.systemLayoutSizeFitting(UILayoutFittingCompressedSize).height
+        if let maxHeight = maxHeight {
+            if height > maxHeight {
+                height = maxHeight
+            }
+        }
+
         var frame = header.frame
         frame.size.height = height
         header.frame = frame

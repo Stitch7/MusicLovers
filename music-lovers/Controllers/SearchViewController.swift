@@ -52,7 +52,6 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
     override func viewWillAppear(_ animated: Bool) {
         self.clearsSelectionOnViewWillAppear = self.splitViewController!.isCollapsed
         super.viewWillAppear(animated)
-        tableView.tableHeaderView = searchController.searchBar
     }
 
     func configureDetailViewController() {
@@ -79,6 +78,9 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
         searchController.searchBar.sizeToFit()
         searchController.searchBar.delegate = self
         searchController.searchBar.placeholder = "Search for a record name".localized
+
+        tableView.tableHeaderView = searchController.searchBar
+        tableView.tableFooterView = UIView(frame: .zero)
     }
 
     func configureLoadingView() {

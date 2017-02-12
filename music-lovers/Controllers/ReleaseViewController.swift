@@ -12,16 +12,11 @@ class ReleaseViewController: UITableViewController {
 
     // MARK: - Properties
 
-    var searchItem: SearchItem? {
-        didSet {
-            self.loadData()
-        }
-    }
-
     lazy var dataSource: SectionsDataSource<ReleaseSections> = {
         SectionsDataSource<ReleaseSections>(tableView: self.tableView)
     }()
 
+    var searchItem: SearchItem?
     var delegate: SectionsDataDelegate<ReleaseSections>?
     var discogsClient: DiscogsClient?
     let loadingView = LoadingView()
@@ -51,8 +46,7 @@ class ReleaseViewController: UITableViewController {
                 guard let release = release else {
                     self.loadingView.remove()
                     DispatchQueue.main.async {
-//                        _ = self.navigationController?.popViewController(animated: true)
-                        _ = self.navigationController?.popToRootViewController(animated: true)
+                        _ = self.navigationController?.popViewController(animated: true)
                     }
                     return
                 }
@@ -63,7 +57,16 @@ class ReleaseViewController: UITableViewController {
                     self.tableView.reloadData()
                     self.title = release.title
 
-                    self.loadingView.remove()
+                    if let imageUrl = release.mainImage?.uri {
+                        UIImage.downloadFrom(url: imageUrl) { image in
+                            guard let coverImage = image else { return }
+                            self.tableView.setBlurredBackground(image: coverImage)
+                            self.loadingView.remove()
+                        }
+                    }
+                    else {
+                        self.loadingView.remove()
+                    }
                 }
             case .failure(let error):
                 self.loadingView.remove()

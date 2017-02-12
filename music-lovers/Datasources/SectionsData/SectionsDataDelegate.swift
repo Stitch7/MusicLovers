@@ -23,7 +23,7 @@ class SectionsDataDelegate<SectionsEnum>: NSObject, UITableViewDelegate where Se
         return view
     }()
 
-    var headerViewFontSize: CGFloat = 13.0
+    var headerViewFontSize: CGFloat = 16.0
     var headerViewHeight: CGFloat = 38.0
     var footerViewHeight: CGFloat = 10.0
 
@@ -34,14 +34,23 @@ class SectionsDataDelegate<SectionsEnum>: NSObject, UITableViewDelegate where Se
 
         let label = UILabel(frame: CGRect(x: 10, y: 0, width: width, height: headerViewHeight))
         label.backgroundColor = .clear
-        label.textColor = .darkGray
+        label.textColor = .black
         label.text = title.uppercased()
-        label.font = UIFont.systemFont(ofSize: headerViewFontSize)
+        label.font = UIFont.boldSystemFont(ofSize: headerViewFontSize)
 
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: width, height: headerViewHeight))
-        view.addSubview(label)
+        if let blurEffectView = self.tableView?.backgroundView?.subviews.first as? UIVisualEffectView {
+            let vibrancy = UIVibrancyEffect(blurEffect: blurEffectView.effect as! UIBlurEffect)
 
-        return view
+            let view = UIVisualEffectView(effect: vibrancy)
+            view.frame = CGRect(x: 0, y: 0, width: width, height: headerViewHeight)
+            view.contentView.addSubview(label)
+            return view
+        }
+        else {
+            let view = UIView(frame: CGRect(x: 0, y: 0, width: width, height: headerViewHeight))
+            view.addSubview(label)
+            return view
+        }
     }
 
     var footerView: UIView = {
@@ -53,10 +62,10 @@ class SectionsDataDelegate<SectionsEnum>: NSObject, UITableViewDelegate where Se
     // MARK: - Initializers
 
     init(tableView: UITableView, didSelectRowAtIndexPath : ((IndexPath) -> Void)? = nil) {
+        tableView.tableFooterView = UIView(frame: .zero)
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.sectionHeaderHeight = 0
         tableView.sectionFooterHeight = 0
-        SectionsEnum.setup(tableView: tableView)
 
         super.init()
         tableView.delegate = self
@@ -98,6 +107,10 @@ class SectionsDataDelegate<SectionsEnum>: NSObject, UITableViewDelegate where Se
 
         let isEmpty = section.numberOfRows(object: object) == 0
         return isEmpty ? emptyView : footerView
+    }
+
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.contentView.superview?.backgroundColor = UIColor.white.withAlphaComponent(0.5)
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

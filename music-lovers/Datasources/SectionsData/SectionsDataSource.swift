@@ -19,7 +19,7 @@ class SectionsDataSource<SectionsEnum>: NSObject, UITableViewDataSource where Se
     init(tableView: UITableView) {
         tableView.rowHeight = UITableViewAutomaticDimension
         SectionsEnum.setup(tableView: tableView)
-
+        
         super.init()
         tableView.dataSource = self
     }

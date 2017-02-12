@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3042027E1E51497100ACAE8E /* UITableView+blurredBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3042027D1E51497100ACAE8E /* UITableView+blurredBackground.swift */; };
 		305021CE1E50C1AA00D6BC61 /* ReleaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305021CD1E50C1AA00D6BC61 /* ReleaseTests.swift */; };
 		305021D01E50C1C400D6BC61 /* AliasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305021CF1E50C1C400D6BC61 /* AliasTests.swift */; };
 		305021D21E50C1D500D6BC61 /* ArtistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305021D11E50C1D500D6BC61 /* ArtistTests.swift */; };
@@ -96,6 +97,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3042027D1E51497100ACAE8E /* UITableView+blurredBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+blurredBackground.swift"; sourceTree = "<group>"; };
 		305021CD1E50C1AA00D6BC61 /* ReleaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReleaseTests.swift; sourceTree = "<group>"; };
 		305021CF1E50C1C400D6BC61 /* AliasTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AliasTests.swift; sourceTree = "<group>"; };
 		305021D11E50C1D500D6BC61 /* ArtistTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistTests.swift; sourceTree = "<group>"; };
@@ -115,7 +117,6 @@
 		305021F21E50E1BA00D6BC61 /* artistResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = artistResponse.json; sourceTree = "<group>"; };
 		305021F41E50E24B00D6BC61 /* discographyResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = discographyResponse.json; sourceTree = "<group>"; };
 		305021F61E50E56A00D6BC61 /* String+leftPaddingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+leftPaddingTests.swift"; sourceTree = "<group>"; };
-		305021F91E50EA3C00D6BC61 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		305021FA1E50EA3C00D6BC61 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		305022001E51014500D6BC61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		305022031E51014A00D6BC61 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -280,13 +281,13 @@
 		30A877571E4B328D00C419F9 /* music-lovers */ = {
 			isa = PBXGroup;
 			children = (
-				30A877A81E4BC1F300C419F9 /* Controllers */,
-				30FE5C2C1E4E484100E9E592 /* Datasources */,
-				30A877C01E4CA92B00C419F9 /* Extensions */,
-				30A877831E4B586400C419F9 /* Models */,
-				30A8777A1E4B57CB00C419F9 /* Networking */,
-				30A877A71E4BC1E300C419F9 /* Supporting Files */,
 				30A877B41E4C88AE00C419F9 /* Views */,
+				30A877A81E4BC1F300C419F9 /* Controllers */,
+				30A877831E4B586400C419F9 /* Models */,
+				30FE5C2C1E4E484100E9E592 /* Datasources */,
+				30A8777A1E4B57CB00C419F9 /* Networking */,
+				30A877C01E4CA92B00C419F9 /* Extensions */,
+				30A877A71E4BC1E300C419F9 /* Supporting Files */,
 				30A877581E4B328D00C419F9 /* AppDelegate.swift */,
 				30A877901E4B5DDA00C419F9 /* Config.swift */,
 				30A877881E4B58C500C419F9 /* Result.swift */,
@@ -431,6 +432,7 @@
 				30A877C71E4CDD5900C419F9 /* UIView+addConstraints.swift */,
 				307354F81E4E8A9600EF1AD9 /* UIViewController+MusicLovers.swift */,
 				305022041E51032000D6BC61 /* String+localized.swift */,
+				3042027D1E51497100ACAE8E /* UITableView+blurredBackground.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -513,12 +515,10 @@
 				TargetAttributes = {
 					30A877541E4B328D00C419F9 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = J8XDHCNJQA;
 						ProvisioningStyle = Automatic;
 					};
 					30A8776A1E4B328D00C419F9 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = J8XDHCNJQA;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 30A877541E4B328D00C419F9;
 					};
@@ -606,6 +606,7 @@
 				30CF22861E4DF22100464097 /* Record.swift in Sources */,
 				30CF22981E4E33E400464097 /* UITableView+setAndLayoutTableHeaderView.swift in Sources */,
 				30CF22A31E4E428400464097 /* UIImage+downloadFrom.swift in Sources */,
+				3042027E1E51497100ACAE8E /* UITableView+blurredBackground.swift in Sources */,
 				30A8778B1E4B599300C419F9 /* HttpError.swift in Sources */,
 				30CF228D1E4DFED400464097 /* Member.swift in Sources */,
 				305022051E51032000D6BC61 /* String+localized.swift in Sources */,
@@ -689,7 +690,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				30A877641E4B328D00C419F9 /* Base */,
-				305021F91E50EA3C00D6BC61 /* de */,
 			);
 			name = LaunchScreen.storyboard;
 			path = .;
@@ -797,7 +797,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = J8XDHCNJQA;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "music-lovers/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "re.reitz.music-lovers";
@@ -810,7 +810,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = J8XDHCNJQA;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "music-lovers/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "re.reitz.music-lovers";
@@ -824,7 +824,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = J8XDHCNJQA;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "music-loversTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "re.reitz.music-loversTests";
@@ -839,7 +839,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = J8XDHCNJQA;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "music-loversTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "re.reitz.music-loversTests";

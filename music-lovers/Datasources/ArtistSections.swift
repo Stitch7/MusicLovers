@@ -70,10 +70,7 @@ extension ArtistSections: SectionsDataEnum {
 
     func generateCell(for tableView: UITableView, at indexPath: IndexPath, with artist: Artist?) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-
-        cell.selectionStyle = .none
         cell.accessoryType = .none
-
         cell.textLabel?.numberOfLines = 0
         cell.textLabel?.font = UIFont.systemFont(ofSize: 15.0)
         cell.textLabel?.textColor = .black

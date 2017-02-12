@@ -25,6 +25,7 @@ extension ReleaseSections: SectionsDataEnum {
         tableView.register(UINib(nibName: "ReleaseTableViewCell", bundle: nil), forCellReuseIdentifier: "ReleaseCell")
         tableView.register(UINib(nibName: "TrackTableViewCell", bundle: nil), forCellReuseIdentifier: "TrackCell")
         tableView.register(UINib(nibName: "VideoTableViewCell", bundle: nil), forCellReuseIdentifier: "VideoCell")
+        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         tableView.estimatedRowHeight = 21
     }
 
@@ -72,7 +73,6 @@ extension ReleaseSections: SectionsDataEnum {
 
     func generateArtistCell(for tableView: UITableView, at indexPath: IndexPath, with release: Release?) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.selectionStyle = .default
         cell.accessoryType = .disclosureIndicator
         cell.textLabel?.numberOfLines = 0
         cell.textLabel?.font = UIFont.systemFont(ofSize: 15.0)
@@ -90,7 +90,6 @@ extension ReleaseSections: SectionsDataEnum {
 
     func generateNotesCell(for tableView: UITableView, at indexPath: IndexPath, with release: Release?) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.selectionStyle = .none
         cell.accessoryType = .none
         cell.textLabel?.numberOfLines = 0
         cell.textLabel?.font = UIFont.systemFont(ofSize: 14.0)
@@ -101,7 +100,6 @@ extension ReleaseSections: SectionsDataEnum {
 
     func generateCreditsCell(for tableView: UITableView, at indexPath: IndexPath, with release: Release?) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.selectionStyle = .none
         cell.accessoryType = .none
         cell.textLabel?.numberOfLines = 0
         cell.textLabel?.font = UIFont.systemFont(ofSize: 15.0)
