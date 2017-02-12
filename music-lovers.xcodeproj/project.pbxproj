@@ -7,9 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		305021CE1E50C1AA00D6BC61 /* ReleaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305021CD1E50C1AA00D6BC61 /* ReleaseTests.swift */; };
+		305021D01E50C1C400D6BC61 /* AliasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305021CF1E50C1C400D6BC61 /* AliasTests.swift */; };
+		305021D21E50C1D500D6BC61 /* ArtistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305021D11E50C1D500D6BC61 /* ArtistTests.swift */; };
+		305021D41E50C1E400D6BC61 /* CompanyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305021D31E50C1E400D6BC61 /* CompanyTests.swift */; };
+		305021D61E50C1EE00D6BC61 /* FormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305021D51E50C1EE00D6BC61 /* FormatTests.swift */; };
+		305021D81E50C1FB00D6BC61 /* IdentifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305021D71E50C1FB00D6BC61 /* IdentifierTests.swift */; };
+		305021DA1E50C20300D6BC61 /* ImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305021D91E50C20300D6BC61 /* ImageTests.swift */; };
+		305021DC1E50C20D00D6BC61 /* LabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305021DB1E50C20D00D6BC61 /* LabelTests.swift */; };
+		305021DE1E50C21400D6BC61 /* MemberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305021DD1E50C21400D6BC61 /* MemberTests.swift */; };
+		305021E01E50C21E00D6BC61 /* RecordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305021DF1E50C21E00D6BC61 /* RecordTests.swift */; };
+		305021E21E50C22700D6BC61 /* TrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305021E11E50C22700D6BC61 /* TrackTests.swift */; };
+		305021E41E50C22F00D6BC61 /* VideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305021E31E50C22F00D6BC61 /* VideoTests.swift */; };
+		305021E71E50C75400D6BC61 /* DiscogsClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305021E61E50C75400D6BC61 /* DiscogsClientTests.swift */; };
+		305021EB1E50CFA600D6BC61 /* searchResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 305021EA1E50CFA600D6BC61 /* searchResponse.json */; };
+		305021ED1E50DFC800D6BC61 /* TestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305021EC1E50DFC800D6BC61 /* TestClient.swift */; };
+		305021EF1E50E0B900D6BC61 /* releaseResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 305021EE1E50E0B900D6BC61 /* releaseResponse.json */; };
+		305021F31E50E1BA00D6BC61 /* artistResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 305021F21E50E1BA00D6BC61 /* artistResponse.json */; };
+		305021F51E50E24B00D6BC61 /* discographyResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 305021F41E50E24B00D6BC61 /* discographyResponse.json */; };
+		305021F71E50E56A00D6BC61 /* String+leftPaddingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305021F61E50E56A00D6BC61 /* String+leftPaddingTests.swift */; };
 		307354F71E4E88CF00EF1AD9 /* UIApplication+tintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307354F61E4E88CF00EF1AD9 /* UIApplication+tintColor.swift */; };
 		307354F91E4E8A9600EF1AD9 /* UIViewController+MusicLovers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307354F81E4E8A9600EF1AD9 /* UIViewController+MusicLovers.swift */; };
 		307354FB1E50B51400EF1AD9 /* SectionsDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307354FA1E50B51400EF1AD9 /* SectionsDataDelegate.swift */; };
+		307354FE1E50BDBF00EF1AD9 /* SearchItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307354FD1E50BDBF00EF1AD9 /* SearchItemTests.swift */; };
 		30A1CD0E1E4E640B00047390 /* SectionsDataEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A1CD0D1E4E640B00047390 /* SectionsDataEnum.swift */; };
 		30A877591E4B328D00C419F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A877581E4B328D00C419F9 /* AppDelegate.swift */; };
 		30A8775B1E4B328D00C419F9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8775A1E4B328D00C419F9 /* SearchViewController.swift */; };
@@ -17,7 +37,6 @@
 		30A877601E4B328D00C419F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A8775E1E4B328D00C419F9 /* Main.storyboard */; };
 		30A877621E4B328D00C419F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A877611E4B328D00C419F9 /* Assets.xcassets */; };
 		30A877651E4B328D00C419F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A877631E4B328D00C419F9 /* LaunchScreen.storyboard */; };
-		30A877701E4B328D00C419F9 /* music_loversTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8776F1E4B328D00C419F9 /* music_loversTests.swift */; };
 		30A8777C1E4B580100C419F9 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8777B1E4B580100C419F9 /* HttpClient.swift */; };
 		30A8777E1E4B581F00C419F9 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8777D1E4B581F00C419F9 /* Credentials.swift */; };
 		30A877801E4B583900C419F9 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8777F1E4B583900C419F9 /* Resource.swift */; };
@@ -75,9 +94,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		305021CD1E50C1AA00D6BC61 /* ReleaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReleaseTests.swift; sourceTree = "<group>"; };
+		305021CF1E50C1C400D6BC61 /* AliasTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AliasTests.swift; sourceTree = "<group>"; };
+		305021D11E50C1D500D6BC61 /* ArtistTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistTests.swift; sourceTree = "<group>"; };
+		305021D31E50C1E400D6BC61 /* CompanyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyTests.swift; sourceTree = "<group>"; };
+		305021D51E50C1EE00D6BC61 /* FormatTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormatTests.swift; sourceTree = "<group>"; };
+		305021D71E50C1FB00D6BC61 /* IdentifierTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierTests.swift; sourceTree = "<group>"; };
+		305021D91E50C20300D6BC61 /* ImageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTests.swift; sourceTree = "<group>"; };
+		305021DB1E50C20D00D6BC61 /* LabelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelTests.swift; sourceTree = "<group>"; };
+		305021DD1E50C21400D6BC61 /* MemberTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberTests.swift; sourceTree = "<group>"; };
+		305021DF1E50C21E00D6BC61 /* RecordTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordTests.swift; sourceTree = "<group>"; };
+		305021E11E50C22700D6BC61 /* TrackTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackTests.swift; sourceTree = "<group>"; };
+		305021E31E50C22F00D6BC61 /* VideoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTests.swift; sourceTree = "<group>"; };
+		305021E61E50C75400D6BC61 /* DiscogsClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscogsClientTests.swift; sourceTree = "<group>"; };
+		305021EA1E50CFA600D6BC61 /* searchResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = searchResponse.json; sourceTree = "<group>"; };
+		305021EC1E50DFC800D6BC61 /* TestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestClient.swift; sourceTree = "<group>"; };
+		305021EE1E50E0B900D6BC61 /* releaseResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = releaseResponse.json; sourceTree = "<group>"; };
+		305021F21E50E1BA00D6BC61 /* artistResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = artistResponse.json; sourceTree = "<group>"; };
+		305021F41E50E24B00D6BC61 /* discographyResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = discographyResponse.json; sourceTree = "<group>"; };
+		305021F61E50E56A00D6BC61 /* String+leftPaddingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+leftPaddingTests.swift"; sourceTree = "<group>"; };
 		307354F61E4E88CF00EF1AD9 /* UIApplication+tintColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+tintColor.swift"; sourceTree = "<group>"; };
 		307354F81E4E8A9600EF1AD9 /* UIViewController+MusicLovers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+MusicLovers.swift"; sourceTree = "<group>"; };
 		307354FA1E50B51400EF1AD9 /* SectionsDataDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsDataDelegate.swift; sourceTree = "<group>"; };
+		307354FD1E50BDBF00EF1AD9 /* SearchItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItemTests.swift; sourceTree = "<group>"; };
 		30A1CD0D1E4E640B00047390 /* SectionsDataEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsDataEnum.swift; sourceTree = "<group>"; };
 		30A877551E4B328D00C419F9 /* music-lovers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "music-lovers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A877581E4B328D00C419F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,11 +127,10 @@
 		30A877641E4B328D00C419F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30A877661E4B328D00C419F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30A8776B1E4B328D00C419F9 /* music-loversTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "music-loversTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		30A8776F1E4B328D00C419F9 /* music_loversTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = music_loversTests.swift; sourceTree = "<group>"; };
 		30A877711E4B328D00C419F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30A8777B1E4B580100C419F9 /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
-		30A8777D1E4B581F00C419F9 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Credentials.swift; path = ../Credentials.swift; sourceTree = "<group>"; };
-		30A8777F1E4B583900C419F9 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = ../Resource.swift; sourceTree = "<group>"; };
+		30A8777D1E4B581F00C419F9 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		30A8777F1E4B583900C419F9 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		30A877811E4B584700C419F9 /* FoundationClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationClient.swift; sourceTree = "<group>"; };
 		30A877841E4B587500C419F9 /* SearchItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
 		30A877861E4B588800C419F9 /* DiscogsClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscogsClient.swift; sourceTree = "<group>"; };
@@ -154,14 +192,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		305021E51E50C23600D6BC61 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				305021CF1E50C1C400D6BC61 /* AliasTests.swift */,
+				305021D11E50C1D500D6BC61 /* ArtistTests.swift */,
+				305021D31E50C1E400D6BC61 /* CompanyTests.swift */,
+				305021D51E50C1EE00D6BC61 /* FormatTests.swift */,
+				305021D71E50C1FB00D6BC61 /* IdentifierTests.swift */,
+				305021D91E50C20300D6BC61 /* ImageTests.swift */,
+				305021DB1E50C20D00D6BC61 /* LabelTests.swift */,
+				305021DD1E50C21400D6BC61 /* MemberTests.swift */,
+				305021DF1E50C21E00D6BC61 /* RecordTests.swift */,
+				305021CD1E50C1AA00D6BC61 /* ReleaseTests.swift */,
+				307354FD1E50BDBF00EF1AD9 /* SearchItemTests.swift */,
+				305021E11E50C22700D6BC61 /* TrackTests.swift */,
+				305021E31E50C22F00D6BC61 /* VideoTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		305021E81E50C7AE00D6BC61 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				305021E61E50C75400D6BC61 /* DiscogsClientTests.swift */,
+				305021EC1E50DFC800D6BC61 /* TestClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		305021E91E50CF9600D6BC61 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				305021F21E50E1BA00D6BC61 /* artistResponse.json */,
+				305021F41E50E24B00D6BC61 /* discographyResponse.json */,
+				305021EE1E50E0B900D6BC61 /* releaseResponse.json */,
+				305021EA1E50CFA600D6BC61 /* searchResponse.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		305021F81E50E56F00D6BC61 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				305021F61E50E56A00D6BC61 /* String+leftPaddingTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		307354FC1E50B64B00EF1AD9 /* SectionsData */ = {
 			isa = PBXGroup;
 			children = (
+				307354FA1E50B51400EF1AD9 /* SectionsDataDelegate.swift */,
 				30A1CD0D1E4E640B00047390 /* SectionsDataEnum.swift */,
 				30FE5C2D1E4E54DE00E9E592 /* SectionsDataSource.swift */,
-				307354FA1E50B51400EF1AD9 /* SectionsDataDelegate.swift */,
 			);
-			name = SectionsData;
+			path = SectionsData;
 			sourceTree = "<group>";
 		};
 		30A8774C1E4B328D00C419F9 = {
@@ -185,13 +271,13 @@
 		30A877571E4B328D00C419F9 /* music-lovers */ = {
 			isa = PBXGroup;
 			children = (
-				30A877831E4B586400C419F9 /* Models */,
-				30A877B41E4C88AE00C419F9 /* Views */,
 				30A877A81E4BC1F300C419F9 /* Controllers */,
 				30FE5C2C1E4E484100E9E592 /* Datasources */,
-				30A8777A1E4B57CB00C419F9 /* Networking */,
 				30A877C01E4CA92B00C419F9 /* Extensions */,
+				30A877831E4B586400C419F9 /* Models */,
+				30A8777A1E4B57CB00C419F9 /* Networking */,
 				30A877A71E4BC1E300C419F9 /* Supporting Files */,
+				30A877B41E4C88AE00C419F9 /* Views */,
 				30A877581E4B328D00C419F9 /* AppDelegate.swift */,
 				30A877901E4B5DDA00C419F9 /* Config.swift */,
 				30A877881E4B58C500C419F9 /* Result.swift */,
@@ -202,8 +288,11 @@
 		30A8776E1E4B328D00C419F9 /* music-loversTests */ = {
 			isa = PBXGroup;
 			children = (
+				305021E91E50CF9600D6BC61 /* Resources */,
+				305021E51E50C23600D6BC61 /* Models */,
+				305021E81E50C7AE00D6BC61 /* Networking */,
+				305021F81E50E56F00D6BC61 /* Extensions */,
 				30A877711E4B328D00C419F9 /* Info.plist */,
-				30A8776F1E4B328D00C419F9 /* music_loversTests.swift */,
 			);
 			path = "music-loversTests";
 			sourceTree = "<group>";
@@ -326,10 +415,10 @@
 			isa = PBXGroup;
 			children = (
 				30A877BE1E4CA92600C419F9 /* String+leftPadding.swift */,
+				307354F61E4E88CF00EF1AD9 /* UIApplication+tintColor.swift */,
 				30CF22A21E4E428400464097 /* UIImage+downloadFrom.swift */,
 				30CF22971E4E33E400464097 /* UITableView+setAndLayoutTableHeaderView.swift */,
 				30A877C71E4CDD5900C419F9 /* UIView+addConstraints.swift */,
-				307354F61E4E88CF00EF1AD9 /* UIApplication+tintColor.swift */,
 				307354F81E4E8A9600EF1AD9 /* UIViewController+MusicLovers.swift */,
 			);
 			path = Extensions;
@@ -418,6 +507,7 @@
 					};
 					30A8776A1E4B328D00C419F9 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = J8XDHCNJQA;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 30A877541E4B328D00C419F9;
 					};
@@ -462,6 +552,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				305021F51E50E24B00D6BC61 /* discographyResponse.json in Resources */,
+				305021EF1E50E0B900D6BC61 /* releaseResponse.json in Resources */,
+				305021F31E50E1BA00D6BC61 /* artistResponse.json in Resources */,
+				305021EB1E50CFA600D6BC61 /* searchResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,7 +619,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30A877701E4B328D00C419F9 /* music_loversTests.swift in Sources */,
+				305021D01E50C1C400D6BC61 /* AliasTests.swift in Sources */,
+				305021DE1E50C21400D6BC61 /* MemberTests.swift in Sources */,
+				305021E01E50C21E00D6BC61 /* RecordTests.swift in Sources */,
+				305021DA1E50C20300D6BC61 /* ImageTests.swift in Sources */,
+				307354FE1E50BDBF00EF1AD9 /* SearchItemTests.swift in Sources */,
+				305021ED1E50DFC800D6BC61 /* TestClient.swift in Sources */,
+				305021E21E50C22700D6BC61 /* TrackTests.swift in Sources */,
+				305021E71E50C75400D6BC61 /* DiscogsClientTests.swift in Sources */,
+				305021D21E50C1D500D6BC61 /* ArtistTests.swift in Sources */,
+				305021E41E50C22F00D6BC61 /* VideoTests.swift in Sources */,
+				305021CE1E50C1AA00D6BC61 /* ReleaseTests.swift in Sources */,
+				305021DC1E50C20D00D6BC61 /* LabelTests.swift in Sources */,
+				305021D61E50C1EE00D6BC61 /* FormatTests.swift in Sources */,
+				305021D81E50C1FB00D6BC61 /* IdentifierTests.swift in Sources */,
+				305021D41E50C1E400D6BC61 /* CompanyTests.swift in Sources */,
+				305021F71E50E56A00D6BC61 /* String+leftPaddingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,6 +794,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = J8XDHCNJQA;
 				INFOPLIST_FILE = "music-loversTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "re.reitz.music-loversTests";
@@ -699,6 +809,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = J8XDHCNJQA;
 				INFOPLIST_FILE = "music-loversTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "re.reitz.music-loversTests";
